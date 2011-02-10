@@ -6,6 +6,7 @@ module Foursquare2
     
     include Venues
     include Checkins
+    include Tips
 
     def initialize(oauth_token)
       @oauth_token = oauth_token
