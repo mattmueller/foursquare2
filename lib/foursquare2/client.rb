@@ -5,6 +5,7 @@ module Foursquare2
     extend Forwardable
     
     include Venues
+    include Checkins
 
     def initialize(oauth_token)
       @oauth_token = oauth_token
