@@ -6,7 +6,7 @@ module Foursquare2
       return_error_or_body(response, response.body.response.special)
     end    
 
-    def search_specials
+    def search_specials(options={})
       response = connection.get do |req|
         req.url "specials/search", options
       end
