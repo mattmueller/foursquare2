@@ -12,11 +12,24 @@ module Foursquare2
     include Specials
     include Users
 
+
+    #Initialize the client class that will be used for all foursquare API requests.  Note that either a valid user oauth token OR a valid client_id + secret is required.
+    #
+    #Certain requests will require an oauth token.  See http://developer.foursquare.com/docs/index_docs.html for the full list.
+    #
+    # @param [Hash] options
+    # @option options String :client_id Your foursquare app's client_id
+    # @option options String :client_secret Your foursquare app's client_secret
+    # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
+    
     def initialize(options={})
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
     end
+
+
+    # Sets up the connection to be used for all requests based on options passed during initialization.
 
     def connection
       params = {}
@@ -30,15 +43,22 @@ module Foursquare2
       end
     end
 
+    # Base URL for api requests.
+
     def api_url
       "https://api.foursquare.com/v2"
     end
+
+    # Helper method to return errors or desired response data as appropriate.
+    #
+    # Added just for convenience to avoid having to traverse farther down the response just to get to returned data.
 
     def return_error_or_body(response, response_body)
       response.body.meta.code == 200 ? response_body : response.body
     end
       
     private
+
 
       def default_headers
         headers = {
