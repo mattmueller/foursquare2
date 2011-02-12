@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "Readme.md",
     "VERSION",
+    "foursquare2.gemspec",
     "lib/foursquare2.rb",
     "lib/foursquare2/checkins.rb",
     "lib/foursquare2/client.rb",
