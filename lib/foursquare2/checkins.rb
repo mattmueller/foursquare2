@@ -58,7 +58,7 @@ module Foursquare2
 
     # Delete a checkin's comment
     #
-    # @params [String] checkin_id - The ID of the checkin
+    # @param [String] checkin_id - The ID of the checkin
     # @param [Hash]  options
     # @option options String :commentId - ID of the comment to be deleted.
 
