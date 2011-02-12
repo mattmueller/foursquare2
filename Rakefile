@@ -15,14 +15,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "foursquare2"
   gem.homepage = "http://github.com/mattmueller/foursquare2"
   gem.license = "MIT"
-  gem.summary = "Foursquare API v2 gem"
-  gem.description = "Self-explanatory"
+  gem.summary = "Foursquare API v2 gem in the spirit of the original foursquare gem"
+  gem.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
   gem.email = "muellermr@gmail.com"
   gem.authors = ["Matt Mueller"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'faraday', '~> 0.5.3'
+  gem.add_runtime_dependency 'faraday_middleware', '~> 0.3.0'
+  gem.add_runtime_dependency 'hashie', '~> 1.0.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
