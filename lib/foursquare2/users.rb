@@ -1,10 +1,23 @@
 module Foursquare2
   module Users
 
+    # Get information about a user
+    #
+    # @param [Integer] user_id - User to get information for.
+
     def user(user_id)
       response = connection.get("users/#{user_id}")
       return_error_or_body(response, response.body.response.user)
     end
+
+    # Search for users
+    # @param [Hash]  options
+    # @option options String :phone - Match on phone number
+    # @option options String :email - Match on email
+    # @option options String :twitter - Match on twitter username
+    # @option options String :twitterSource - Friends of this twitter handle that use foursquare.
+    # @option options String :fbid - Match on facebook id.
+    # @option options String :name - Match on name
 
     def search_users(options={})
       response = connection.get do |req|
@@ -13,15 +26,28 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Get all pending friend requests for the authenticated user
+
     def user_requests
       response = connection.get("users/requests")
       return_error_or_body(response, response.body.response.requests)
     end
 
+    # Get all badges for a given user.
+    #
+    # @param [String] user_id - The user to retrieve badges for.
+
     def user_badges(user_id)
       response = connection.get("users/#{user_id}/badges")
       return_error_or_body(response, response.body.response.sets)
     end
+
+    # Get checkins for the authenticated user
+    # @param [Hash]  options
+    # @option options Integer :limit
+    # @option options Integer :offest - For paging through results
+    # @option options Integer :afterTimestamp - Get all checkins after this epoch time.
+    # @option options Integer :beforeTimestamp - Get all checkins before this epoch time.
 
     def user_checkins(options={})
       response = connection.get do |req|
@@ -30,12 +56,28 @@ module Foursquare2
       return_error_or_body(response, response.body.response.checkins)
     end
 
+    # Get all friends for a given user.
+    #
+    # @param [String] user_id - The user to retrieve friends for.
+    # @param [Hash]  options
+    # @option options Integer :limit
+    # @option options Integer :offest - For paging through results
+
     def user_friends(user_id, options={})
       response = connection.get do |req|
         req.url "users/#{user_id}/friends", options
       end
       return_error_or_body(response, response.body.response.friends)
     end
+
+    # Get all tips for a given user.
+    #
+    # @param [String] user_id - The user to retrieve friends for.
+    # @param [Hash]  options
+    # @option options Integer :limit
+    # @option options Integer :offest - For paging through results
+    # @option options String :sort - One of recent, nearby, popular
+    # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
 
     def user_tips(user_id, options={})
       response = connection.get do |req|
@@ -44,12 +86,27 @@ module Foursquare2
       return_error_or_body(response, response.body.response.tips)
     end
 
+    # Get all todos for a given user.
+    #
+    # @param [String] user_id - The user to retrieve friends for.
+    # @param [Hash]  options
+    # @option options String :sort - One of recent, nearby, popular
+    # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
+
+
     def user_todos(user_id, options={})
       response = connection.get do |req|
         req.url "users/#{user_id}/todos", options
       end
       return_error_or_body(response, response.body.response.todos)
     end
+
+    # Get the venue history for the authenticated user.
+    #
+    # @param [Hash]  options
+    # @option options Integer :afterTimestamp - Get all venues after this epoch time.
+    # @option options Integer :beforeTimestamp - Get all venues before this epoch time.
+
 
     def user_venue_history(options={})
       response = connection.get do |req|
@@ -58,12 +115,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response.venues)
     end
 
+    # Request friendship with a user
+    #
+    # @param [String] user_id - The user to request friendship with.
+
     def user_friend_request(user_id)
       response = connection.post do |req|
         req.url "users/#{user_id}/request"
       end
       return_error_or_body(response, response.body.response)
     end   
+
+    # Unfriend a user
+    #
+    # @param [String] user_id - The user to unfriend.
 
     def user_unfriend(user_id)
       response = connection.post do |req|
@@ -72,6 +137,10 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end 
 
+    # Approve friendship with a user.
+    #
+    # @param [String] user_id - The user to approve friendship with.
+
     def user_approve_friend(user_id)
       response = connection.post do |req|
         req.url "users/#{user_id}/approve"
@@ -79,12 +148,21 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end 
 
+    # Deny friendship with a user.
+    #
+    # @param [String] user_id - The user to deny friendship with.
+
     def user_deny_friend(user_id)
       response = connection.post do |req|
         req.url "users/#{user_id}/deny"
       end
       return_error_or_body(response, response.body.response)
     end 
+
+    # Set pings for a friend
+    #
+    # @param [String] user_id - The user to set pings for
+    # @param [String] value - The value of ping setting for this friend, either true or false.
 
     def user_set_friend_pings(user_id, value)
       response = connection.post do |req|
