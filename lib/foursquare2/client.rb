@@ -10,6 +10,7 @@ module Foursquare2
     include Photos
     include Settings
     include Specials
+    include Users
 
     def initialize(oauth_token)
       @oauth_token = oauth_token

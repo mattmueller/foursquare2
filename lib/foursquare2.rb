@@ -7,6 +7,7 @@ module Foursquare2
   class << self
   end
 
+  require 'foursquare2/users'
   require 'foursquare2/specials'
   require 'foursquare2/settings'
   require 'foursquare2/photos'
