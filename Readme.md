@@ -23,7 +23,7 @@ Currently this gem does not handle the oauth2 authentication flow for you, use t
 
 ### Examples
 
-See [the documentation](http://rubydoc.info/gems/foursquare2) for a list of all supported methods and available options.
+See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list of all supported methods and available options.
 
 #### Get information about a user (use 'self' for the authenticated user)
 
