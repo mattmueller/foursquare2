@@ -12,13 +12,17 @@ module Foursquare2
     include Specials
     include Users
 
-    def initialize(oauth_token)
-      @oauth_token = oauth_token
+    def initialize(options={})
+      @client_id = options[:client_id]
+      @client_secret = options[:client_secret]
+      @oauth_token = options[:oauth_token]
     end
 
     def connection
       params = {}
-      params[:oauth_token] = @oauth_token
+      params[:client_id] = @client_id if @client_id
+      params[:client_secret] = @client_secret if @client_secret
+      params[:oauth_token] = @oauth_token if @oauth_token
       @connection ||= Faraday::Connection.new(:url => api_url, :params => params, :headers => default_headers) do |builder|
         builder.adapter Faraday.default_adapter
         builder.use Faraday::Response::ParseJson
