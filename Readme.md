@@ -1,6 +1,6 @@
 # foursquare2
 
-Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs).
+Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
 ## Installation
 
