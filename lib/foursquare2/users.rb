@@ -44,7 +44,7 @@ module Foursquare2
       return_error_or_body(response, response.body.response.tips)
     end
 
-    def user_tips(user_id, options={})
+    def user_todos(user_id, options={})
       response = connection.get do |req|
         req.url "users/#{user_id}/todos", options
       end
