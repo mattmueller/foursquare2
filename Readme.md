@@ -41,7 +41,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2) for a list of all 
 
     client.checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
 
-### Todo
+## Todo
 
 * Add test coverage
 * Integrate oauth2 authentication flow
