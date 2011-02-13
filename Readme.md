@@ -41,9 +41,52 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
     client.checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
 
+## Full list of methods
+
+See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursquare's endpoint list](http://developer.foursquare.com/docs/index_docs.html) for parameters.
+
+    client.checkin
+    client.recent_checkins
+    client.add_checkin
+    client.add_checkin_comment
+    client.delete_checkin_comment
+    client.photo
+    client.settings
+    client.setting
+    client.update_setting
+    client.special
+    client.search_specials
+    client.tip
+    client.search_tips
+    client.add_tip
+    client.mark_tip_todo
+    client.mark_tip_done
+    client.unmark_tip
+    client.user
+    client.search_users
+    client.user_requests
+    client.user_badges
+    client.user_checkins
+    client.user_friends
+    client.user_tips
+    client.user_todos
+    client.user_venue_history
+    client.user_friend_request
+    client.user_unfriend
+    client.user_approve_friend
+    client.user_deny_friend
+    client.user_set_friend_pings
+    client.venue
+    client.search_venues
+    client.venue_categories
+    client.add_venue
+    client.mark_venue_todo
+    client.flag_venue
+    client.propose_venue_edit
+
 ## Todo
 
-* Add test coverage
+* More test coverage
 * Integrate oauth2 authentication flow
 
 ## Contributing to foursquare2
