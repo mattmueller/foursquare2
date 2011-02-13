@@ -1,0 +1,145 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "tip": {
+            "id": "4b5e662a70c603bba7d790b4",
+            "createdAt": 1264477738,
+            "text": "Get two slices and a can of soda for only $2.75!",
+            "venue": {
+                "id": "4a89cd2ff964a520100920e3",
+                "name": "2 Bros Pizza",
+                "contact": {
+                    "phone": "2127770600"
+                },
+                "location": {
+                    "address": "32 St Marks Pl",
+                    "crossStreet": "btw 2nd & 3rd Ave",
+                    "city": "New York",
+                    "state": "NY",
+                    "postalCode": "10003",
+                    "country": "USA",
+                    "lat": 40.7288118,
+                    "lng": -73.9884434
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1ca941735",
+                        "name": "Pizza",
+                        "icon": "http://foursquare.com/img/categories/food/pizza.png",
+                        "parents": [
+                            "Food"
+                        ],
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 1791,
+                    "usersCount": 1077
+                },
+                "todos": {
+                    "count": 0
+                }
+            },
+            "user": {
+                "id": "38141",
+                "firstName": "Andrew",
+                "lastName": "P.",
+                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/WUEDYQX4VHVAVUYA.jpg",
+                "gender": "male",
+                "homeCity": "New York, NY"
+            },
+            "todo": {
+                "count": 0,
+                "groups": [
+                    {
+                        "type": "friends",
+                        "name": "friends who want to do this",
+                        "count": 0,
+                        "items": [
+                            
+                        ]
+                    },
+                    {
+                        "type": "others",
+                        "name": "others who want to do this",
+                        "count": 0,
+                        "items": [
+                            
+                        ]
+                    }
+                ]
+            },
+            "done": {
+                "count": 6,
+                "groups": [
+                    {
+                        "type": "friends",
+                        "name": "friends who have done this",
+                        "count": 0,
+                        "items": [
+                            
+                        ]
+                    },
+                    {
+                        "type": "others",
+                        "name": "others who have done this",
+                        "count": 6,
+                        "items": [
+                            {
+                                "id": "318537",
+                                "firstName": "Allison",
+                                "lastName": "B.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/A4SNOCNLCC31Q4VJ.jpg",
+                                "gender": "female",
+                                "homeCity": "Brooklyn, ny"
+                            },
+                            {
+                                "id": "344560",
+                                "firstName": "Alar",
+                                "lastName": "B.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/E2YHFAIKEGXH1UYH.jpg",
+                                "gender": "male",
+                                "homeCity": "New York, NY"
+                            },
+                            {
+                                "id": "299569",
+                                "firstName": "Alan",
+                                "lastName": "T.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/24LJSVNOSM5U0YCU.jpg",
+                                "gender": "male",
+                                "homeCity": "New York, NY"
+                            },
+                            {
+                                "id": "7968",
+                                "firstName": "Josh",
+                                "lastName": "W.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/WG2Z0EOXCYAELSZ2.jpg",
+                                "gender": "male",
+                                "homeCity": "Cincinnati, Ohio"
+                            },
+                            {
+                                "id": "38141",
+                                "firstName": "Andrew",
+                                "lastName": "P.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/WUEDYQX4VHVAVUYA.jpg",
+                                "gender": "male",
+                                "homeCity": "New York, NY"
+                            },
+                            {
+                                "id": "946569",
+                                "firstName": "griffin",
+                                "lastName": "n.",
+                                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/SQD1EVA44CP3E21H.jpg",
+                                "gender": "male",
+                                "homeCity": "New Milford, CT"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

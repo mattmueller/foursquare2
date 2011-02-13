@@ -1,0 +1,156 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "tips": [
+            {
+                "id": "4c5b5007d25320a14656c07a",
+                "createdAt": 1281052679,
+                "text": "If you want a soda go to the vending machine next to the ice Cream place near the music barge it's only $2 for a 20oz bottle instead of $2 for a can at one of the carts.",
+                "todo": {
+                    "count": 0
+                },
+                "done": {
+                    "count": 1
+                },
+                "venue": {
+                    "id": "4c48dc0520ab1b8d6118fd15",
+                    "name": "Movies With A View",
+                    "contact": {
+                        
+                    },
+                    "location": {
+                        "lat": 40.701781,
+                        "lng": -73.997748,
+                        "distance": 274
+                    },
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d162941735",
+                            "name": "Other - Parks & Outdoor",
+                            "icon": "http://foursquare.com/img/categories/parks_outdoors/default.png",
+                            "parents": [
+                                "Parks & Outdoors"
+                            ],
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 93,
+                        "usersCount": 54
+                    },
+                    "todos": {
+                        "count": 0
+                    }
+                },
+                "user": {
+                    "id": "2227298",
+                    "firstName": "mindvomit",
+                    "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/0EHHLLXPDQHXD3XK.jpg",
+                    "gender": "female",
+                    "homeCity": "Brooklyn, NY"
+                }
+            },
+            {
+                "id": "4c520e7794790f47cf1708a2",
+                "createdAt": 1280446071,
+                "text": "Also, ground is a little wet, hope you have some bags...",
+                "todo": {
+                    "count": 0
+                },
+                "done": {
+                    "count": 1
+                },
+                "venue": {
+                    "id": "4c48dc0520ab1b8d6118fd15",
+                    "name": "Movies With A View",
+                    "contact": {
+                        
+                    },
+                    "location": {
+                        "lat": 40.701781,
+                        "lng": -73.997748,
+                        "distance": 274
+                    },
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d162941735",
+                            "name": "Other - Parks & Outdoor",
+                            "icon": "http://foursquare.com/img/categories/parks_outdoors/default.png",
+                            "parents": [
+                                "Parks & Outdoors"
+                            ],
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 93,
+                        "usersCount": 54
+                    },
+                    "todos": {
+                        "count": 0
+                    }
+                },
+                "user": {
+                    "id": "2227298",
+                    "firstName": "mindvomit",
+                    "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/0EHHLLXPDQHXD3XK.jpg",
+                    "gender": "female",
+                    "homeCity": "Brooklyn, NY"
+                }
+            },
+            {
+                "id": "4c520e519d642d7f377693de",
+                "createdAt": 1280446033,
+                "text": "Pick up some extra napkins [and put some pieces in your ears] in case the sound is too loud again this week...",
+                "todo": {
+                    "count": 0
+                },
+                "done": {
+                    "count": 1
+                },
+                "venue": {
+                    "id": "4c48dc0520ab1b8d6118fd15",
+                    "name": "Movies With A View",
+                    "contact": {
+                        
+                    },
+                    "location": {
+                        "lat": 40.701781,
+                        "lng": -73.997748,
+                        "distance": 274
+                    },
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d162941735",
+                            "name": "Other - Parks & Outdoor",
+                            "icon": "http://foursquare.com/img/categories/parks_outdoors/default.png",
+                            "parents": [
+                                "Parks & Outdoors"
+                            ],
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 93,
+                        "usersCount": 54
+                    },
+                    "todos": {
+                        "count": 0
+                    }
+                },
+                "user": {
+                    "id": "2227298",
+                    "firstName": "mindvomit",
+                    "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/0EHHLLXPDQHXD3XK.jpg",
+                    "gender": "female",
+                    "homeCity": "Brooklyn, NY"
+                }
+            }
+        ]
+    }
+}
