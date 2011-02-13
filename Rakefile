@@ -19,9 +19,6 @@ Jeweler::Tasks.new do |gem|
   gem.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
   gem.email = "muellermr@gmail.com"
   gem.authors = ["Matt Mueller"]
-  gem.add_runtime_dependency 'faraday', '~> 0.5.3'
-  gem.add_runtime_dependency 'faraday_middleware', '~> 0.3.0'
-  gem.add_runtime_dependency 'hashie', '~> 1.0.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
