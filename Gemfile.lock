@@ -17,6 +17,7 @@ GEM
       rake
     jnunemaker-matchy (0.4.0)
     json_pure (1.5.1)
+    multi_json (0.0.5)
     multipart-post (1.1.0)
     rack (1.2.1)
     rake (0.8.7)
@@ -35,5 +36,6 @@ DEPENDENCIES
   jeweler (~> 1.5.2)
   jnunemaker-matchy (~> 0.4)
   json_pure (~> 1.4)
+  multi_json (~> 0.0.5)
   rcov
   shoulda

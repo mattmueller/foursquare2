@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "checkin": {
+            "id": "4d572bcc9e508cfab975189b",
+            "createdAt": 1297558476,
+            "type": "checkin",
+            "timeZone": "America/Indiana/Knox",
+            "user": {
+                "id": "108914",
+                "firstName": "Matt",
+                "lastName": "Mueller",
+                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/-1_1258721627014.jpg",
+                "gender": "male",
+                "homeCity": "Nashville, TN",
+                "relationship": "self"
+            },
+            "venue": {
+                "id": "4b8c3d87f964a520f7c532e3",
+                "name": "Bridgestone Arena",
+                "contact": {
+                    "phone": "6157702000",
+                    "twitter": "BrdgstoneArena"
+                },
+                "location": {
+                    "address": "501 Broadway",
+                    "city": "Nashville",
+                    "state": "TN",
+                    "postalCode": "37203",
+                    "country": "USA",
+                    "lat": 36.159221413680946,
+                    "lng": -86.7784309387207
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d185941735",
+                        "name": "Hockey",
+                        "icon": "http://foursquare.com/img/categories/arts_entertainment/stadium_hockey.png",
+                        "parents": [
+                            "Arts & Entertainment",
+                            "Stadium"
+                        ],
+                        "primary": true
+                    },
+                    {
+                        "id": "4bf58dd8d48988d1e5931735",
+                        "name": "Music Venue",
+                        "icon": "http://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                        "parents": [
+                            "Arts & Entertainment"
+                        ]
+                    },
+                    {
+                        "id": "4bf58dd8d48988d171941735",
+                        "name": "Event Space",
+                        "icon": "http://foursquare.com/img/categories/building/default.png",
+                        "parents": [
+                            "Home / Work / Other"
+                        ]
+                    },
+                    {
+                        "id": "4bf58dd8d48988d1e6931735",
+                        "name": "Concert Hall",
+                        "icon": "http://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                        "parents": [
+                            "Arts & Entertainment",
+                            "Music Venue"
+                        ]
+                    },
+                    {
+                        "id": "4bf58dd8d48988d1f1931735",
+                        "name": "Other - Entertainment",
+                        "icon": "http://foursquare.com/img/categories/arts_entertainment/default.png",
+                        "parents": [
+                            "Arts & Entertainment"
+                        ]
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 7692,
+                    "usersCount": 2858
+                },
+                "todos": {
+                    "count": 0
+                }
+            },
+            "source": {
+                "name": "foursquare for Android",
+                "url": "http://foursquare.com/devices/android"
+            },
+            "photos": {
+                "count": 0,
+                "items": [
+                    
+                ]
+            },
+            "comments": {
+                "count": 0,
+                "items": [
+                    
+                ]
+            }
+        }
+    }
+}

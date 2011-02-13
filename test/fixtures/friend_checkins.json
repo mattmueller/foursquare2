@@ -1,0 +1,154 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "recent": [
+            {
+                "id": "4d57562fcff7721e2db0c1f5",
+                "createdAt": 1297569327,
+                "type": "checkin",
+                "timeZone": "America/Indiana/Knox",
+                "user": {
+                    "id": "104500",
+                    "firstName": "Chris",
+                    "lastName": "McIntyre",
+                    "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/-1_1258670041337.jpg",
+                    "gender": "male",
+                    "homeCity": "Davidson, TN",
+                    "relationship": "friend"
+                },
+                "venue": {
+                    "id": "4b058668f964a520cc6022e3",
+                    "name": "Buffalo Billiards",
+                    "contact": {
+                        
+                    },
+                    "location": {
+                        "address": "154 2nd Avenue North",
+                        "city": "Nashville",
+                        "state": "TN",
+                        "postalCode": "37201",
+                        "lat": 36.163561,
+                        "lng": -86.776222
+                    },
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d1e3931735",
+                            "name": "Billiards",
+                            "icon": "http://foursquare.com/img/categories/arts_entertainment/billiards.png",
+                            "parents": [
+                                "Arts & Entertainment"
+                            ],
+                            "primary": true
+                        },
+                        {
+                            "id": "4bf58dd8d48988d116941735",
+                            "name": "Bar",
+                            "icon": "http://foursquare.com/img/categories/nightlife/default.png",
+                            "parents": [
+                                "Nightlife"
+                            ]
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 331,
+                        "usersCount": 188
+                    },
+                    "todos": {
+                        "count": 0
+                    },
+                    "specials": [
+                        
+                    ]
+                },
+                "source": {
+                    "name": "Gowalla",
+                    "url": "http://gowalla.com/"
+                },
+                "photos": {
+                    "count": 0,
+                    "items": [
+                        
+                    ]
+                },
+                "comments": {
+                    "count": 0,
+                    "items": [
+                        
+                    ]
+                }
+            },
+            {
+                "id": "4d575426c6edf04dce4edca2",
+                "createdAt": 1297568806,
+                "type": "checkin",
+                "isMayor": true,
+                "timeZone": "America/Indiana/Knox",
+                "user": {
+                    "id": "343118",
+                    "firstName": "David",
+                    "lastName": "Cintron",
+                    "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/NDBY0W44W4CKCEKX.jpg",
+                    "gender": "male",
+                    "homeCity": "Nashville, TN",
+                    "relationship": "friend"
+                },
+                "venue": {
+                    "id": "4b0b5f97f964a520ed3023e3",
+                    "name": "Brentwood Downs",
+                    "contact": {
+                        "phone": "6158346355"
+                    },
+                    "location": {
+                        "address": "One Derby Trace",
+                        "city": "Nashville",
+                        "state": "TN",
+                        "postalCode": "37211",
+                        "lat": 36.0427951,
+                        "lng": -86.7394326
+                    },
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d103941735",
+                            "name": "Home",
+                            "icon": "http://foursquare.com/img/categories/building/home.png",
+                            "parents": [
+                                "Home / Work / Other"
+                            ],
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 758,
+                        "usersCount": 39
+                    },
+                    "todos": {
+                        "count": 0
+                    },
+                    "specials": [
+                        
+                    ]
+                },
+                "source": {
+                    "name": "foursquare for iPhone",
+                    "url": "http://foursquare.com/devices/iphone"
+                },
+                "photos": {
+                    "count": 0,
+                    "items": [
+                        
+                    ]
+                },
+                "comments": {
+                    "count": 0,
+                    "items": [
+                        
+                    ]
+                }
+            }
+        ]
+    }
+}

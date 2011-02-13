@@ -23,7 +23,29 @@ def foursquare_test_client
 end
 
 def foursquare_url(url)
-  url = "https://api.foursquare.com/v2#{url}"
+  url =~ /^http/ ? url : "http://api.foursquare.com/v2#{url}"
+end
+
+def fixture_file(filename)
+  return '' if filename == ''
+  file_path = File.expand_path(File.dirname(__FILE__) + '/fixtures/' + filename)
+  File.read(file_path)
+end
+
+def stub_get(url, filename, options={})
+  opts = {
+    :body => fixture_file(filename),
+    :content_type => 'application/json; charset=utf-8'
+  }.merge(options)
+  FakeWeb.register_uri(:get, foursquare_url(url), opts)
+end
+
+def stub_post(url, filename, options={})
+  opts = {
+    :body => fixture_file(filename),
+    :content_type => 'application/json; charset=utf-8'
+  }.merge(options)
+  FakeWeb.register_uri(:post, foursquare_url(url), opts)
 end
 
 class Test::Unit::TestCase
