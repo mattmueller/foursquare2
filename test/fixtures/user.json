@@ -1,0 +1,270 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "user": {
+            "id": "108914",
+            "firstName": "Matt",
+            "lastName": "Mueller",
+            "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/-1_1258721627014.jpg",
+            "gender": "male",
+            "homeCity": "Nashville, TN",
+            "relationship": "self",
+            "type": "user",
+            "pings": false,
+            "contact": {
+                "phone": "9045578823",
+                "email": "muellermr@gmail.com",
+                "twitter": "matt_mueller",
+                "facebook": "57300121"
+            },
+            "badges": {
+                "count": 14
+            },
+            "mayorships": {
+                "count": 4,
+                "items": [
+                    {
+                        "id": "4c5d885d7f661b8d3e844b1c",
+                        "name": "change:healthcare",
+                        "contact": {
+                            "twitter": "askch"
+                        },
+                        "location": {
+                            "address": "12 Cadillac Drive Suite 240",
+                            "city": "Brentwood",
+                            "state": "TN",
+                            "postalCode": "37027",
+                            "lat": 36.0361571,
+                            "lng": -86.7954817
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d124941735",
+                                "name": "Corporate / Office",
+                                "icon": "http://foursquare.com/img/categories/building/default.png",
+                                "parents": [
+                                    "Home / Work / Other"
+                                ],
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 292,
+                            "usersCount": 11
+                        },
+                        "todos": {
+                            "count": 0
+                        }
+                    },
+                    {
+                        "id": "4b0849def964a5203a0823e3",
+                        "name": "Lowe's",
+                        "contact": {
+                            "phone": "6153569223",
+                            "twitter": "Lowes"
+                        },
+                        "location": {
+                            "address": "7034 Charlotte Pike",
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "postalCode": "37209",
+                            "lat": 36.13324768002033,
+                            "lng": -86.90593242645264
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d112951735",
+                                "name": "Hardware",
+                                "icon": "http://foursquare.com/img/categories/shops/hardware.png",
+                                "parents": [
+                                    "Shops"
+                                ],
+                                "primary": true
+                            }
+                        ],
+                        "verified": true,
+                        "stats": {
+                            "checkinsCount": 486,
+                            "usersCount": 153
+                        },
+                        "todos": {
+                            "count": 0
+                        }
+                    },
+                    {
+                        "id": "4c59f84a6407d13a9795b328",
+                        "name": "The Bloomy Rind",
+                        "contact": {
+                            
+                        },
+                        "location": {
+                            "lat": 36.15021,
+                            "lng": -86.83969
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d1c4941735",
+                                "name": "Other - Food",
+                                "icon": "http://foursquare.com/img/categories/food/default.png",
+                                "parents": [
+                                    "Food"
+                                ],
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 8,
+                            "usersCount": 4
+                        },
+                        "todos": {
+                            "count": 0
+                        }
+                    },
+                    {
+                        "id": "4b2e7045f964a52026e024e3",
+                        "name": "Miel",
+                        "contact": {
+                            
+                        },
+                        "location": {
+                            "address": "343 53rd Ave N",
+                            "city": "Nashville",
+                            "state": "TN",
+                            "lat": 36.1513196,
+                            "lng": -86.8511338
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d10c941735",
+                                "name": "French",
+                                "icon": "http://foursquare.com/img/categories/food/default.png",
+                                "parents": [
+                                    "Food"
+                                ],
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 54,
+                            "usersCount": 46
+                        },
+                        "todos": {
+                            "count": 0
+                        }
+                    }
+                ]
+            },
+            "checkins": {
+                "count": 669,
+                "items": [
+                    {
+                        "id": "4d572bcc9e508cfab975189b",
+                        "createdAt": 1297558476,
+                        "type": "checkin",
+                        "timeZone": "America/Indiana/Knox",
+                        "venue": {
+                            "id": "4b8c3d87f964a520f7c532e3",
+                            "name": "Bridgestone Arena",
+                            "contact": {
+                                "phone": "6157702000",
+                                "twitter": "BrdgstoneArena"
+                            },
+                            "location": {
+                                "address": "501 Broadway",
+                                "city": "Nashville",
+                                "state": "TN",
+                                "postalCode": "37203",
+                                "country": "USA",
+                                "lat": 36.159221413680946,
+                                "lng": -86.7784309387207
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d185941735",
+                                    "name": "Hockey",
+                                    "icon": "http://foursquare.com/img/categories/arts_entertainment/stadium_hockey.png",
+                                    "parents": [
+                                        "Arts & Entertainment",
+                                        "Stadium"
+                                    ],
+                                    "primary": true
+                                },
+                                {
+                                    "id": "4bf58dd8d48988d1e5931735",
+                                    "name": "Music Venue",
+                                    "icon": "http://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                                    "parents": [
+                                        "Arts & Entertainment"
+                                    ]
+                                },
+                                {
+                                    "id": "4bf58dd8d48988d171941735",
+                                    "name": "Event Space",
+                                    "icon": "http://foursquare.com/img/categories/building/default.png",
+                                    "parents": [
+                                        "Home / Work / Other"
+                                    ]
+                                },
+                                {
+                                    "id": "4bf58dd8d48988d1e6931735",
+                                    "name": "Concert Hall",
+                                    "icon": "http://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                                    "parents": [
+                                        "Arts & Entertainment",
+                                        "Music Venue"
+                                    ]
+                                },
+                                {
+                                    "id": "4bf58dd8d48988d1f1931735",
+                                    "name": "Other - Entertainment",
+                                    "icon": "http://foursquare.com/img/categories/arts_entertainment/default.png",
+                                    "parents": [
+                                        "Arts & Entertainment"
+                                    ]
+                                }
+                            ],
+                            "verified": true,
+                            "stats": {
+                                "checkinsCount": 7692,
+                                "usersCount": 2858
+                            },
+                            "todos": {
+                                "count": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "friends": {
+                "count": 46,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "other friends",
+                        "count": 46,
+                        "items": [
+                            
+                        ]
+                    }
+                ]
+            },
+            "following": {
+                "count": 0
+            },
+            "requests": {
+                "count": 1
+            },
+            "tips": {
+                "count": 0
+            },
+            "todos": {
+                "count": 0
+            }
+        }
+    }
+}
