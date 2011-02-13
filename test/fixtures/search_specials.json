@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "specials": {
+            "count": 1,
+            "items": [
+                {
+                    "id": "4d501124253d6a31d3be5e29",
+                    "type": "frequency",
+                    "message": "Buy 1 Get 1 40% Off All Video Games (priced up to $19.99)\r\n\r\nItems must be of equal or lesser value to the lowest priced item purchased\r\n\r\nEnds 2/12/2011",
+                    "description": "every check-in",
+                    "venue": {
+                        "id": "4c94fb6958d4b60cb9cf2d29",
+                        "name": "Express Toys R Us",
+                        "contact": {
+                            "phone": "7183813042"
+                        },
+                        "location": {
+                            "address": "58-19 Myrtle Avenue",
+                            "city": "Ridgewood",
+                            "state": "NY",
+                            "postalCode": "11385",
+                            "lat": 40.700514,
+                            "lng": -73.90071,
+                            "distance": 82
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d1f3941735",
+                                "name": "Toys & Games",
+                                "icon": "http://foursquare.com/img/categories/shops/toys.png",
+                                "parents": [
+                                    "Shops"
+                                ],
+                                "primary": true
+                            }
+                        ],
+                        "verified": true,
+                        "stats": {
+                            "checkinsCount": 0,
+                            "usersCount": 0
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
