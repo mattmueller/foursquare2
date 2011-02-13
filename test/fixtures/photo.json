@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "photo": {
+            "id": "4d0fb8162d39a340637dc42b",
+            "createdAt": 1292875798,
+            "url": "http://playfoursquare.s3.amazonaws.com/pix/UYU54GYOCURPAUYXH5V2U3EOM4DCX4VZPT3YOMN43H555KU2.jpg",
+            "sizes": {
+                "count": 4,
+                "items": [
+                    {
+                        "url": "http://playfoursquare.s3.amazonaws.com/pix/UYU54GYOCURPAUYXH5V2U3EOM4DCX4VZPT3YOMN43H555KU2.jpg",
+                        "width": 540,
+                        "height": 720
+                    },
+                    {
+                        "url": "http://playfoursquare.s3.amazonaws.com/derived_pix/UYU54GYOCURPAUYXH5V2U3EOM4DCX4VZPT3YOMN43H555KU2_300x300.jpg",
+                        "width": 300,
+                        "height": 300
+                    },
+                    {
+                        "url": "http://playfoursquare.s3.amazonaws.com/derived_pix/UYU54GYOCURPAUYXH5V2U3EOM4DCX4VZPT3YOMN43H555KU2_100x100.jpg",
+                        "width": 100,
+                        "height": 100
+                    },
+                    {
+                        "url": "http://playfoursquare.s3.amazonaws.com/derived_pix/UYU54GYOCURPAUYXH5V2U3EOM4DCX4VZPT3YOMN43H555KU2_36x36.jpg",
+                        "width": 36,
+                        "height": 36
+                    }
+                ]
+            },
+            "user": {
+                "id": "2102",
+                "firstName": "Kushal",
+                "lastName": "D.",
+                "photo": "http://playfoursquare.s3.amazonaws.com/userpix_thumbs/2102_1242573242.jpg",
+                "gender": "male",
+                "homeCity": "Brooklyn, NY"
+            }
+        }
+    }
+}
