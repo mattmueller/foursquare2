@@ -14,7 +14,7 @@ Currently this gem does not handle the oauth2 authentication flow for you, use t
 
 ### Instantiate a client (Userless Access)
 
-    client = Foursquare2::Client.new(:client_key => 'your_key', :client_secret => 'your_secret')
+    client = Foursquare2::Client.new(:client_id => 'your_client_id', :client_secret => 'your_secret')
 
 ### Instantiate a client (Authenticated User Access)
 
