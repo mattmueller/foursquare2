@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{foursquare2}
-  s.version = "0.9.0"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller"]
