@@ -3,8 +3,8 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem 'faraday', '~> 0.5.3'
-gem 'faraday_middleware', '~> 0.3.0'
+gem 'faraday', '~> 0.6.0'
+gem 'faraday_middleware', '~> 0.6.0'
 gem 'hashie', '~> 1.0.0'
 
 

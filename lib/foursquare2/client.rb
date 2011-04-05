@@ -39,8 +39,8 @@ module Foursquare2
       params[:oauth_token] = @oauth_token if @oauth_token
       @connection ||= Faraday::Connection.new(:url => api_url, :params => params, :headers => default_headers) do |builder|
         builder.adapter Faraday.default_adapter
-        builder.use Faraday::Response::ParseJson
         builder.use Faraday::Response::Mashify
+        builder.use Faraday::Response::ParseJson
       end
     end
 
