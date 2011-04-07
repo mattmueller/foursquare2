@@ -16,9 +16,14 @@ class TestVenues < Test::Unit::TestCase
 
     should "search for venues based on passed criteria" do
       stub_get("https://api.foursquare.com/v2/venues/search?ll=36.142064%2C-86.816086&oauth_token=#{@client.oauth_token}&query=coffee", "search_venues.json")
-      venues = @client.search_venues(:ll => '36.142064,-86.816086', :query => 'coffee')
-      venues.groups.first.items.count.should == 30
+      venues = @client.search_venues(:ll => "36.142064,-86.816086", :query => "coffee")
       venues.groups.first.items.first.name.should == 'Ugly Mugs'
+    end
+
+    should "search for venues from a tip search" do
+      stub_get("https://api.foursquare.com/v2/tips/search?ll=-23.013968%2C-45.550802&oauth_token=#{@client.oauth_token}&query=rodoviaria", "search_venues_by_tip.json")
+      venues = @client.search_venues_by_tip(:ll => "-23.013968,-45.550802", :query => "rodoviaria")
+      venues.first.name.should == "Santa Barbara"
     end
   end
 

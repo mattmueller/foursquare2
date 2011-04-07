@@ -28,6 +28,23 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Search for venues by tip
+    #
+    # @param [Hash]  options
+    # @option options String :ll - Latitude and longitude in format LAT,LON
+    # @option options Integer :limit - The limit of results to return.
+    # @option options Integer :offset - Used to page through results.
+    # @option options String :filter - Set to 'friends' to limit tips to those from friends.
+
+    def search_venues_by_tip(options={})
+      tips = search_tips(options)
+      venues = []
+      tips.each do |tip|
+        venues << tip['venue']
+      end
+      venues
+  end
+
     # Retrieve information about all venue categories.
 
     def venue_categories
