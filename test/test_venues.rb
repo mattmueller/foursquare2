@@ -25,6 +25,13 @@ class TestVenues < Test::Unit::TestCase
       venues = @client.search_venues_by_tip(:ll => "-23.013968,-45.550802", :query => "rodoviaria")
       venues.first.name.should == "Santa Barbara"
     end
+
+    should "not find venues from a tip search" do
+      stub_get("https://api.foursquare.com/v2/tips/search?ll=-23.013968%2C-45.550802&oauth_token=#{@client.oauth_token}&query=loremlpsun", "no_venues_by_tip.json")
+      venues = @client.search_venues_by_tip(:ll => "-23.013968,-45.550802", :query => "loremlpsun")
+      venues.size.should == 0
+    end
+
   end
 
 end
