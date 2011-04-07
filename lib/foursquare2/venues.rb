@@ -35,6 +35,7 @@ module Foursquare2
     # @option options Integer :limit - The limit of results to return.
     # @option options Integer :offset - Used to page through results.
     # @option options String :filter - Set to 'friends' to limit tips to those from friends.
+    # @option options String :query - Only find tips matching this term.
 
     def search_venues_by_tip(options={})
       tips = search_tips(options)
