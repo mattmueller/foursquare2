@@ -31,8 +31,28 @@ module Foursquare2
     # @param [Hash]  options
     # @option options String :venue_id The ID of the venue
     # @option options String :query - Only find tips matching this term.
+    # @option options String :sort  [recent]  One of recent or popular.
+    # @option options Integer :limit [100] Number of results to return, up to 500.
+    # @option options Integer :offset [100] Used to page through results
 
-    def search_tips_from_venue(options={})
+    def search_in_venue_tips(options={})
+      tips = venue_tips(options)
+      tip = []
+      tips.each do |check_tip| 
+        tip << check_tip if check_tip.text.include? options[:query]
+      end
+      tip
+    end
+
+    # Search for tips from a venue.
+    #
+    # @param [Hash]  options
+    # @option options String :venue_id The ID of the venue
+    # @option options String :sort  [recent]  One of recent or popular.
+    # @option options Integer :limit [100] Number of results to return, up to 500.
+    # @option options Integer :offset [100] Used to page through results
+
+    def venue_tips(options={})
       response = connection.get("venues/#{options[:venue_id]}/tips")
       return_error_or_body(response, response.body.response.tips.items)
     end
