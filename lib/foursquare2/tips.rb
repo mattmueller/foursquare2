@@ -26,6 +26,17 @@ module Foursquare2
       return_error_or_body(response, response.body.response.tips)
     end
 
+    # Search for tips from a venue.
+    #
+    # @param [Hash]  options
+    # @option options String :venue_id The ID of the venue
+    # @option options String :query - Only find tips matching this term.
+
+    def search_tips_from_venue(options={})
+      response = connection.get("venues/#{options[:venue_id]}/tips")
+      return_error_or_body(response, response.body.response.tips.items)
+    end
+
     # Add a tip
     #
     # @param [Hash]  options

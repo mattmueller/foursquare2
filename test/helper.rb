@@ -16,10 +16,10 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'foursquare2'
 
-FakeWeb.allow_net_connect = true
+FakeWeb.allow_net_connect = false
 
 def foursquare_test_client
-  Foursquare2::Client.new(:oauth_token => 'UT4HBW4X20JDAX1TV4F3XXJZK4JBF1M3VOR4GSSF3QCPQUTU')
+  Foursquare2::Client.new(:oauth_token => 'yeehaw')
 end
 
 def foursquare_url(url)
