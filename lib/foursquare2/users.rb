@@ -96,7 +96,7 @@ module Foursquare2
     # @option options String :sort - One of recent, nearby, popular
     # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
 
-    def search_user_tips(user_id, options={})
+    def user_tips_by_text(user_id, options={})
       tips = user_tips(user_id, options)
       Foursquare2.filter(tips.items, options[:query])
     end

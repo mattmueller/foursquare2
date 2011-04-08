@@ -30,7 +30,7 @@ class TestUsers < Test::Unit::TestCase
 
     should "fetch tips and filter with some term" do
       stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}&query=bar", "user_tips.json")
-      tips = @client.search_user_tips('self', {:query => 'bar'})
+      tips = @client.user_tips_by_text('self', {:query => 'bar'})
       tips.size.should == 0 
     end
 
