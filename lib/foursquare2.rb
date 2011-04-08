@@ -24,14 +24,7 @@ module Foursquare2
   require 'foursquare2/checkins'
   require 'foursquare2/venues'
   require 'foursquare2/client'
+  require 'foursquare2/hash'
 
 end
 
-
-class ::Hash
-   def method_missing(name)
-     return self[name] if key? name
-     self.each { |k,v| return v if k.to_s.to_sym == name }
-     super.method_missing name
-   end
- end
