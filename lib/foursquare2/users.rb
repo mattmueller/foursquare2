@@ -86,6 +86,21 @@ module Foursquare2
       return_error_or_body(response, response.body.response.tips)
     end
 
+    # Search all tips with some term for a given user.
+    #
+    # @param [Hash]  options
+    # @option [String] user_id - The user to retrieve friends for.
+    # @option String :query - Only find tips matching this term.
+    # @option options Integer :limit
+    # @option options Integer :offest - For paging through results
+    # @option options String :sort - One of recent, nearby, popular
+    # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
+
+    def search_user_tips(user_id, options={})
+      tips = user_tips(user_id, options)
+      Foursquare2.filter(tips.items, options[:query])
+    end
+
     # Get all todos for a given user.
     #
     # @param [String] user_id - The user to retrieve friends for.

@@ -5,6 +5,15 @@ directory = File.expand_path(File.dirname(__FILE__))
 
 module Foursquare2
   class << self
+
+    def filter tips, term
+      tip = []
+      tips.each do |check_tip| 
+        tip << check_tip if check_tip.text.include? term
+      end
+      tip
+    end
+
   end
 
   require 'foursquare2/users'

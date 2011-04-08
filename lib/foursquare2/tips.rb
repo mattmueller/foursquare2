@@ -37,11 +37,7 @@ module Foursquare2
 
     def search_in_venue_tips(options={})
       tips = venue_tips(options)
-      tip = []
-      tips.each do |check_tip| 
-        tip << check_tip if check_tip.text.include? options[:query]
-      end
-      tip
+      Foursquare2.filter(tips, options[:query])
     end
 
     # Search for tips from a venue.
