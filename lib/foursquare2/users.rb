@@ -98,7 +98,7 @@ module Foursquare2
 
     def user_tips_by_text(user_id, options={})
       tips = user_tips(user_id, options)
-      Foursquare2.filter(tips.items, options[:query])
+      Foursquare2.filter(tips, options[:query])
     end
 
     # Get all todos for a given user.

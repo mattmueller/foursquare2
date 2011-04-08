@@ -35,15 +35,15 @@ class TestVenues < Test::Unit::TestCase
     should "get tips from a venue" do
       stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/tips?oauth_token=#{@client.oauth_token}", "venue_tips.json")
       tips = @client.venue_tips(:venue_id => '4b8c3d87f964a520f7c532e3')
-      tips.first.id.should == "4c94a45c82b56dcb47cad0aa"
-      tips.size.should == 4
+      tips.items.first.id.should == "4c94a45c82b56dcb47cad0aa"
+      tips.items.size.should == 4
     end
 
     should "get tips from a venue only with some term" do
       stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/tips?oauth_token=#{@client.oauth_token}", "venue_tips.json")
       tips = @client.search_in_venue_tips({:venue_id => '4b8c3d87f964a520f7c532e3', :query => "legal"})
-      tips.first.id.should == "4c94a45c82b56dcb47cad0aa"
-      tips.size.should == 1
+      tips.items.first.id.should == "4c94a45c82b56dcb47cad0aa"
+      tips.items.count.should == 1
     end
 
   end

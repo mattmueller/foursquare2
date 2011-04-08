@@ -50,7 +50,7 @@ module Foursquare2
 
     def venue_tips(options={})
       response = connection.get("venues/#{options[:venue_id]}/tips")
-      return_error_or_body(response, response.body.response.tips.items)
+      return_error_or_body(response, response.body.response.tips)
     end
 
     # Add a tip
