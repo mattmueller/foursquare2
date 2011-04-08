@@ -20,5 +20,13 @@ class TestUsers < Test::Unit::TestCase
       users.results.count.should == 1
       users.results.first.lastName.should == 'Mueller'
     end
+
+    should "fetch tips" do
+      stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}", "user_tips.json")
+      tips = @client.user_tips('self')
+      tips.items.first.text.should == "Encontrei mesas e chao sujos."
+      tips.items.size.should == 12 
+    end
+
   end
 end
