@@ -64,12 +64,12 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.unmark_tip
     client.user
     client.search_users
-    client.search_user_tips
     client.user_requests
     client.user_badges
     client.user_checkins
     client.user_friends
     client.user_tips
+    client.user_tips_by_text
     client.user_todos
     client.user_venue_history
     client.user_friend_request

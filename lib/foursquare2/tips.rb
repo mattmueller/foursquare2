@@ -35,7 +35,7 @@ module Foursquare2
     # @option options Integer :limit [100] Number of results to return, up to 500.
     # @option options Integer :offset [100] Used to page through results
 
-    def search_in_venue_tips(options={})
+    def venue_tips_by_text(options={})
       tips = venue_tips(options)
       Foursquare2.filter(tips, options[:query])
     end
