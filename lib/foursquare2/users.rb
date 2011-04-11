@@ -116,7 +116,6 @@ module Foursquare2
 
     def user_tips_by_text(user_id, options={})
       tips = user_tips(user_id, options)
-puts tips.to_yaml
       Foursquare2.filter(tips, options[:query])
     end
 
