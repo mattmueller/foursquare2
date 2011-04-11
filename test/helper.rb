@@ -15,6 +15,7 @@ require 'fakeweb'
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'foursquare2'
+require 'config'
 
 FakeWeb.allow_net_connect = false
 

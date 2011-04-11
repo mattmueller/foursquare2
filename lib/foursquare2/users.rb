@@ -26,6 +26,24 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Search for users by tip
+    # @param [Hash]  options
+    # @option options String :tip - Match on phone number
+    # @option options String :email - Match on email
+    # @option options String :twitter - Match on twitter username
+    # @option options String :twitterSource - Friends of this twitter handle that use foursquare.
+    # @option options String :fbid - Match on facebook id.
+    # @option options String :name - Match on name
+
+    def search_users_by_tip(options={})
+      tips = search_tips(options)
+      user = []
+      tips.each do |tip|
+        user << tip['user']
+      end
+      user.uniq
+  end
+
     # Get all pending friend requests for the authenticated user
 
     def user_requests
@@ -98,6 +116,7 @@ module Foursquare2
 
     def user_tips_by_text(user_id, options={})
       tips = user_tips(user_id, options)
+puts tips.to_yaml
       Foursquare2.filter(tips, options[:query])
     end
 

@@ -28,16 +28,17 @@ class TestUsers < Test::Unit::TestCase
       tips.items.size.should == 12 
     end
 
-    should "fetch tips and filter with some term" do
-      stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}&query=bar", "user_tips.json")
-      tips = @client.user_tips_by_text('self', {:query => 'bar'})
-      tips.items.size.should == 0 
+    should "fetch tips and filter with term #{QUERY}" do
+      stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}&query=#{QUERY}", "user_tips.json")
+      tips = @client.user_tips_by_text('self', {:query => QUERY})
+      tips.items.size.should == 1 
     end
 
-    should "no fetch tips and filter with some term" do
-      stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}&query=LorenIpsun", "user_tips_empty.json")
-      tips = @client.user_tips_by_text('self', {:query => 'LorenIpsun'})
-      tips.items.size.should == 0 
+    should "list only user with tip #{QUERY}" do
+      stub_get("https://api.foursquare.com/v2/tips/search?oauth_token=#{@client.oauth_token}&ll=77.7%2C-77.7&query=#{QUERY}", "search_tips.json")
+      users = @client.search_users_by_tip({:ll =>'77.7,-77.7', :query => QUERY})
+      users.first.id.should == "2227298"
+      users.size.should == 1
     end
 
   end
