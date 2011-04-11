@@ -79,7 +79,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_set_friend_pings
     client.venue
     client.venue_tips
-    client.search_in_venue_tips
+    client.venue_tips_by_text
     client.search_venues
     client.search_venues_by_tip
     client.venue_categories
