@@ -49,7 +49,7 @@ module Foursquare2
     # check if the first last name of user match the query
 
     def check_name user, query
-      user.firstName.match(query)
+      user.firstName.downcase.match(query.downcase)
     end
     # Get all pending friend requests for the authenticated user
 

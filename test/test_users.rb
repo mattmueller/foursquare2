@@ -43,6 +43,13 @@ class TestUsers < Test::Unit::TestCase
       users.size.should == 1
     end
 
+    should "find by name not case sensitive" do
+      stub_get("https://api.foursquare.com/v2/tips/search?oauth_token=#{@client.oauth_token}&ll=77.7%2C-77.7&query=#{QUERY}&limit=500", "search_tips.json")
+      users = @client.search_users_by_tip({:name => 'Developer', :ll =>'77.7,-77.7', :query => QUERY})
+      users.first.id.should == "2227298"
+      users.size.should == 1
+    end
+
     should "haven't user with name anonymous with tip #{QUERY}" do
       stub_get("https://api.foursquare.com/v2/tips/search?oauth_token=#{@client.oauth_token}&ll=77.7%2C-77.7&query=#{QUERY}&limit=500", "search_tips.json")
       users = @client.search_users_by_tip({:name => 'anonymous', :ll =>'77.7,-77.7', :query => QUERY})
