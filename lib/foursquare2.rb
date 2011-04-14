@@ -8,9 +8,11 @@ module Foursquare2
 
     def filter tips, term
       tip = []
-      tips.items.each do |check_tip| 
-        tip << check_tip if check_tip.text.include? term
+      unless tips.nil?
+        tips.items.each do |check_tip| 
+          tip << check_tip if check_tip.text.include? term
         end
+      end
       {:count => tip.count,:items => tip}
     end
 
