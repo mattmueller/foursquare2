@@ -2,6 +2,8 @@
 
 Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
+And another features like search user by tip, search venue by tip, filter tip from a user
+
 ## Installation
 
     sudo gem install foursquare2
