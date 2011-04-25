@@ -61,7 +61,6 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
      client.search_users_by_tip(:ll => '36.142064,-86.816086', :name => 'Marco')
 
 #### Search tips in a user ( or filter the tips of a user with some term)
-
      client.user_tips_by_text(:user_id => "123456", :query => 'coffee')
 
 #### Search venues by tip 
