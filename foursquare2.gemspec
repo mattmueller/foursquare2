@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{foursquare2}
-  s.version = "0.9.1.1"
+  s.version = "0.9.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
-  s.date = %q{2011-04-05}
+  s.date = %q{2011-04-25}
   s.description = %q{Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch.}
-  s.email = %q{muellermr@gmail.com}
+  s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
   s.extra_rdoc_files = [
     "LICENSE.txt"
   ]
@@ -27,23 +27,30 @@ Gem::Specification.new do |s|
     "lib/foursquare2.rb",
     "lib/foursquare2/checkins.rb",
     "lib/foursquare2/client.rb",
+    "lib/foursquare2/hash.rb",
     "lib/foursquare2/photos.rb",
     "lib/foursquare2/settings.rb",
     "lib/foursquare2/specials.rb",
     "lib/foursquare2/tips.rb",
     "lib/foursquare2/users.rb",
     "lib/foursquare2/venues.rb",
+    "test/config.rb",
     "test/fixtures/checkin.json",
     "test/fixtures/friend_checkins.json",
+    "test/fixtures/no_venues_by_tip.json",
     "test/fixtures/photo.json",
     "test/fixtures/search_specials.json",
     "test/fixtures/search_tips.json",
     "test/fixtures/search_users.json",
     "test/fixtures/search_venues.json",
+    "test/fixtures/search_venues_by_tip.json",
     "test/fixtures/special.json",
     "test/fixtures/tip.json",
     "test/fixtures/user.json",
+    "test/fixtures/user_tips.json",
+    "test/fixtures/user_tips_empty.json",
     "test/fixtures/venue.json",
+    "test/fixtures/venue_tips.json",
     "test/helper.rb",
     "test/test_checkins.rb",
     "test/test_client.rb",
@@ -56,9 +63,10 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/mattmueller/foursquare2}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Foursquare API v2 gem in the spirit of the original foursquare gem}
   s.test_files = [
+    "test/config.rb",
     "test/helper.rb",
     "test/test_checkins.rb",
     "test/test_client.rb",
@@ -70,7 +78,6 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
