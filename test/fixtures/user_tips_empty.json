@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "tips": {
+      "count": 0,
+      "items":[] 
+    }
+  }
+}

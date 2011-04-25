@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "tips": {
+      "count": 4,
+      "items": [
+        {
+          "id": "4c94a45c82b56dcb47cad0aa",
+          "createdAt": 1284809820,
+          "text": "A arena é muito legal, mas os equipamentos são péssimos.",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "user": {
+            "id": "3362873",
+            "firstName": "Felipe",
+            "lastName": "A.",
+            "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/DRECUTB3C3NXBYFT.jpg",
+            "gender": "male",
+            "homeCity": "São Paulo, Brasil"
+          }
+        },
+        {
+          "id": "4c43ef8f429a0f47851b481e",
+          "createdAt": 1279520655,
+          "text": "O endereco do mapa tah errado.Rua Joaquim Bagunha Maldos n 535 Vila Tesouro Cep 12221420",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "user": {
+            "id": "765336",
+            "firstName": "Sandro",
+            "lastName": "E.",
+            "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/ANJZL2NLHLOBNDQI.jpg",
+            "gender": "male",
+            "homeCity": "São José dos Campos, Brazil"
+          }
+        },
+        {
+          "id": "4bb693bf70c603bb029096b4",
+          "createdAt": 1270256575,
+          "text": "Adrenalina pura! Tem um bar bem loko! Recomendo!",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "user": {
+            "id": "765336",
+            "firstName": "Sandro",
+            "lastName": "E.",
+            "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/ANJZL2NLHLOBNDQI.jpg",
+            "gender": "male",
+            "homeCity": "São José dos Campos, Brazil"
+          }
+        },
+        {
+          "id": "4bb6157870c603bb6f8396b4",
+          "createdAt": 1270224248,
+          "text": "Paintball",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "user": {
+            "id": "765336",
+            "firstName": "Sandro",
+            "lastName": "E.",
+            "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/ANJZL2NLHLOBNDQI.jpg",
+            "gender": "male",
+            "homeCity": "São José dos Campos, Brazil"
+          }
+        }
+      ]
+    }
+  }
+}
