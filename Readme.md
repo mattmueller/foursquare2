@@ -2,7 +2,13 @@
 
 Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
-And another features like search user by tip, search venue by tip, filter tip from a user
+And another features like:
+
+  * search user by tip, 
+
+  * "venue_tips" add option to search venue by tip, where filter venues who have some term, like pizza
+
+  * filter tip from a user
 
 ## Installation
 
