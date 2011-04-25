@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "tips": [
+      {
+        "id": "4c51a2630f39b7138e171d00",
+        "createdAt": 1280418403,
+        "text": "A melhor parada rumo ao Litoral Norte pela rodovia dos Tamoios. Fica perto do posto da Polícia Rodoviária. O lugar é lindo e tem boa comida.",
+        "todo": {
+          "count": 0
+        },
+        "done": {
+          "count": 1
+        },
+        "venue": {
+          "id": "4be44639910020a19476d114",
+          "name": "Santa Barbara",
+          "contact": {
+
+          },
+          "location": {
+            "address": "Estrada dos Tamoios Km 22,5",
+            "state": "São Paulo",
+            "lat": -23.319228,
+            "lng": -45.733193,
+            "distance": 38770
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d1cb941735",
+              "name": "Food Trucks",
+              "icon": "http://foursquare.com/img/categories/food/streetfood.png",
+              "parents": [
+                "Food"
+              ],
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "checkinsCount": 61,
+            "usersCount": 47
+          },
+          "todos": {
+            "count": 0
+          }
+        },
+        "user": {
+          "id": "1122609",
+          "firstName": "Eduardo",
+          "lastName": "P.",
+          "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/HK4MTEIKNMMVAZFS.jpg",
+          "gender": "male",
+          "homeCity": "são paulo, Brazil"
+        }
+      },
+      {
+        "id": "4d1e10f72d5f8eec44c678cc",
+        "createdAt": 1293816055,
+        "text": "Gente, eu não tô na rodoviária, mas é tipo, praticamente lá que eu tô.",
+        "todo": {
+          "count": 0
+        },
+        "done": {
+          "count": 1
+        },
+        "venue": {
+          "id": "4cb62d393ac937040db9d10a",
+          "name": "Rodoviária de Aparecida",
+          "contact": {
+
+          },
+          "location": {
+            "lat": -22.842335,
+            "lng": -45.231119,
+            "distance": 37937
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d1fe931735",
+              "name": "Bus Stations",
+              "icon": "http://foursquare.com/img/categories/travel/busstation.png",
+              "parents": [
+                "Travel Spots"
+              ],
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "checkinsCount": 25,
+            "usersCount": 15
+          },
+          "todos": {
+            "count": 0
+          }
+        },
+        "user": {
+          "id": "5168620",
+          "firstName": "Ana Paula",
+          "lastName": "d.",
+          "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/M20JL3T15EUIH53Z.jpg",
+          "gender": "female",
+          "homeCity": "Aparecida, Brasil"
+        }
+      }
+    ]
+  }
+}

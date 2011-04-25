@@ -26,6 +26,31 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Search for users by tip
+    # @param [Hash]  options
+    # @option options String :ll - Latitude and longitude in format LAT,LON
+    # @option options Integer :limit - The limit of results to return.
+    # @option options Integer :offset - Used to page through results.
+    # @option options String :filter - Set to 'friends' to limit tips to those from friends.
+    # @option options String :query - Only find tips matching this term.
+    # @option options String :name - Match on name
+
+    def search_users_by_tip(options={})
+      name = options.delete(:name)
+      options[:limit] = 500
+      tips = search_tips(options)
+      user = []
+      tips.each do |tip|
+        user << tip['user'] if check_name(tip['user'], name)
+      end
+      user.uniq
+  end
+
+    # check if the first last name of user match the query
+
+    def check_name user, query
+      user.firstName.downcase.match(query.downcase)
+    end
     # Get all pending friend requests for the authenticated user
 
     def user_requests
@@ -84,6 +109,21 @@ module Foursquare2
         req.url "users/#{user_id}/tips", options
       end
       return_error_or_body(response, response.body.response.tips)
+    end
+
+    # Search all tips with some term for a given user.
+    #
+    # @param [Hash]  options
+    # @option [String] user_id - The user to retrieve friends for.
+    # @option String :query - Only find tips matching this term.
+    # @option options Integer :limit
+    # @option options Integer :offest - For paging through results
+    # @option options String :sort - One of recent, nearby, popular
+    # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
+
+    def user_tips_by_text(user_id, options={})
+      tips = user_tips(user_id, options)
+      Foursquare2.filter(tips, options[:query])
     end
 
     # Get all todos for a given user.

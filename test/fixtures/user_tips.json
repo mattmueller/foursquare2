@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "tips": {
+      "count": 12,
+      "items": [
+        {
+          "id": "4d44492b3616b60c52a6e2c2",
+          "createdAt": 1296320811,
+          "text": "Encontrei mesas e chao sujos.",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "venue": {
+            "id": "4cd0330b06b54688b186d994",
+            "name": "Subway Jd. Aquarius",
+            "contact": {
+
+            },
+            "location": {
+              "lat": -23.223232,
+              "lng": -45.903825
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16e941735",
+                "name": "Fast Food Restaurants",
+                "icon": "http://foursquare.com/img/categories/food/fastfood.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 20,
+              "usersCount": 11
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4ca7959cd971b1f79edc0be1",
+          "createdAt": 1286051228,
+          "text": "Ambiente muito gostoso para um café com os amigos.",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 3
+          },
+          "venue": {
+            "id": "4bc3d330f8219c740cb6b610",
+            "name": "Franz café",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Vilarreal",
+              "crossStreet": "Vila Ema",
+              "city": "São José dos Campos",
+              "state": "São Paulo",
+              "postalCode": "Brasil",
+              "lat": -23.1790801,
+              "lng": -45.8872476
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d1e1931735",
+                "name": "Arcades",
+                "icon": "http://foursquare.com/img/categories/arts_entertainment/arcade.png",
+                "parents": [
+                  "Arts & Entertainment"
+                ],
+                "primary": true
+              },
+              {
+                "id": "4bf58dd8d48988d16d941735",
+                "name": "Cafés",
+                "icon": "http://foursquare.com/img/categories/food/cafe.png",
+                "parents": [
+                  "Food"
+                ]
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 10,
+              "usersCount": 8
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4ca5dcb4931bb60c417d8de2",
+          "createdAt": 1285938356,
+          "text": "O pão de queijo é mto bom!",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 4
+          },
+          "venue": {
+            "id": "4bcc558f0687ef3ba303dfcc",
+            "name": "Padaria Guanabara",
+            "contact": {
+
+            },
+            "location": {
+              "city": "São Carlos",
+              "state": "São Paulo",
+              "lat": -22.012264,
+              "lng": -47.896243
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16d941735",
+                "name": "Cafés",
+                "icon": "http://foursquare.com/img/categories/food/cafe.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 80,
+              "usersCount": 20
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4ca27492d7c33704d47f9862",
+          "createdAt": 1285715090,
+          "text": "As pizza do rodízio são muito bem servidas!",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 2
+          },
+          "venue": {
+            "id": "4c4712b0417b20a1265adca9",
+            "name": "Livorno",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Av. Piracema, 669",
+              "crossStreet": "at Shopping Tamboré",
+              "city": "Barueri",
+              "state": "São Paulo",
+              "lat": -23.5046737,
+              "lng": -46.8325722
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16b941735",
+                "name": "Brazilian Restaurants",
+                "icon": "http://foursquare.com/img/categories/food/brazilian.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 60,
+              "usersCount": 34
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c9f2d060e9bb1f7651fee5f",
+          "createdAt": 1285500166,
+          "text": "Para mais informações acesse www.hominiss.com.br",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 3
+          },
+          "venue": {
+            "id": "4c976a6f72dd224bbf44b491",
+            "name": "Hominiss Consulting",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Rua São Sebastião",
+              "crossStreet": "Rua Vitor de Souza",
+              "city": "São Carlos",
+              "state": "São Paulo",
+              "lat": -22.0145343,
+              "lng": -47.894082
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d124941735",
+                "name": "Offices",
+                "icon": "http://foursquare.com/img/categories/building/default.png",
+                "parents": [
+                  "Homes, Work, Others"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 31,
+              "usersCount": 5
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c9e166554c8a1cd96e2894b",
+          "createdAt": 1285428837,
+          "text": "A qualidade do atendimento caiu muito.",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 3
+          },
+          "venue": {
+            "id": "4c1827d3fe5a76b0cab80115",
+            "name": "Pimenta Chopp e Petiscos",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Carlos Botelho",
+              "crossStreet": "Alexandrina",
+              "city": "Sao Carlos",
+              "state": "São Paulo",
+              "lat": -22.0126343,
+              "lng": -47.8881819
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d116941735",
+                "name": "Bars",
+                "icon": "http://foursquare.com/img/categories/nightlife/default.png",
+                "parents": [
+                  "Nightlife Spots"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 32,
+              "usersCount": 22
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c994beda004a1cdd6af3e6e",
+          "createdAt": 1285114861,
+          "text": "O Machiato é muito bom!",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 2
+          },
+          "venue": {
+            "id": "4bafa174f964a520bf113ce3",
+            "name": "McCafé - Shopping Tamboré",
+            "contact": {
+
+            },
+            "location": {
+              "address": "av. piracema, 669",
+              "city": "Barueri",
+              "state": "São Paulo",
+              "lat": -23.504693184228792,
+              "lng": -46.83265686035156
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16d941735",
+                "name": "Cafés",
+                "icon": "http://foursquare.com/img/categories/food/cafe.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 251,
+              "usersCount": 78
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c94a45c82b56dcb47cad0aa",
+          "createdAt": 1284809820,
+          "text": "A arena é muito legal, mas os equipamentos são péssimos.",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "venue": {
+            "id": "4bb567e2941ad13a7e3d1ee3",
+            "name": "Counter Strike Paintball",
+            "contact": {
+              "phone": "551239127128"
+            },
+            "location": {
+              "address": "Counter Strike Paintball",
+              "crossStreet": "Rua Joaquim Bagunha Maldos 535 Vila Tesouro CEP 12",
+              "city": "Sao Jose dos Campos",
+              "state": "São Paulo",
+              "postalCode": "12220420",
+              "country": "Brasil",
+              "lat": -23.1764201,
+              "lng": -45.8778545
+            },
+            "categories": [
+
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 27,
+              "usersCount": 2
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c93fd1f82b56dcbc5f1caaa",
+          "createdAt": 1284767007,
+          "text": "O melhor chopp da cidade!",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 2
+          },
+          "venue": {
+            "id": "4c1827d3fe5a76b0cab80115",
+            "name": "Pimenta Chopp e Petiscos",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Carlos Botelho",
+              "crossStreet": "Alexandrina",
+              "city": "Sao Carlos",
+              "state": "São Paulo",
+              "lat": -22.0126343,
+              "lng": -47.8881819
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d116941735",
+                "name": "Bars",
+                "icon": "http://foursquare.com/img/categories/nightlife/default.png",
+                "parents": [
+                  "Nightlife Spots"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 32,
+              "usersCount": 22
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c93649b911b8cfa153ef5b5",
+          "createdAt": 1284727963,
+          "text": "Dica: confirme bem o seu pedido com o garçom, pois é muito comum vc receber algo diferente do que pediu.",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "venue": {
+            "id": "4c920489b641236ad7048679",
+            "name": "Padaria Leopoldina",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Av. Dr. Carlos Botelho, 1768",
+              "crossStreet": "Rua José Bonifácio",
+              "city": "São Carlos",
+              "state": "São Paulo",
+              "lat": -22.0125525,
+              "lng": -47.8842908
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16a941735",
+                "name": "Bakeries",
+                "icon": "http://foursquare.com/img/categories/food/bakery.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 34,
+              "usersCount": 17
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c92064a238c6dcb859fc455",
+          "createdAt": 1284638282,
+          "text": "Padaria com ambiente requintado, preços justos, porém, o serviço muitas vezes deixa a desejar. Mesmo assim vale a pena visitar!",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 3
+          },
+          "venue": {
+            "id": "4c920489b641236ad7048679",
+            "name": "Padaria Leopoldina",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Av. Dr. Carlos Botelho, 1768",
+              "crossStreet": "Rua José Bonifácio",
+              "city": "São Carlos",
+              "state": "São Paulo",
+              "lat": -22.0125525,
+              "lng": -47.8842908
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d16a941735",
+                "name": "Bakeries",
+                "icon": "http://foursquare.com/img/categories/food/bakery.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 34,
+              "usersCount": 17
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        },
+        {
+          "id": "4c91452aae96a0938b07a246",
+          "createdAt": 1284588842,
+          "text": "Já comi o de frango, muito bom e bem servido, recomendo!",
+          "url": "",
+          "todo": {
+            "count": 0
+          },
+          "done": {
+            "count": 1
+          },
+          "venue": {
+            "id": "4c6ae7206d390f477b85099a",
+            "name": "Posto Lago Azul",
+            "contact": {
+
+            },
+            "location": {
+              "address": "Rod. Dos bandeirantes",
+              "city": "Jundiaí",
+              "state": "São Paulo",
+              "lat": -23.1862491,
+              "lng": -46.9325781
+            },
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d1c4941735",
+                "name": "Restaurants",
+                "icon": "http://foursquare.com/img/categories/food/default.png",
+                "parents": [
+                  "Food"
+                ],
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 250,
+              "usersCount": 187
+            },
+            "todos": {
+              "count": 0
+            }
+          }
+        }
+      ]
+    }
+  }
+}

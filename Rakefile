@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = "Foursquare API v2 gem in the spirit of the original foursquare gem"
   gem.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
-  gem.email = "muellermr@gmail.com"
-  gem.authors = ["Matt Mueller"]
+  gem.email = ["muellermr@gmail.com", "email@marcomoura.com"]
+  gem.authors = ["Matt Mueller", "Marco Moura"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
