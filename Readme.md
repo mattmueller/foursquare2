@@ -2,17 +2,6 @@
 
 Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
-And another features like:
-
-  * "venue_tips" add option to search tips from a venue who have some term, like pizza
-
-  * "search_venues_by_tip" Search for venues by tip
-
-  * "search_users_by_tip", search users by tip, 
-
-  * "user_tips_by_text" Search all tips with some term for a given user.
-
-
 ## Installation
 
     sudo gem install foursquare2
@@ -53,21 +42,19 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
     client.checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
 
 
-
-#### And some hacks to extends the api 
-
 #### Search user by tip 
 
      client.search_users_by_tip(:ll => '36.142064,-86.816086', :name => 'Marco')
 
-#### Search tips in a user ( or filter the tips of a user with some term)
+#### Search tips from a user (optionally filter a user's tips based on some term)
+
      client.user_tips_by_text(:user_id => "123456", :query => 'coffee')
 
 #### Search venues by tip 
 
      client.search_venues_by_tip(:ll => '36.142064,-86.816086', :query => 'coffee')
 
-#### Search tips in a venue ( or filter the tips of a venue with some term)
+#### Search tips at a venue (optionally filter a venue's tips based on some term)
 
      client.venue_tips(:venueId => "4b2afcaaf964a5205bb324e3", :query => 'coffee')
 
