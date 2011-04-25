@@ -4,11 +4,14 @@ Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
 And another features like:
 
-  * search user by tip, 
+  * "venue_tips" add option to search tips from a venue who have some term, like pizza
 
-  * "venue_tips" add option to search venue by tip, where filter venues who have some term, like pizza
+  * "search_venues_by_tip" Search for venues by tip
 
-  * filter tip from a user
+  * "search_users_by_tip", search users by tip, 
+
+  * "user_tips_by_text" Search all tips with some term for a given user.
+
 
 ## Installation
 
@@ -57,13 +60,17 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
      client.search_users_by_tip(:ll => '36.142064,-86.816086', :name => 'Marco')
 
+#### Search tips in a user ( or filter the tips of a user with some term)
+
+     client.user_tips_by_text(:user_id => "123456", :query => 'coffee')
+
 #### Search venues by tip 
 
      client.search_venues_by_tip(:ll => '36.142064,-86.816086', :query => 'coffee')
 
-#### Search tips in a venue
+#### Search tips in a venue ( or filter the tips of a venue with some term)
 
-     client.venue_tips_by_text(:venueId => "4b2afcaaf964a5205bb324e3", :query => 'coffee')
+     client.venue_tips(:venueId => "4b2afcaaf964a5205bb324e3", :query => 'coffee')
 
 
 
@@ -106,7 +113,6 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_set_friend_pings
     client.venue
     client.venue_tips
-    client.venue_tips_by_text
     client.search_venues
     client.search_venues_by_tip
     client.venue_categories
