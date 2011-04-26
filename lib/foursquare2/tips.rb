@@ -28,18 +28,18 @@ module Foursquare2
 
     # Search for tips from a venue.
     #
+    # @param [String] venue_id - Venue id to flag, required.
     # @param [Hash]  options
-    # @option options String :venueId The ID of the venue
     # @option options String :sort  [recent]  One of recent or popular.
     # @option options Integer :limit [100] Number of results to return, up to 500.
     # @option options Integer :offset [100] Used to page through results
     # @option options String :query - Only find tips matching this term.
 
-    def venue_tips(options={})
-        response = connection.get("venues/#{options[:venueId]}/tips")
-        tips = return_error_or_body(response, response.body.response.tips)
-        tips = Foursquare2.filter(tips, options[:query]) if options.has_key? :query
-        tips 
+    def venue_tips(venue_id, options={})
+      response = connection.get("venues/#{venue_id}/tips")
+      tips = return_error_or_body(response, response.body.response.tips)
+      tips = Foursquare2.filter(tips, options[:query]) if options.has_key? :query
+      tips 
     end
 
     # Add a tip

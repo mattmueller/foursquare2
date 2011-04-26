@@ -95,7 +95,7 @@ module Foursquare2
       return_error_or_body(response, response.body.response.friends)
     end
 
-    # Get all tips for a given user.
+    # Get all tips for a given user, optionally filtering by text.
     #
     # @param [String] user_id - The user to retrieve friends for.
     # @param [Hash]  options
@@ -103,27 +103,15 @@ module Foursquare2
     # @option options Integer :offest - For paging through results
     # @option options String :sort - One of recent, nearby, popular
     # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
+    # @option String :query - Only find tips matching this term.
 
     def user_tips(user_id, options={})
       response = connection.get do |req|
         req.url "users/#{user_id}/tips", options
       end
-      return_error_or_body(response, response.body.response.tips)
-    end
-
-    # Search all tips with some term for a given user.
-    #
-    # @param [Hash]  options
-    # @option [String] user_id - The user to retrieve friends for.
-    # @option String :query - Only find tips matching this term.
-    # @option options Integer :limit
-    # @option options Integer :offest - For paging through results
-    # @option options String :sort - One of recent, nearby, popular
-    # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
-
-    def user_tips_by_text(user_id, options={})
-      tips = user_tips(user_id, options)
-      Foursquare2.filter(tips, options[:query])
+      tips = return_error_or_body(response, response.body.response.tips)
+      tips = Foursquare2.filter(tips, options[:query]) if options.has_key? :query
+      tips
     end
 
     # Get all todos for a given user.

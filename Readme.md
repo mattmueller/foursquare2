@@ -48,7 +48,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
 #### Search tips from a user (optionally filter a user's tips based on some term)
 
-     client.user_tips_by_text("123456", :query => 'coffee')
+     client.user_tips("123456", :query => 'coffee')
 
 #### Search venues by tip 
 
@@ -56,7 +56,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
 #### Search tips at a venue (optionally filter a venue's tips based on some term)
 
-     client.venue_tips(:venueId => "4b2afcaaf964a5205bb324e3", :query => 'coffee')
+     client.venue_tips("4b2afcaaf964a5205bb324e3", :query => 'coffee')
 
 
 
@@ -89,7 +89,6 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_checkins
     client.user_friends
     client.user_tips
-    client.user_tips_by_text
     client.user_todos
     client.user_venue_history
     client.user_friend_request
