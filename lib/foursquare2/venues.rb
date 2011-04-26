@@ -44,7 +44,7 @@ module Foursquare2
         venues << tip['venue']
       end
       venues
-  end
+    end
 
     # Retrieve information about all venue categories.
 
