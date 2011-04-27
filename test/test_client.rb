@@ -18,5 +18,15 @@ class TestClient < Test::Unit::TestCase
       @client.client_id.should == 'awesome'
       @client.client_secret.should == 'sauce'
     end
+    
+    should "retain SSL option for requests when you don't pass it as param" do
+      @client = Foursquare2::Client.new(:client_id => 'awesome', :client_secret => 'sauce')
+      @client.ssl.should == {}
+    end
+    
+    should "retain SSL option for requests" do
+      @client = Foursquare2::Client.new(:client_id => 'awesome', :client_secret => 'sauce', :ssl => {:ca_file => 'path_to_ca_file'})      
+      @client.ssl[:ca_file].should == 'path_to_ca_file'
+    end
   end
 end
