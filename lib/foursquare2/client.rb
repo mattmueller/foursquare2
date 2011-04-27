@@ -30,6 +30,10 @@ module Foursquare2
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
     end
     
+    def ssl
+      @ssl
+    end
+    
     # Sets up the connection to be used for all requests based on options passed during initialization.
 
     def connection
