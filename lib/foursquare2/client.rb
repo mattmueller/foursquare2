@@ -22,6 +22,7 @@ module Foursquare2
     # @option options String :client_id Your foursquare app's client_id
     # @option options String :client_secret Your foursquare app's client_secret
     # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
+    # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
     
     def initialize(options={})
       @client_id = options[:client_id]
