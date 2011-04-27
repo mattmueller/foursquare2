@@ -27,7 +27,7 @@ module Foursquare2
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
-      @ssl = options[:ssl]
+      @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
     end
     
     # Sets up the connection to be used for all requests based on options passed during initialization.
