@@ -27,9 +27,13 @@ module Foursquare2
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
+      @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
     end
-
-
+    
+    def ssl
+      @ssl
+    end
+    
     # Sets up the connection to be used for all requests based on options passed during initialization.
 
     def connection
@@ -37,7 +41,7 @@ module Foursquare2
       params[:client_id] = @client_id if @client_id
       params[:client_secret] = @client_secret if @client_secret
       params[:oauth_token] = @oauth_token if @oauth_token
-      @connection ||= Faraday::Connection.new(:url => api_url, :params => params, :headers => default_headers) do |builder|
+      @connection ||= Faraday::Connection.new(:url => api_url, :ssl => @ssl, :params => params, :headers => default_headers) do |builder|
         builder.adapter Faraday.default_adapter
         builder.use Faraday::Response::Mashify
         builder.use Faraday::Response::ParseJson
