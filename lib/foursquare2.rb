@@ -10,7 +10,7 @@ module Foursquare2
       tip = []
       unless tips.nil?
         tips.items.each do |check_tip| 
-          tip << check_tip if check_tip.text.downcase.include? term
+          tip << check_tip if check_tip.text.downcase.include? term.downcase
         end
       end
       {:count => tip.count,:items => tip}
