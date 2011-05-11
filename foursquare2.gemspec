@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
-  s.date = %q{2011-05-04}
+  s.date = %q{2011-05-11}
   s.description = %q{Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch.}
   s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
   s.extra_rdoc_files = [
@@ -63,7 +63,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/mattmueller/foursquare2}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
+  s.rubygems_version = %q{1.4.2}
   s.summary = %q{Foursquare API v2 gem in the spirit of the original foursquare gem}
   s.test_files = [
     "test/config.rb",
