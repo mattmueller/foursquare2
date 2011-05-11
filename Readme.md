@@ -39,7 +39,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
 #### Check-in to a venue as the authenticated user
 
-    client.checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
+    client.add_checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
 
 
 #### Search user by tip 
