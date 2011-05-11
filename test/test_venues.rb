@@ -42,7 +42,13 @@ class TestVenues < Test::Unit::TestCase
     should "get tips from a venue only with some term" do
       stub_get("https://api.foursquare.com/v2/venues/4c94a45c82b56dcb47cad0aa/tips?oauth_token=#{@client.oauth_token}", "venue_tips.json")
       tips = @client.venue_tips('4c94a45c82b56dcb47cad0aa', {:query => "legal"})
+      tips.items.count.should == 1
+      tips.items.first.id.should == "4c94a45c82b56dcb47cad0aa"
+    end
 
+    should "get tips from a venue only with some term case sensitive" do
+      stub_get("https://api.foursquare.com/v2/venues/4c94a45c82b56dcb47cad0aa/tips?oauth_token=#{@client.oauth_token}", "venue_tips.json")
+      tips = @client.venue_tips('4c94a45c82b56dcb47cad0aa', {:query => "LEGAL"})
       tips.items.count.should == 1
       tips.items.first.id.should == "4c94a45c82b56dcb47cad0aa"
     end
