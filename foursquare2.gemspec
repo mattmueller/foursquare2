@@ -63,19 +63,8 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/mattmueller/foursquare2}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Foursquare API v2 gem in the spirit of the original foursquare gem}
-  s.test_files = [
-    "test/config.rb",
-    "test/helper.rb",
-    "test/test_checkins.rb",
-    "test/test_client.rb",
-    "test/test_photos.rb",
-    "test/test_specials.rb",
-    "test/test_tips.rb",
-    "test/test_users.rb",
-    "test/test_venues.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -91,7 +80,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<fakeweb>, ["~> 1.3"])
       s.add_development_dependency(%q<jnunemaker-matchy>, ["~> 0.4"])
       s.add_development_dependency(%q<json_pure>, ["~> 1.4"])
-      s.add_development_dependency(%q<multi_json>, [">= 0.0.5", "< 1.0.0"])
+      s.add_development_dependency(%q<multi_json>, ["< 2.0.0", ">= 0.0.5"])
     else
       s.add_dependency(%q<faraday>, ["~> 0.6"])
       s.add_dependency(%q<faraday_middleware>, ["~> 0.6"])
@@ -103,7 +92,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<fakeweb>, ["~> 1.3"])
       s.add_dependency(%q<jnunemaker-matchy>, ["~> 0.4"])
       s.add_dependency(%q<json_pure>, ["~> 1.4"])
-      s.add_dependency(%q<multi_json>, [">= 0.0.5", "< 1.0.0"])
+      s.add_dependency(%q<multi_json>, ["< 2.0.0", ">= 0.0.5"])
     end
   else
     s.add_dependency(%q<faraday>, ["~> 0.6"])
@@ -116,7 +105,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<fakeweb>, ["~> 1.3"])
     s.add_dependency(%q<jnunemaker-matchy>, ["~> 0.4"])
     s.add_dependency(%q<json_pure>, ["~> 1.4"])
-    s.add_dependency(%q<multi_json>, [">= 0.0.5", "< 1.0.0"])
+    s.add_dependency(%q<multi_json>, ["< 2.0.0", ">= 0.0.5"])
   end
 end
 
