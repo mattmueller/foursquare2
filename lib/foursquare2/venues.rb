@@ -117,5 +117,25 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+
+    # Explore venues
+    #
+    # @param [Hash]  options
+    # @option options String :ll - Latitude and longitude in format LAT,LON
+    # @option options Integer :llAcc - Accuracy of the lat/lon in meters.
+    # @option options Integer :alt - Altitude in meters
+    # @option options Integer :altAcc - Accuracy of the altitude in meters
+    # @option options Integer :radius - Radius to search within, in meters
+    # @option options String :section - One of food, drinks, coffee, shops, or arts. Choosing one of these limits results to venues with categories matching these terms.
+    # @option options String :query - Query to match venues on.
+    # @option options Integer :limit - The limit of results to return.
+    # @option options String :basis - If present and set to friends or me, limits results to only places where friends have visited or user has visited, respectively.
+
+    def explore_venues(options={})
+      response = connection.get do |req|
+        req.url "venues/explore", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
   end 
 end
