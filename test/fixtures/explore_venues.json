@@ -1,0 +1,284 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "keywords": {
+            "count": 30,
+            "items": [
+                {
+                    "displayName": "Food Truck",
+                    "keyword": "Food Truck"
+                },
+                {
+                    "displayName": "Street Food",
+                    "keyword": "Street Food"
+                },
+                {
+                    "displayName": "American",
+                    "keyword": "American"
+                },
+                {
+                    "displayName": "Pizza",
+                    "keyword": "Pizza"
+                },
+                {
+                    "displayName": "Ice Cream",
+                    "keyword": "Ice Cream"
+                },
+                {
+                    "displayName": "Deli",
+                    "keyword": "Deli"
+                },
+                {
+                    "displayName": "Bodega",
+                    "keyword": "Bodega"
+                },
+                {
+                    "displayName": "Italian",
+                    "keyword": "Italian"
+                },
+                {
+                    "displayName": "Seafood",
+                    "keyword": "Seafood"
+                },
+                {
+                    "displayName": "Hot Dogs",
+                    "keyword": "Hot Dogs"
+                },
+                {
+                    "displayName": "Sandwiches",
+                    "keyword": "Sandwiches"
+                },
+                {
+                    "displayName": "Diner",
+                    "keyword": "Diner"
+                },
+                {
+                    "displayName": "Burgers",
+                    "keyword": "Burgers"
+                },
+                {
+                    "displayName": "Falafel",
+                    "keyword": "Falafel"
+                },
+                {
+                    "displayName": "New American",
+                    "keyword": "New American"
+                },
+                {
+                    "displayName": "Other - Food",
+                    "keyword": "Other - Food"
+                },
+                {
+                    "displayName": "Mexican",
+                    "keyword": "Mexican"
+                },
+                {
+                    "displayName": "Japanese",
+                    "keyword": "Japanese"
+                },
+                {
+                    "displayName": "Bakery",
+                    "keyword": "Bakery"
+                },
+                {
+                    "displayName": "Chinese",
+                    "keyword": "Chinese"
+                },
+                {
+                    "displayName": "Vegetarian",
+                    "keyword": "Vegetarian"
+                },
+                {
+                    "displayName": "Vegan",
+                    "keyword": "Vegan"
+                },
+                {
+                    "displayName": "Gastropub",
+                    "keyword": "Gastropub"
+                },
+                {
+                    "displayName": "Sushi",
+                    "keyword": "Sushi"
+                },
+                {
+                    "displayName": "Food Court",
+                    "keyword": "Food Court"
+                },
+                {
+                    "displayName": "African",
+                    "keyword": "African"
+                },
+                {
+                    "displayName": "Eastern European",
+                    "keyword": "Eastern European"
+                },
+                {
+                    "displayName": "Bagels",
+                    "keyword": "Bagels"
+                },
+                {
+                    "displayName": "Cuban",
+                    "keyword": "Cuban"
+                },
+                {
+                    "displayName": "Australian",
+                    "keyword": "Australian"
+                }
+            ]
+        },
+        "warning": {
+            "text": "There aren't a lot of results near you. Try expanding the search area by tapping the settings button on the top left of the screen."
+        },
+        "groups": [
+            {
+                "type": "recommended",
+                "name": "Recommended Places",
+                "items": [
+                    {
+                        "reasons": {
+                            "count": 1,
+                            "items": [
+                                {
+                                    "type": "general",
+                                    "message": "This place is popular on foursquare."
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "3fd66200f964a520e9e81ee3",
+                            "name": "Grimaldi's Pizzeria",
+                            "contact": {
+                                "phone": "7188584300"
+                            },
+                            "location": {
+                                "address": "19 Old Fulton St",
+                                "crossStreet": "btw Front & Water Sts",
+                                "city": "Brooklyn",
+                                "state": "NY",
+                                "postalCode": "11201",
+                                "country": "USA",
+                                "lat": 40.7026434,
+                                "lng": -73.9934553,
+                                "distance": 625
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d1ca941735",
+                                    "name": "Pizza Place",
+                                    "pluralName": "Pizza Places",
+                                    "icon": "https://foursquare.com/img/categories/food/pizza.png",
+                                    "parents": [
+                                        "Food"
+                                    ],
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "checkinsCount": 5014,
+                                "usersCount": 3875
+                            },
+                            "todos": {
+                                "count": 0
+                            },
+                            "hereNow": {
+                                "count": 2
+                            }
+                        },
+                        "tips": [
+                            {
+                                "id": "4c62b64eedb29c74df3a2ca7",
+                                "createdAt": 1281537614,
+                                "text": "This famous Brooklyn eatery, a perennial atop the city's best pizza joints, has received eviction papers after falling behind on rent and city taxes.",
+                                "url": "http://online.wsj.com/article/SB10001424052748703435104575421652613394906.html?mod=4sq",
+                                "todo": {
+                                    "count": 104
+                                },
+                                "done": {
+                                    "count": 190
+                                },
+                                "user": {
+                                    "id": "989827",
+                                    "firstName": "The Wall Street Journal",
+                                    "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/RNLQAGZVMSFTB1WG.jpg",
+                                    "gender": "male",
+                                    "homeCity": "New York, NY"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "reasons": {
+                            "count": 1,
+                            "items": [
+                                {
+                                    "type": "general",
+                                    "message": "This place is popular on foursquare."
+                                }
+                            ]
+                        },
+                        "venue": {
+                            "id": "4a9c07d1f964a520ca3520e3",
+                            "name": "Heights Falafel",
+                            "contact": {},
+                            "location": {
+                                "address": "78 Henry St.",
+                                "city": "Brooklyn",
+                                "state": "NY",
+                                "lat": 40.6985,
+                                "lng": -73.9925,
+                                "distance": 654
+                            },
+                            "categories": [
+                                {
+                                    "id": "4bf58dd8d48988d10b941735",
+                                    "name": "Falafel Restaurant",
+                                    "pluralName": "Falafel Restaurants",
+                                    "icon": "https://foursquare.com/img/categories/food/default.png",
+                                    "parents": [
+                                        "Food"
+                                    ],
+                                    "primary": true
+                                }
+                            ],
+                            "verified": false,
+                            "stats": {
+                                "checkinsCount": 281,
+                                "usersCount": 143
+                            },
+                            "todos": {
+                                "count": 0
+                            },
+                            "hereNow": {
+                                "count": 0
+                            }
+                        },
+                        "tips": [
+                            {
+                                "id": "4d457c972e326ea85aa4eea6",
+                                "createdAt": 1296399511,
+                                "text": "The nicest guys to ever make a falafel.",
+                                "todo": {
+                                    "count": 0
+                                },
+                                "done": {
+                                    "count": 4
+                                },
+                                "user": {
+                                    "id": "5626664",
+                                    "firstName": "Andie",
+                                    "lastName": "O.",
+                                    "photo": "https://playfoursquare.s3.amazonaws.com/userpix_thumbs/5CHQX5YNEVO13SHY.jpg",
+                                    "gender": "female",
+                                    "homeCity": "Long Island, NY"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

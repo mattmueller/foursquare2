@@ -59,6 +59,13 @@ class TestVenues < Test::Unit::TestCase
 
       tips.items.count.should == 0
     end
+    
+    should "allow venues to be explored" do
+      stub_get("https://api.foursquare.com/v2/venues/explore?section=food&ll=40.7%2C-74&oauth_token=yeehaw&limit=2", "explore_venues.json")
+      venues = @client.explore_venues(:ll => '40.7,-74', :section => 'food', :limit => '2')
+      venues.groups.first.items.count.should == 2
+    end
+     
 
   end
 
