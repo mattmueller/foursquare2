@@ -10,7 +10,7 @@ GEM
     faraday_middleware (0.7.0)
       faraday (~> 0.7.3)
     git (1.2.5)
-    hashie (1.0.0)
+    hashie (1.1.0)
     jeweler (1.6.4)
       bundler (~> 1.0)
       git (>= 1.2.5)
