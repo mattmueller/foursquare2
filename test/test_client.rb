@@ -45,7 +45,7 @@ class TestClient < Test::Unit::TestCase
       response = Faraday::Response.new body: fixture_file('error.json', :parse => true)
       client   = Foursquare2::Client.new
   
-      assert_raises(Foursquare2::Error) do
+      assert_raises(Foursquare2::APIError) do
         client.return_error_or_body(response, response.body)
       end
     end

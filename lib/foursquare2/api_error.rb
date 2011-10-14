@@ -1,5 +1,5 @@
 module Foursquare2
-  class Error < StandardError
+  class APIError < StandardError
 
     attr_reader :code
     attr_reader :detail

@@ -63,7 +63,7 @@ module Foursquare2
       if response.body.meta.code == 200 
         response_body
       else
-        raise Foursquare2::Error.new(response.body.meta) 
+        raise Foursquare2::APIError.new(response.body.meta) 
       end
     end
       
