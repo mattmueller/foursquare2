@@ -60,7 +60,11 @@ module Foursquare2
     # Added just for convenience to avoid having to traverse farther down the response just to get to returned data.
 
     def return_error_or_body(response, response_body)
-      response.body.meta.code == 200 ? response_body : response.body
+      if response.body.meta.code == 200 
+        response_body
+      else
+        raise Foursquare2::Error.new(response.body.meta) 
+      end
     end
       
     private
