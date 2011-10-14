@@ -40,4 +40,15 @@ class TestClient < Test::Unit::TestCase
     end
   end
 
+  context "When returning a unsucessful response(error)" do
+    should "raise Foursquare2::Error." do
+      response = Faraday::Response.new body: fixture_file('error.json', :parse => true)
+      client   = Foursquare2::Client.new
+  
+      assert_raises(Foursquare2::Error) do
+        client.return_error_or_body(response, response.body)
+      end
+    end
+  end
+
 end
