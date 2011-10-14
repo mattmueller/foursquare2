@@ -11,6 +11,7 @@ require 'test/unit'
 require 'shoulda'
 require 'matchy'
 require 'fakeweb'
+require 'json'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
@@ -27,10 +28,17 @@ def foursquare_url(url)
   url =~ /^http/ ? url : "http://api.foursquare.com/v2#{url}"
 end
 
-def fixture_file(filename)
+def fixture_file(filename, options={})
   return '' if filename == ''
   file_path = File.expand_path(File.dirname(__FILE__) + '/fixtures/' + filename)
-  File.read(file_path)
+  fixture   = File.read(file_path)
+  
+  case File.extname(file_path)
+  when '.json'
+    options[:parse] ? JSON.parse(fixture) : fixture
+  else
+    fixture
+  end
 end
 
 def stub_get(url, filename, options={})
