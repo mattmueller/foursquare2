@@ -43,9 +43,14 @@ module Foursquare2
       params[:client_secret] = @client_secret if @client_secret
       params[:oauth_token] = @oauth_token if @oauth_token
       @connection ||= Faraday::Connection.new(:url => api_url, :ssl => @ssl, :params => params, :headers => default_headers) do |builder|
-        builder.adapter Faraday.default_adapter
+        builder.use Faraday::Request::Multipart
+        builder.use Faraday::Request::UrlEncoded
+
         builder.use Faraday::Response::Mashify
         builder.use Faraday::Response::ParseJson
+
+        builder.adapter Faraday.default_adapter
+
       end
     end
 
