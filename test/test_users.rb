@@ -56,5 +56,10 @@ class TestUsers < Test::Unit::TestCase
       users.size.should == 0
     end
 
+    should "find a users mayorships" do
+      stub_get("https://api.foursquare.com/v2/users/self/mayorships?oauth_token=#{@client.oauth_token}", "user_mayorships.json")
+      mayorships = @client.user_mayorships('self')
+      mayorships.items.size.should == 2
+    end
   end
 end

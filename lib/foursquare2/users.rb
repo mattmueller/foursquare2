@@ -143,6 +143,17 @@ module Foursquare2
       return_error_or_body(response, response.body.response.venues)
     end
 
+    # Get the mayorships for a given user.
+    #
+    # @param [String] user_id - The user to retrieve friends for.
+
+    def user_mayorships(user_id)
+      response = connection.get do |req|
+      req.url "users/#{user_id}/mayorships"
+      end
+      return_error_or_body(response, response.body.response.mayorships)
+    end
+
     # Request friendship with a user
     #
     # @param [String] user_id - The user to request friendship with.

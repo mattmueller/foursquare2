@@ -89,6 +89,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_checkins
     client.user_friends
     client.user_tips
+    client.user_mayorships
     client.user_todos
     client.user_venue_history
     client.user_friend_request

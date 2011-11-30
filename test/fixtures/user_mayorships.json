@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 0
+            }
+        }
+    ],
+    "response": {
+        "mayorships": {
+            "count": 2,
+            "items": [
+                {
+                    "venue": {
+                        "id": "4b93d555f964a520125434e3",
+                        "name": "Amelia river golf course",
+                        "contact": {},
+                        "location": {
+                            "lat": 30.602988,
+                            "lng": -81.461325,
+                            "city": "Fernandina Beach",
+                            "state": "Florida"
+                        },
+                        "categories": [],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 8,
+                            "usersCount": 6,
+                            "tipCount": 0
+                        }
+                    }
+                },
+                {
+                    "venue": {
+                        "id": "4c59f84a6407d13a9795b328",
+                        "name": "The Bloomy Rind",
+                        "contact": {},
+                        "location": {
+                            "lat": 36.150177983333336,
+                            "lng": -86.83967341666667
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d1c4941735",
+                                "name": "Restaurant",
+                                "pluralName": "Restaurants",
+                                "shortName": "Other - Food",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories/food/default_",
+                                    "sizes": [
+                                        32,
+                                        44,
+                                        64,
+                                        88,
+                                        256
+                                    ],
+                                    "name": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 8,
+                            "usersCount": 4,
+                            "tipCount": 0
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
