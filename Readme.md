@@ -71,6 +71,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.add_checkin_comment
     client.delete_checkin_comment
     client.photo
+    client.add_photo
     client.settings
     client.setting
     client.update_setting
