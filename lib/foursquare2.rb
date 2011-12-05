@@ -13,7 +13,7 @@ module Foursquare2
           tip << check_tip if check_tip.text.downcase.include? term.downcase
         end
       end
-      {:count => tip.count,:items => tip}
+      Hashie::Mash.new({:count => tip.count, :items => tip })
     end
 
   end
@@ -26,7 +26,6 @@ module Foursquare2
   require 'foursquare2/checkins'
   require 'foursquare2/venues'
   require 'foursquare2/client'
-  require 'foursquare2/hash'
   require 'foursquare2/api_error'
 
 end
