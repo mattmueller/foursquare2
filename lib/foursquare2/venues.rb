@@ -52,6 +52,13 @@ module Foursquare2
       response = connection.get("venues/categories")
       return_error_or_body(response, response.body.response.categories)
     end
+    
+    # Retrieve links for a venue.
+
+    def venue_links(venue_id)
+      response = connection.get("venues/#{venue_id}/links")
+      return_error_or_body(response, response.body.response.links)
+    end
 
     # Add a venue
     # @param [Hash]  options

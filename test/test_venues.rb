@@ -65,7 +65,22 @@ class TestVenues < Test::Unit::TestCase
       venues = @client.explore_venues(:ll => '40.7,-74', :section => 'food', :limit => '2')
       venues.groups.first.items.count.should == 2
     end
-     
+
+    should "get links for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/links?oauth_token=#{@client.oauth_token}", "venue_links.json")
+      links = @client.venue_links('4b8c3d87f964a520f7c532e3')
+      links.items.first.linkedId.should == "2513467"
+      links.items.size == links.count
+      links.items.size.should == 2
+    end
+    
+    should "get photos for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/photos?group=venue&oauth_token=#{@client.oauth_token}&limit=3", "venue_photos.json")
+      photos = @client.venue_photos('4b8c3d87f964a520f7c532e3', { :group => 'venue', :limit => 3 })
+      photos.items.first.id.should == "4edc309e46907c1b44d25ab2"
+      photos['count'].should == 222
+      photos.items.size.should == 3
+    end
 
   end
 
