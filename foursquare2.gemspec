@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{foursquare2}
-  s.version = "1.3.1"
+  s.version = "1.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
@@ -28,7 +28,6 @@ Gem::Specification.new do |s|
     "lib/foursquare2/api_error.rb",
     "lib/foursquare2/checkins.rb",
     "lib/foursquare2/client.rb",
-    "lib/foursquare2/hash.rb",
     "lib/foursquare2/photos.rb",
     "lib/foursquare2/settings.rb",
     "lib/foursquare2/specials.rb",
