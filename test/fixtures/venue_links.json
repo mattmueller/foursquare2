@@ -1,0 +1,22 @@
+{
+  "meta":{"code":200},  "response":{
+  "links":{
+    "count":2,
+    "items":[
+      {
+        "provider":{
+          "id":"voiceplaces"
+        },
+        "linkedId":"2513467",
+        "url":"http:\/\/www.voiceplaces.com\/bridgestone-arena-voice-places-2513467-l\/"
+        },
+        {
+          "provider":{
+            "id":"sk"
+          },
+          "linkedId":"883686"
+        }
+      ]
+    }
+  }
+}

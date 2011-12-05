@@ -100,6 +100,8 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_set_friend_pings
     client.venue
     client.venue_tips
+    client.venue_links
+    client.venue_photos
     client.search_venues
     client.search_venues_by_tip
     client.venue_categories
