@@ -27,6 +27,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response.photo)
     end
     
+    # Retrieve photos for a venue
+    #
+    # @params [String] venue_id - The ID of the venue
+    # @param [Hash] options
+    # @option options String :group - Pass checkin for photos added by friends (including on their recent checkins). Pass venue for public photos added to the venue by non-friends. Use multi to fetch both. Default - venue
+    # @option options Integer :limit - Number of results to return, up to 500.
+    # @option options Integer :offset - Used to page through results.
+    def venue_photos(venue_id, options = {:group => 'venue'})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/photos", options
+      end
+      return_error_or_body(response, response.body.response.photos)
+    end
+    
   end
 end
 
