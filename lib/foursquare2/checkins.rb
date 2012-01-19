@@ -4,9 +4,13 @@ module Foursquare2
     # Retrive information about a single checkin.
     #
     # @param [String] checkin_id the ID of the checkin.
+    # @param [Hash] options
+    # @option options String :signature - Signature allowing users to bypass the friends-only access check on checkins
 
-    def checkin(checkin_id)
-      response = connection.get("checkins/#{checkin_id}")
+    def checkin(checkin_id, options={})
+      response = connection.get do |req|
+        req.url "checkins/#{checkin_id}", options
+      end
       return_error_or_body(response, response.body.response.checkin)
     end
 
