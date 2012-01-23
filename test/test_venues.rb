@@ -62,7 +62,7 @@ class TestVenues < Test::Unit::TestCase
     end
     
     should "allow venues to be explored" do
-      stub_get("https://api.foursquare.com/v2/venues/explore?section=food&ll=40.7%2C-74&oauth_token=yeehaw&limit=2", "explore_venues.json")
+      stub_get("https://api.foursquare.com/v2/venues/explore?section=food&ll=40.7%2C-74&oauth_token=#{@client.oauth_token}&limit=2", "explore_venues.json")
       venues = @client.explore_venues(:ll => '40.7,-74', :section => 'food', :limit => '2')
       venues.groups.first.items.count.should == 2
     end
@@ -81,6 +81,12 @@ class TestVenues < Test::Unit::TestCase
       photos.items.first.id.should == "4edc309e46907c1b44d25ab2"
       photos['count'].should == 222
       photos.items.size.should == 3
+    end
+
+    should "should suggest venues based on passed criteria" do
+      stub_get("https://api.foursquare.com/v2/venues/suggestCompletion?oauth_token=#{@client.oauth_token}&ll=40.7%2C-74&query=coffee", "suggest_completion_venues.json")
+      venues = @client.suggest_completion_venues(:ll => "40.7,-74", :query => "coffee")
+      venues.minivenues.first.id.should == '44dc96e4f964a520b0361fe3'
     end
 
   end
