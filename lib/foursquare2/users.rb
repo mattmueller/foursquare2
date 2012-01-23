@@ -64,7 +64,7 @@ module Foursquare2
 
     def user_badges(user_id)
       response = connection.get("users/#{user_id}/badges")
-      return_error_or_body(response, response.body.response.sets)
+      return_error_or_body(response, response.body.response)
     end
 
     # Get checkins for the authenticated user
