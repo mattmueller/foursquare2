@@ -4,7 +4,7 @@ source "http://rubygems.org"
 #   gem "activesupport", ">= 2.3.5"
 
 gem 'faraday', '>= 0.6', '< 0.8'
-gem 'faraday_middleware', '>= 0.6', '< 0.8'
+gem 'faraday_middleware', '>= 0.8'
 gem 'hashie', '~> 1.0'
 
 
