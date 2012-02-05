@@ -77,7 +77,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<faraday>, ["< 0.8", ">= 0.6"])
-      s.add_runtime_dependency(%q<faraday_middleware>, ["< 0.8", ">= 0.6"])
+      s.add_runtime_dependency(%q<faraday_middleware>, [">= 0.6"])
       s.add_runtime_dependency(%q<hashie>, ["~> 1.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
@@ -89,7 +89,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<multi_json>, ["< 2.0.0", ">= 0.0.5"])
     else
       s.add_dependency(%q<faraday>, ["< 0.8", ">= 0.6"])
-      s.add_dependency(%q<faraday_middleware>, ["< 0.8", ">= 0.6"])
+      s.add_dependency(%q<faraday_middleware>, [">= 0.6"])
       s.add_dependency(%q<hashie>, ["~> 1.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
@@ -102,7 +102,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<faraday>, ["< 0.8", ">= 0.6"])
-    s.add_dependency(%q<faraday_middleware>, ["< 0.8", ">= 0.6"])
+    s.add_dependency(%q<faraday_middleware>, [">= 0.6"])
     s.add_dependency(%q<hashie>, ["~> 1.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
