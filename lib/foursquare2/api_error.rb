@@ -16,6 +16,6 @@ module Foursquare2
     def message
       "#{@type}: #{@detail} (#{@code})"
     end
-
+    alias :to_s :message
   end
 end
