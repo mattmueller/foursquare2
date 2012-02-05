@@ -36,10 +36,13 @@ module Foursquare2
     # @option options String :query - Only find tips matching this term.
 
     def venue_tips(venue_id, options={})
-      response = connection.get("venues/#{venue_id}/tips")
+      query = options.delete(:query)
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/tips", options
+      end
       tips = return_error_or_body(response, response.body.response.tips)
-      tips = Foursquare2.filter(tips, options[:query]) if options.has_key? :query
-      tips 
+      tips = Foursquare2.filter(tips, query) if query
+      tips
     end
 
     # Add a tip
