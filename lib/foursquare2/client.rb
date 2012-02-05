@@ -46,8 +46,8 @@ module Foursquare2
         builder.use Faraday::Request::Multipart
         builder.use Faraday::Request::UrlEncoded
 
-        builder.use Faraday::Response::Mashify
-        builder.use Faraday::Response::ParseJson
+        builder.use FaradayMiddleware::Mashify
+        builder.use FaradayMiddleware::ParseJson
 
         builder.adapter Faraday.default_adapter
 
