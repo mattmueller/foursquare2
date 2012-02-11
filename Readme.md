@@ -109,6 +109,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.mark_venue_todo
     client.flag_venue
     client.propose_venue_edit
+	client.managed_venues
 
 ## Todo
 
