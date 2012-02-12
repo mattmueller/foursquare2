@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "special": {
+            "id": "4bd876f886ba62b58a6e88b3",
+            "type": "mayor",
+            "message": "Test",
+            "description": "Congrats"
+        }
+    }
+}

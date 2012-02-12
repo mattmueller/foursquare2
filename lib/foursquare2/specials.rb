@@ -26,6 +26,29 @@ module Foursquare2
       return_error_or_body(response, response.body.response.specials.items)
     end
     
+    # Add a special for venue managers
+    # Details on param options can be found at https://developer.foursquare.com/docs/specials/add
+    #
+    # @param [Hash]  options
+    # @option options String :name - A name for the special.
+    # @option options String :text - Required
+    # @option options String :unlockedText - Required. Special text that is shown when the user has unlocked the special.
+    # @option options String :finePrint 
+    # @option options Integer :count1 
+    # @option options Integer :count2 
+    # @option options Integer :count3 
+    # @option options String :type
+    # @option options String :offerId
+    # @option options Float :cost
+    #
+
+    def add_special(options={})
+      response = connection.post do |req|
+        req.url "specials/add", options
+      end
+        return_error_or_body(response, response.body.response.special)
+    end
+    
   end
 end
 
