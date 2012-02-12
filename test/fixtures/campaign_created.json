@@ -1,0 +1,34 @@
+{
+  "meta":{"code":200},  "response":{
+  "campaign":{
+    "id":"123",
+    "special":{
+          "id":"4bd876f886ba62b58a6e88b3",
+		  "text":"Test Special",
+		  "name":"Special"
+		},
+	"startsAt":"1284286794",
+	"endsAt":"1284286794",
+	"venues":[
+		{
+		   "count":1,
+			"items":[
+				{
+					"id": "4c94a45c82b56dcb47cad0aa"
+				}
+			 ]
+			}
+			],
+	"venueGroups":[
+		{
+			"count":1,
+			"items":[
+				{
+					"id": "4d94a45c82b56dcb47cad0aa"
+				}
+			]
+		}
+	]
+	}
+	}
+	}

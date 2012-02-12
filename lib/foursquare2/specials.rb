@@ -37,7 +37,7 @@ module Foursquare2
     # @option options Integer :count1 
     # @option options Integer :count2 
     # @option options Integer :count3 
-    # @option options String :type
+    # @option options String :type - Required.
     # @option options String :offerId
     # @option options Float :cost
     #
