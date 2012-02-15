@@ -88,6 +88,13 @@ class TestVenues < Test::Unit::TestCase
       venues = @client.suggest_completion_venues(:ll => "40.7,-74", :query => "coffee")
       venues.minivenues.first.id.should == '44dc96e4f964a520b0361fe3'
     end
+    
+    should "fetch venue for manager" do
+      stub_get("https://api.foursquare.com/v2/venues/managed?oauth_token=#{@client.oauth_token}", "managed_venues.json")
+      venues = @client.managed_venues()
+      venues.first.name.should == 'Black Founders Startup Ventures'
+      venues.first.location.address.should == '625 2nd St'
+    end
 
   end
 

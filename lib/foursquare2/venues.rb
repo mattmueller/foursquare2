@@ -162,5 +162,17 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+    
+    #
+    #Returns a list of venues managed
+    #
+    
+    def managed_venues()
+      response = connection.get do |req|
+        req.url "venues/managed"
+      end
+      return_error_or_body(response, response.body.response.venues)
+    end
+    
   end 
 end
