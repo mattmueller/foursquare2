@@ -6,8 +6,8 @@ module Foursquare2
     #
     # @param [Hash]  options
     # @option options String :specialId - required (unless the campaignId parameter has been provided). special ID
-    # @option options String :groupId - comma-separated list of venue group IDs
-    # @option options String :venueId - comma-separated list of venue IDs
+    # @option options String :groupId - comma-separated list of venue group IDs (either groupId or venueId is required)
+    # @option options String :venueId - comma-separated list of venue IDs (either groupId or venueId is required)
     # @option options Integer :endAt - DateTime when the campaign is to be automatically deactivated (seconds since epoch)
     # @option options Integer :startAt - DateTime when the campaign is to be started (seconds since epoch)
     # @option options String :campaignId - ID of an existing campaign to copy. 
