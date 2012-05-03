@@ -13,6 +13,7 @@ require 'matchy'
 require 'fakeweb'
 require 'json'
 require 'hashie'
+require 'awesome_print'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
@@ -33,7 +34,7 @@ def fixture_file(filename, options={})
   return '' if filename == ''
   file_path = File.expand_path(File.dirname(__FILE__) + '/fixtures/' + filename)
   fixture   = File.read(file_path)
-  
+
   case File.extname(file_path)
   when '.json'
     options[:parse] ? Hashie::Mash.new(JSON.parse(fixture)) : fixture
