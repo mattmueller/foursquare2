@@ -3,7 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem 'faraday', '>= 0.6', '< 0.8'
+gem 'faraday', '~> 0.8'
 gem 'faraday_middleware', '>= 0.8'
 gem 'hashie', '~> 1.0'
 
@@ -12,6 +12,7 @@ gem 'hashie', '~> 1.0'
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
+  gem 'awesome_print'
   gem "shoulda"
   gem "bundler", "~> 1.0"
   gem "jeweler", "~> 1.5"

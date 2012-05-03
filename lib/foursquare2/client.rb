@@ -3,7 +3,7 @@ require 'forwardable'
 module Foursquare2
   class Client
     extend Forwardable
-    
+
     include Venues
     include Checkins
     include Tips
@@ -23,18 +23,18 @@ module Foursquare2
     # @option options String :client_secret Your foursquare app's client_secret
     # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
     # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
-    
+
     def initialize(options={})
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
     end
-    
+
     def ssl
       @ssl
     end
-    
+
     # Sets up the connection to be used for all requests based on options passed during initialization.
 
     def connection
@@ -65,13 +65,13 @@ module Foursquare2
     # Added just for convenience to avoid having to traverse farther down the response just to get to returned data.
 
     def return_error_or_body(response, response_body)
-      if response.body.meta.code == 200 
+      if response.body.meta.code == 200
         response_body
       else
         raise Foursquare2::APIError.new(response.body.meta, response.body.response)
       end
     end
-      
+
     private
 
 
