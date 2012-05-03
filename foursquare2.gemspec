@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "foursquare2"
-  s.version = "1.3.6"
+  s.version = "1.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
@@ -69,7 +69,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/mattmueller/foursquare2"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.15"
+  s.rubygems_version = "1.8.10"
   s.summary = "Foursquare API v2 gem in the spirit of the original foursquare gem"
 
   if s.respond_to? :specification_version then
