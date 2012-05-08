@@ -167,7 +167,7 @@ module Foursquare2
 
     def venue_menus(venue_id)
       response = connection.get("venues/#{venue_id}/menu")
-      return_error_or_body(response, response.body.response.links)
+      return_error_or_body(response, response.body.response)
     end
   end 
 end
