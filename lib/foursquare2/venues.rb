@@ -162,5 +162,12 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+  
+    # Retrieve menus for a venue.
+
+    def venue_menus(venue_id)
+      response = connection.get("venues/#{venue_id}/menu")
+      return_error_or_body(response, response.body.response)
+    end
   end 
 end
