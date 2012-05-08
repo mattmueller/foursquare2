@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
-  s.date = "2012-05-03"
+  s.date = "2012-05-08"
   s.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
   s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
   s.extra_rdoc_files = [
@@ -55,6 +55,7 @@ Gem::Specification.new do |s|
     "test/fixtures/user_tips_empty.json",
     "test/fixtures/venue.json",
     "test/fixtures/venue_links.json",
+    "test/fixtures/venue_menus.json",
     "test/fixtures/venue_photos.json",
     "test/fixtures/venue_tips.json",
     "test/helper.rb",
