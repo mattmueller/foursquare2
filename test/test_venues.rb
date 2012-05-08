@@ -89,6 +89,14 @@ class TestVenues < Test::Unit::TestCase
       venues.minivenues.first.id.should == '44dc96e4f964a520b0361fe3'
     end
 
+    should "get menus for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b2a544ff964a5204ca724e3/menu?oauth_token=#{@client.oauth_token}", "venue_menus.json")
+      response = @client.venue_menus('4b2a544ff964a5204ca724e3')
+      response.menu.menus.items.count.should == 1
+      response.menu.menus.items.first.name.should == "Main Menu"
+      response.menu.menus.items.first['entries']['items'].first['entries'].items.count.should == 11
+    end
+
   end
 
 end

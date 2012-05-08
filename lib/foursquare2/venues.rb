@@ -47,6 +47,8 @@ module Foursquare2
     end
 
     # Retrieve information about all venue categories.
+    #
+    # param [String] venue_id The ID of the venue
 
     def venue_categories
       response = connection.get("venues/categories")
@@ -54,6 +56,8 @@ module Foursquare2
     end
     
     # Retrieve links for a venue.
+    #
+    # param [String] venue_id The ID of the venue
 
     def venue_links(venue_id)
       response = connection.get("venues/#{venue_id}/links")
@@ -164,6 +168,8 @@ module Foursquare2
     end
   
     # Retrieve menus for a venue.
+    #
+    # param [String] venue_id The ID of the venue
 
     def venue_menus(venue_id)
       response = connection.get("venues/#{venue_id}/menu")

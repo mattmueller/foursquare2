@@ -1,0 +1,265 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 0
+            }
+        }
+    ],
+    "response": {
+        "menu": {
+            "provider": {
+                "name": "singleplatform",
+                "attributionImage": "https://as.singleplatform.com/Foursquare/mcdonalds-8697/provided_by.png",
+                "attributionLink": "http://www.singlepage.com/mcdonalds-8697/menu?ref=Foursquare",
+                "attributionText": "Disclaimer: Always check with the business for pricing and availability of menu items. SinglePlatform is not responsible for menu or pricing changes, but the information is believed to be accurate when posted. Listing of a menu does not mean that there is any affiliation, endorsement or sponsorship between SinglePlatform and the listed business."
+            },
+            "menus": {
+                "count": 1,
+                "items": [
+                    {
+                        "menuId": "m2vi641d8m5km41qa2ie7vu0l",
+                        "name": "Main Menu",
+                        "description": "",
+                        "entries": {
+                            "count": 2,
+                            "items": [
+                                {
+                                    "sectionId": "egndr92t336nkqmi89b6cbsq4",
+                                    "name": "Salads",
+                                    "entries": {
+                                        "count": 11,
+                                        "items": [
+                                            {
+                                                "entryId": "eq90ulhw3d1b80bw1wvcyb31a",
+                                                "name": "Premium Bacon Ranch Salad",
+                                                "description": "Fresh mixed greens and sumptuous grape tomatoes, getting along brilliantly with hickory-smoked bacon."
+                                            },
+                                            {
+                                                "entryId": "enehqgrua2jy4w3i426kboopj",
+                                                "name": "Premium Bacon Ranch Salad",
+                                                "description": "With crispy chicken  fresh mixed greens tossed with sumptuous grape tomatoes, shaved carrots, jack and cheddar cheeses, hickory-smoked bacon and all-white meat chicken."
+                                            },
+                                            {
+                                                "entryId": "e6hver5izfd9sd82na9eakutb",
+                                                "name": "Premium Bacon Ranch Salad",
+                                                "description": "With grilled chicken  we know you showed up for the bacon. but you'll stay for the fresh mixed greens, grilled chicken and creamy ranch dressing."
+                                            },
+                                            {
+                                                "entryId": "e3gqn6sfj4r7etg5y89nrqh5t",
+                                                "name": "Premium Caesar Salad",
+                                                "description": "Crispy all-white meat chicken, deliciously fresh greens, zingy parmesan cheese and creamy ranch dressing."
+                                            },
+                                            {
+                                                "entryId": "eyoop5ks5jh3lsrt3p6oqgv2s",
+                                                "name": "Premium Caesar Salad",
+                                                "description": "With crispy chicken  is it the juicy, freshly grilled all-white meat chicken? perhaps the zing of parmesan cheese? could it be the deliciously fresh greens? better order one and find out."
+                                            },
+                                            {
+                                                "entryId": "ejs4lsd5xyqkuwier31nrlmu9",
+                                                "name": "Premium Caesar Salad with Grilled Chicken"
+                                            },
+                                            {
+                                                "entryId": "e391vm2ev6xgub4xcdcxbbg4q",
+                                                "name": "Premium Southwest Salad",
+                                                "description": "Premium greens topped with a snappy mix of fire-roasted corn, savory black beans, poblano peppers, chili lime tortilla strips, and squeeze-it-yourself lime wedge on the side."
+                                            },
+                                            {
+                                                "entryId": "e98clbjht1rn5c4fxmxa15xu6",
+                                                "name": "Premium Southwest Salad with Crispy Chicken",
+                                                "description": "Our hottest salad yet: crispy chicken, fresh mixed greens, oven-roasted tomatoes, fire-roasted corn, savory black beans, poblano peppers, shredded cheddar and jack cheeses, chili lime tortilla strips and a fresh-sliced lime wedge on the side."
+                                            },
+                                            {
+                                                "entryId": "efplpay55j9wutkz9t299ys09",
+                                                "name": "Premium Southwest Salad with Grilled Chicken",
+                                                "description": "Our hottest salad yet: fresh-grilled chicken, fresh mixed greens, oven-roasted tomatoes, fire-roasted corn, savory black beans, poblano peppers, shredded cheddar and jack cheeses, chili lime tortilla strips and a fresh-sliced lime wedge on the side."
+                                            },
+                                            {
+                                                "entryId": "e8js4xocm438xs96lkym447cv",
+                                                "name": "Side Salad",
+                                                "description": "Premium mixed greens tossed with succulent grape tomatoes and shaved carrots."
+                                            },
+                                            {
+                                                "entryId": "ex8e1du2dd9n6p730h4aaour9",
+                                                "name": "Fruit & Walnuts",
+                                                "description": "Go wild with wedges of crisp apples, juicy red grapes, candied walnuts and our low-fat vanilla yogurt."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "e9mw4rruoy88sf5obdzv3gx7p",
+                                    "name": "Burgers and Sandwiches",
+                                    "entries": {
+                                        "count": 31,
+                                        "items": [
+                                            {
+                                                "entryId": "etr58xjhhthq77nrwsd5b637y",
+                                                "name": "Angus Chipotle Bbq Bacon",
+                                                "description": "Make time for the bold taste of a third-pound* 100% angus beef smothered in sensationally sweet 'n smoky chipotle bbq sauce, kicked up with crisp red onions, sliced pickles and two slices of american cheese, all on a toasted sesame seed bun."
+                                            },
+                                            {
+                                                "entryId": "ebee6eiw0sa7vkg6d8v6z2psr",
+                                                "name": "Angus Bacon & Cheese",
+                                                "description": "Bigger really is better when you meet our third-pound* 100% angus beef patty on a premium bakery style bun. then add savory bacon, two slices of golden cheese and top it off with crisp red onion and crinkle-cut pickles."
+                                            },
+                                            {
+                                                "entryId": "e18xynzfw0w6b6fyhpx4v0myi",
+                                                "name": "Angus Deluxe",
+                                                "description": "Behold our sumptuous, third-pound* 100% angus beef patty on a premium bakery style bun. don't forget the bling: two slices of golden cheese topped off with farm fresh tomato, whole-leaf lettuce, crisp red onion and crinkle-cut pickles."
+                                            },
+                                            {
+                                                "entryId": "eh4goq8j1pelsxdtk6zd79njd",
+                                                "name": "Angus Mushroom & Swiss",
+                                                "description": "A thick and juicy third-pound* 100% angus beef patty is good. but we're going for great. so we add two slices of swiss cheese and savory sautéed mushrooms. nice, huh?"
+                                            },
+                                            {
+                                                "entryId": "ejxp4b6yeadg4qc26g9rlwn6y",
+                                                "name": "Big Mac",
+                                                "description": "Maybe it's the double layer of sear-sizzled 100% pure beef mingled with the sauce and melty cheese, the snap of the onion and the tart crunch of pickle. or maybe it's just that it's tall. either way, you so want one."
+                                            },
+                                            {
+                                                "entryId": "e2603yhrltm33ruvj1ea3rimk",
+                                                "name": "Quarter Pounder with Cheese",
+                                                "description": "It's 100% pure beefy cheesiness. it tastes great, and it knows it. two slices of melting cheese, a quarter pound of 100% pure beef and a toasted sesame seed bun. really, what's not to love?"
+                                            },
+                                            {
+                                                "entryId": "exf82gplhtjkmv0vg1pstewv5",
+                                                "name": "Double Quarter Pounder with Cheese",
+                                                "description": "With two 1/4 pound 100% beef patties and two slices of american cheese, the dqpc grants all your burger wishes, times two."
+                                            },
+                                            {
+                                                "entryId": "e3p3y78o1nwv4jdkz1izd6ese",
+                                                "name": "Hamburger",
+                                                "description": "Always delicious. juicy 100% beef patty, tangy pickles, onions, ketchup and mustard all on a toasted bun."
+                                            },
+                                            {
+                                                "entryId": "e4brvdxnm5250dl6pg3wwjjff",
+                                                "name": "Cheeseburger",
+                                                "description": "A slice of melty american cheese on a juicy 100% beef patty, zippy pickles and onions, ketchup and mustard on a toasted bun."
+                                            },
+                                            {
+                                                "entryId": "e0g1ur0gs58gv25wl4sup5shi",
+                                                "name": "Double Cheeseburger",
+                                                "description": "We make it like we always have: two slices of golden american cheese with two 100% all-beef patties, pickles, onions, ketchup and mustard on a toasted bun."
+                                            },
+                                            {
+                                                "entryId": "eehy728zuc6tbyk1jc2cuy0de",
+                                                "name": "Mcdouble",
+                                                "description": "Take two. a slice of melty american cheese between two 100% beef patties, topped with pickles, onions, ketchup and mustard on a toasted bun."
+                                            },
+                                            {
+                                                "entryId": "eyeg5319b5qtyelks4078phnr",
+                                                "name": "Filet-O-Fish",
+                                                "description": "Dive right in. don't hesitate, cuz it's made with light, flaky filet of white fish from the deep, cold waters of the pacific ocean and the bering, baltic and north seas. topped with tangy tartar sauce in a lightly steamed bun. down you go!"
+                                            },
+                                            {
+                                                "entryId": "e0hqfe76lvx1h5btjenufy7ef",
+                                                "name": "Southern Style Crispy Chicken Sandwich",
+                                                "description": "All-white meat crispy chicken and zingy pickles on a buttery steamed bun."
+                                            },
+                                            {
+                                                "entryId": "eh8esbp6i93i6k2j8g2pltego",
+                                                "name": "Big N' Tasty",
+                                                "description": "With a 1/4 pound* 100% beef patty, juicy tomato, premium leaf lettuce, pickles, slivered onions, ketchup and mayonnaise dressing on a toasted sesame seed bun, we could have called it the ginormous burger. (but we didn't.)"
+                                            },
+                                            {
+                                                "entryId": "e9clqv2dfwfotxa7p28rp828t",
+                                                "name": "Big N' Tasty with Cheese",
+                                                "description": "With a 1/4 pound* 100% beef patty, slice of american cheese, juicy tomato, premium leaf lettuce, pickles, slivered onions, ketchup and mayonnaise dressing on a toasted sesame seed bun, we could have called it the ginormous burger. (but we didn't.)"
+                                            },
+                                            {
+                                                "entryId": "exa46eamkp2txbof1phor8ts4",
+                                                "name": "Premium Crispy Chicken Classic Sandwich",
+                                                "description": "White meat crispy chicken breast filet so tender and juicy, we can't keep it a secret. served on a bakery-style bun with leafy green lettuce, a slice of tomato and mayonnaise dressing."
+                                            },
+                                            {
+                                                "entryId": "epj0uubqagdlslni7xhld9s05",
+                                                "name": "Premium Grilled Chicken Classic Sandwich",
+                                                "description": "White meat grilled chicken breast filet so tender and juicy, we can't keep it a secret. served on a bakery-style bun with leafy green lettuce, a slice of tomato and mayonnaise dressing."
+                                            },
+                                            {
+                                                "entryId": "e0b653g0l5337kstmw0tjvcpg",
+                                                "name": "Premium Grilled Chicken Club Sandwich",
+                                                "description": "White meat grilled chicken breast filet and hickory smoked bacon make for the most delicious of encounters. the bakery-style bun and swiss cheese help, too."
+                                            },
+                                            {
+                                                "entryId": "eo60oae73d6wvknpkqce7jfjt",
+                                                "name": "Premium Crispy Chicken Ranch Blt Sandwich",
+                                                "description": "Juicy white meat crispy chicken breast filet? check. hickory smoked bacon? check. creamy ranch sauce? check, and check out the bakery-style bun."
+                                            },
+                                            {
+                                                "entryId": "e0ka9gh3krbzgh7whvgrn431d",
+                                                "name": "Premium Grilled Chicken Ranch Blt Sandwich",
+                                                "description": "Juicy white meat grilled chicken breast filet? check. hickory smoked bacon? check. creamy ranch sauce? check, and check out the bakery-style bun."
+                                            },
+                                            {
+                                                "entryId": "endwb3uqmso70erhvvw3frocg",
+                                                "name": "Mcchicken",
+                                                "description": "You'll be dazzled by the golden, crispy chicken housed on a perfectly toasted bun."
+                                            },
+                                            {
+                                                "entryId": "eccl4culdr2ybxqiux202y7ut",
+                                                "name": "Premium Grilled Chicken Classic Sandwich",
+                                                "description": "White meat grilled chicken breast filet so tender and juicy, we can't keep it a secret. served on a bakery-style bun with leafy green lettuce, a slice of tomato and mayonnaise dressing."
+                                            },
+                                            {
+                                                "entryId": "ek4b5p8ewjrbbj1gecofl4l7m",
+                                                "name": "Angus Bacon & Cheese Snack Wrap",
+                                                "description": "100% savory angus beef, sensational bacon slices, melty american cheese, tangy crinkle cut pickles and snappy red onions in a soft flour tortilla."
+                                            },
+                                            {
+                                                "entryId": "ehvabvs68vutqn2p6azvi3rxk",
+                                                "name": "Angus Deluxe Snack Wrap",
+                                                "description": "100% savory angus beef, fresh, ripe tomato slices, melty american cheese, crinkle cut pickles, crisp lettuce and snappy red onions wrapped in a soft flour tortilla."
+                                            },
+                                            {
+                                                "entryId": "eo5q39nrp7nvp2fl4rub260og",
+                                                "name": "Angus Mushroom & Swiss Snack Wrap",
+                                                "description": "100% savory angus beef, tantalizingly tasty sliced mushrooms, and melty swiss cheese in a soft flour tortilla."
+                                            },
+                                            {
+                                                "entryId": "ebse3x8wc4lfv0bsphab75cds",
+                                                "name": "Chipotle Bbq Snack Wrap (Grilled)",
+                                                "description": "100% angus beef smothered in sensationally sweet 'n smoky chipotle bbq sauce, crisp red onions, sliced pickles and american cheese, wrapped up in a soft flour tortilla."
+                                            },
+                                            {
+                                                "entryId": "e9ivvuduhjmcpw7ap379xk46q",
+                                                "name": "Honey Mustard Snack Wrap (Crispy)",
+                                                "description": "A crispy chicken selects premium breast strip shines bright with the sweet, zippy glow of honey mustard."
+                                            },
+                                            {
+                                                "entryId": "ed420f3pqozelm7rd651wc4bo",
+                                                "name": "Chipotle Bbq Snack Wrap (Grilled)",
+                                                "description": "Plump and juicy grilled chicken, bathed in the deep heat of chipotle bbq sauce, held in the tight embrace of a flour tortilla. wait, are you blushing?"
+                                            },
+                                            {
+                                                "entryId": "ef6a9mpkms8apkwbspryj7tfa",
+                                                "name": "Ranch Snack Wrap (Crispy)",
+                                                "description": "There's no messing around here, at the intersection of crispy chicken and creamy, tangy ranch sauce. on second thought, grab a napkin."
+                                            },
+                                            {
+                                                "entryId": "e5vpk5x73siscf3tgpuf55ocj",
+                                                "name": "Ranch Snack Wrap (Grilled)",
+                                                "description": "Feast on this: juicy grilled chicken breast strip plus creamy, tangy ranch sauce wrapped in a tortilla."
+                                            },
+                                            {
+                                                "entryId": "edujyemz5hn5ypev1gydk0wy6",
+                                                "name": "Mac Snack Wrap",
+                                                "description": "Oh, yes, we did! it's all you love about the big mac sandwich, wrapped and ready for snacking."
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
