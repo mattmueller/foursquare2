@@ -12,7 +12,7 @@ module Foursquare2
     include Specials
     include Users
 
-    attr_reader :client_id, :client_secret, :oauth_token
+    attr_reader :client_id, :client_secret, :oauth_token, :api_version
 
     #Initialize the client class that will be used for all foursquare API requests.  Note that either a valid user oauth token OR a valid client_id + secret is required.
     #
@@ -22,12 +22,14 @@ module Foursquare2
     # @option options String :client_id Your foursquare app's client_id
     # @option options String :client_secret Your foursquare app's client_secret
     # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
+    # @option options String :api_version A date formatted as YYYYMMDD indicating the API version you intend to use
     # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
 
     def initialize(options={})
       @client_id = options[:client_id]
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
+      @api_version = options[:api_version]
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
     end
 
@@ -42,6 +44,7 @@ module Foursquare2
       params[:client_id] = @client_id if @client_id
       params[:client_secret] = @client_secret if @client_secret
       params[:oauth_token] = @oauth_token if @oauth_token
+      params[:v] = @api_version if @api_version
       @connection ||= Faraday::Connection.new(:url => api_url, :ssl => @ssl, :params => params, :headers => default_headers) do |builder|
         builder.use Faraday::Request::Multipart
         builder.use Faraday::Request::UrlEncoded
