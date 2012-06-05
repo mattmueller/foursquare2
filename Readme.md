@@ -20,6 +20,9 @@ Currently this gem does not handle the oauth2 authentication flow for you, use t
 
     client = Foursquare2::Client.new(:oauth_token => 'user_oauth_token')
 
+### Instantiate a client (With versioning)
+
+    client = Foursquare2::Client.new(:api_version => '20120505')
 
 ### Examples
 

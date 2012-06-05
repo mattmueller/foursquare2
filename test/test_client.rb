@@ -2,7 +2,7 @@ require 'helper'
 
 class TestClient < Test::Unit::TestCase
   
- context "when instantiating a client instance" do
+  context "when instantiating a client instance" do
     should "use the correct url for api requests" do
       @client = Foursquare2::Client.new
       @client.api_url.should == 'https://api.foursquare.com/v2'
@@ -19,6 +19,11 @@ class TestClient < Test::Unit::TestCase
       @client.client_secret.should == 'sauce'
     end
     
+    should "retain api version for requests" do
+      @client = Foursquare2::Client.new(:api_version => '20120505')
+      @client.api_version.should == "20120505"
+    end
+
     should "retain SSL option for requests when you don't pass it as param" do
       @client = Foursquare2::Client.new(:client_id => 'awesome', :client_secret => 'sauce')
       @client.ssl.should == {}
