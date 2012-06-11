@@ -28,6 +28,20 @@ class TestClient < Test::Unit::TestCase
       @client = Foursquare2::Client.new(:client_id => 'awesome', :client_secret => 'sauce', :ssl => {:ca_file => 'path_to_ca_file'})      
       @client.ssl[:ca_file].should == 'path_to_ca_file'
     end
+
+    should "apply the middleware to the connection" do
+      middleware = [FaradayMiddleware::Instrumentation,
+                    [FaradayMiddleware::ParseJson, {:content_type => /\bjson$/}]]
+      client = Foursquare2::Client.new(:connection_middleware => middleware)
+
+      Faraday::Builder.any_instance.expects(:use).at_least_once
+      Faraday::Builder.any_instance.expects(:use) \
+        .with(FaradayMiddleware::Instrumentation)
+      Faraday::Builder.any_instance.expects(:use) \
+        .with(FaradayMiddleware::ParseJson, {:content_type => /\bjson$/})
+
+      client.connection
+    end
   end
 
   context "When returning a successful response" do

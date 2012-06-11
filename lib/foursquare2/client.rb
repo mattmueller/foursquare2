@@ -22,6 +22,7 @@ module Foursquare2
     # @option options String :client_id Your foursquare app's client_id
     # @option options String :client_secret Your foursquare app's client_secret
     # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
+    # @option options Array  :connection_middleware A collection of different middleware to be applied when the connection is created
     # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
 
     def initialize(options={})
@@ -29,6 +30,7 @@ module Foursquare2
       @client_secret = options[:client_secret]
       @oauth_token = options[:oauth_token]
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
+      @connection_middleware = options.fetch(:connection_middleware, [])
     end
 
     def ssl
@@ -48,6 +50,10 @@ module Foursquare2
 
         builder.use FaradayMiddleware::Mashify
         builder.use FaradayMiddleware::ParseJson
+
+        @connection_middleware.each do |middleware|
+          builder.use *middleware
+        end
 
         builder.adapter Faraday.default_adapter
 
