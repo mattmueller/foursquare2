@@ -22,3 +22,7 @@ group :development do
   gem 'json_pure', '~> 1.4'
   gem 'multi_json', '>= 0.0.5', '< 2.0.0'
 end
+
+group :test do
+  gem 'mocha'
+end
