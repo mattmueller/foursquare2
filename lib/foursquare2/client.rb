@@ -2,6 +2,13 @@ require 'forwardable'
 
 module Foursquare2
   class Client
+    DEFAULT_CONNECTION_MIDDLEWARE = [
+      Faraday::Request::Multipart,
+      Faraday::Request::UrlEncoded,
+      FaradayMiddleware::Mashify,
+      FaradayMiddleware::ParseJson
+    ]
+
     extend Forwardable
 
     include Venues
@@ -23,6 +30,7 @@ module Foursquare2
     # @option options String :client_secret Your foursquare app's client_secret
     # @option options String :oauth_token A valid oauth token for a user (or the 'secret' value from api v1)
     # @option options String :api_version A date formatted as YYYYMMDD indicating the API version you intend to use
+    # @option options Array  :connection_middleware A collection of different middleware to be applied when the connection is created
     # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
 
     def initialize(options={})
@@ -31,6 +39,8 @@ module Foursquare2
       @oauth_token = options[:oauth_token]
       @api_version = options[:api_version]
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
+      @connection_middleware = options.fetch(:connection_middleware, [])
+      @connection_middleware += DEFAULT_CONNECTION_MIDDLEWARE
     end
 
     def ssl
@@ -46,14 +56,10 @@ module Foursquare2
       params[:oauth_token] = @oauth_token if @oauth_token
       params[:v] = @api_version if @api_version
       @connection ||= Faraday::Connection.new(:url => api_url, :ssl => @ssl, :params => params, :headers => default_headers) do |builder|
-        builder.use Faraday::Request::Multipart
-        builder.use Faraday::Request::UrlEncoded
-
-        builder.use FaradayMiddleware::Mashify
-        builder.use FaradayMiddleware::ParseJson
-
+        @connection_middleware.each do |middleware|
+          builder.use *middleware
+        end
         builder.adapter Faraday.default_adapter
-
       end
     end
 
