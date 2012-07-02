@@ -25,6 +25,7 @@ module Foursquare2
   require 'foursquare2/tips'
   require 'foursquare2/checkins'
   require 'foursquare2/venues'
+  require 'foursquare2/pages'
   require 'foursquare2/client'
   require 'foursquare2/api_error'
 
