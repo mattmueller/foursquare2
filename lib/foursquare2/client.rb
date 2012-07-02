@@ -18,6 +18,7 @@ module Foursquare2
     include Settings
     include Specials
     include Users
+    include Pages
 
     attr_reader :client_id, :client_secret, :oauth_token, :api_version
 
