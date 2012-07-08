@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "code": 200,
+    "errorType": "deprecated",
+    "errorDetail": "Please provide an API version to avoid future errors.See http:\/\/bit.ly\/vywCav"
+  },
+  "notifications": [{
+    "type": "notificationTray",
+    "item": {
+      "unreadCount": 0
+    }
+  }],
+  "response": {
+    "venues": {
+      "count": 11051,
+      "items": [{
+        "id": "4c1571cc7f7f2d7f368ce268",
+        "name": "Starbucks",
+        "contact": {
+          "twitter": "starbucks"
+        },
+        "location": {
+          "address": "36 Furlong Dr.",
+          "lat": 42.39980951166117,
+          "lng": -71.00035339133224,
+          "postalCode": "2151",
+          "city": "Revere",
+          "state": "MA",
+          "country": "United States",
+          "cc": "US"
+        },
+        "categories": [{
+          "id": "4bf58dd8d48988d1e0931735",
+          "name": "Coffee Shop",
+          "pluralName": "Coffee Shops",
+          "shortName": "Coffee Shop",
+          "icon": "https:\/\/foursquare.com\/img\/categories\/food\/coffeeshop.png",
+          "parents": ["Food"],
+          "primary": true
+        }],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 228,
+          "usersCount": 101,
+          "tipCount": 1
+        },
+        "url": "http:\/\/starbucks.com",
+        "likes": {
+          "count": 0,
+          "groups": []
+        },
+        "beenHere": {
+          "count": 0
+        }
+      }, {
+        "id": "4cf126d51d18a143c64251ec",
+        "name": "Starbucks",
+        "contact": {
+          "twitter": "starbucks"
+        },
+        "location": {
+          "address": "710 N Broad St",
+          "lat": 35.240871,
+          "lng": -82.72704929,
+          "postalCode": "28712",
+          "city": "Brevard",
+          "state": "NC",
+          "country": "United States",
+          "cc": "US"
+        },
+        "categories": [{
+          "id": "4bf58dd8d48988d1e0931735",
+          "name": "Coffee Shop",
+          "pluralName": "Coffee Shops",
+          "shortName": "Coffee Shop",
+          "icon": "https:\/\/foursquare.com\/img\/categories\/food\/coffeeshop.png",
+          "parents": ["Food"],
+          "primary": true
+        }],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 66,
+          "usersCount": 44,
+          "tipCount": 0
+        },
+        "url": "http:\/\/starbucks.com",
+        "likes": {
+          "count": 0,
+          "groups": []
+        },
+        "beenHere": {
+          "count": 0
+        }
+      }]
+    }
+  }
+}

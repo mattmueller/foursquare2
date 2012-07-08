@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "code": 200,
+    "errorType": "deprecated",
+    "errorDetail": "Please provide an API version to avoid future errors.See http:\/\/bit.ly\/vywCav"
+  },
+  "notifications": [{
+    "type": "notificationTray",
+    "item": {
+      "unreadCount": 0
+    }
+  }],
+  "response": {
+    "user": {
+      "id": "14046309",
+      "firstName": "Nashville Geeks",
+      "photo": "https:\/\/is1.4sqi.net\/userpix_thumbs\/IXHCY5SK3SDJC310.png",
+      "friends": {
+        "count": 0,
+        "groups": [{
+          "type": "friends",
+          "name": "Mutual friends",
+          "count": 0,
+          "items": []
+        }, {
+          "type": "others",
+          "name": "Other friends",
+          "count": 0,
+          "items": []
+        }]
+      },
+      "type": "page",
+      "followers": {
+        "count": 197,
+        "groups": []
+      },
+      "tips": {
+        "count": 15
+      },
+      "lists": {
+        "groups": [{
+          "type": "created",
+          "count": 1,
+          "items": []
+        }]
+      },
+      "gender": "none",
+      "homeCity": "Nashville, TN",
+      "bio": "",
+      "contact": {
+        "twitter": "nashvillegeeks",
+        "facebook": "119351084835752"
+      },
+      "pings": false,
+      "badges": {
+        "count": 0,
+        "items": []
+      },
+      "mayorships": {
+        "count": 0,
+        "items": []
+      },
+      "checkins": {
+        "count": 12,
+        "items": [{
+          "id": "4f21560e1081200df2ae864d",
+          "createdAt": 1327584782,
+          "type": "checkin",
+          "visibility": "public",
+          "shout": "#geekbreakfast",
+          "timeZone": "America\/Chicago",
+          "timeZoneOffset": -360,
+          "venue": {
+            "id": "4b05866df964a520a96122e3",
+            "name": "Noshville",
+            "contact": {
+              "phone": "6153296674",
+              "formattedPhone": "(615) 329-6674"
+            },
+            "location": {
+              "address": "1918 Broadway",
+              "crossStreet": "btwn 20th Ave North & Lyle Ave",
+              "lat": 36.15001115,
+              "lng": -86.797777,
+              "postalCode": "37203",
+              "city": "Nashville",
+              "state": "TN",
+              "country": "United States",
+              "cc": "US"
+            },
+            "categories": [{
+              "id": "4bf58dd8d48988d147941735",
+              "name": "Diner",
+              "pluralName": "Diners",
+              "shortName": "Diner",
+              "icon": "https:\/\/foursquare.com\/img\/categories\/food\/default.png",
+              "parents": ["Food"],
+              "primary": true
+            }],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 4248,
+              "usersCount": 2622,
+              "tipCount": 42
+            },
+            "url": "http:\/\/www.noshville.com\/",
+            "likes": {
+              "count": 2,
+              "groups": [{
+                "type": "others",
+                "count": 2,
+                "items": [{
+                  "id": "189330",
+                  "firstName": "Courtney",
+                  "lastName": "F.",
+                  "photo": "https:\/\/is0.4sqi.net\/userpix_thumbs\/DCS05HYMVHTK5BMR.jpg",
+                  "tips": {
+                    "count": 7
+                  },
+                  "gender": "female",
+                  "homeCity": "Nashville, TN",
+                  "bio": "librarian. grad student. occasionally a knitter, sewer (sewist?), baker, reader and even more occasional blogger.",
+                  "contact": {
+                    "twitter": "library_chic",
+                    "facebook": "34105804"
+                  }
+                }, {
+                  "id": "1733717",
+                  "firstName": "Christine",
+                  "lastName": "H.",
+                  "photo": "https:\/\/is0.4sqi.net\/userpix_thumbs\/XI40K0J4UAFCYRUS.jpg",
+                  "tips": {
+                    "count": 8
+                  },
+                  "gender": "female",
+                  "homeCity": "Glendale, CA",
+                  "bio": "",
+                  "contact": {
+                    "facebook": "1525776221"
+                  }
+                }]
+              }],
+              "summary": "Courtney F & Christine H"
+            },
+            "like": false,
+            "menu": {
+              "type": "foodAndBeverage",
+              "url": "https:\/\/foursquare.com\/v\/noshville\/4b05866df964a520a96122e3\/menu",
+              "mobileUrl": "https:\/\/foursquare.com\/v\/4b05866df964a520a96122e3\/device_menu"
+            },
+            "beenHere": {
+              "count": 1,
+              "marked": true
+            },
+            "listed": {
+              "groups": [{
+                "type": "dones",
+                "count": 1,
+                "items": []
+              }]
+            }
+          },
+          "likes": {
+            "count": 0,
+            "groups": []
+          },
+          "like": false,
+          "photos": {
+            "count": 0,
+            "items": []
+          }
+        }]
+      },
+      "following": {
+        "count": 0
+      },
+      "todos": {
+        "count": 0
+      },
+      "photos": {
+        "count": 0,
+        "items": []
+      },
+      "scores": {
+        "recent": 0,
+        "max": 0,
+        "goal": 50,
+        "checkinsCount": 0
+      },
+      "pageInfo": {
+        "title": "Follow our tips on Foursquare!",
+        "description": "Nashville Geeks is the umbrella group for tech and new media geeks in Nashville, TN. Follow us for fun factoids, commentary, and, of course, actual tips\u2014all from a Nashville Geek perspective.",
+        "banner": "https:\/\/is1.4sqi.net\/userpix\/5R1RTOJHAHYVCWF5.png",
+        "links": {
+          "count": 1,
+          "items": [{
+            "url": "http:\/\/nashvillegeeks.org",
+            "title": "http:\/\/nashvillegeeks.org"
+          }]
+        }
+      }
+    }
+  }
+}
