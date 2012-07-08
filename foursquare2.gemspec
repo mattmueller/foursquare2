@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "foursquare2"
-  s.version = "1.6.0"
+  s.version = "1.7.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "foursquare2.gemspec",
     "lib/foursquare2.rb",
     "lib/foursquare2/api_error.rb",
+    "lib/foursquare2/campaigns.rb",
     "lib/foursquare2/checkins.rb",
     "lib/foursquare2/client.rb",
     "lib/foursquare2/pages.rb",
@@ -36,10 +37,12 @@ Gem::Specification.new do |s|
     "lib/foursquare2/users.rb",
     "lib/foursquare2/venues.rb",
     "test/config.rb",
+    "test/fixtures/campaign_created.json",
     "test/fixtures/checkin.json",
     "test/fixtures/error.json",
     "test/fixtures/explore_venues.json",
     "test/fixtures/friend_checkins.json",
+    "test/fixtures/managed_venues.json",
     "test/fixtures/no_venues_by_tip.json",
     "test/fixtures/page.json",
     "test/fixtures/page_venues.json",
@@ -51,6 +54,7 @@ Gem::Specification.new do |s|
     "test/fixtures/search_venues.json",
     "test/fixtures/search_venues_by_tip.json",
     "test/fixtures/special.json",
+    "test/fixtures/special_created.json",
     "test/fixtures/suggest_completion_venues.json",
     "test/fixtures/tip.json",
     "test/fixtures/user.json",
@@ -63,6 +67,7 @@ Gem::Specification.new do |s|
     "test/fixtures/venue_photos.json",
     "test/fixtures/venue_tips.json",
     "test/helper.rb",
+    "test/test_campaigns.rb",
     "test/test_checkins.rb",
     "test/test_client.rb",
     "test/test_pages.rb",
