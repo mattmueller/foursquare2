@@ -19,6 +19,7 @@ module Foursquare2
     include Specials
     include Users
     include Pages
+    include Campaigns
 
     attr_reader :client_id, :client_secret, :oauth_token, :api_version
 

@@ -18,6 +18,7 @@ module Foursquare2
 
   end
 
+  require 'foursquare2/campaigns'
   require 'foursquare2/users'
   require 'foursquare2/specials'
   require 'foursquare2/settings'
@@ -28,6 +29,7 @@ module Foursquare2
   require 'foursquare2/pages'
   require 'foursquare2/client'
   require 'foursquare2/api_error'
+  
 
 end
 

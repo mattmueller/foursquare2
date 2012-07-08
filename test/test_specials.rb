@@ -19,5 +19,12 @@ class TestSpecials < Test::Unit::TestCase
       specials.count.should == 1
       specials.first.message.should == "Buy 1 Get 1 40% Off All Video Games (priced up to $19.99)\r\n\r\nItems must be of equal or lesser value to the lowest priced item purchased\r\n\r\nEnds 2/12/2011"
     end
+    
+    should "add a special for a venue with given params" do
+      stub_post("https://api.foursquare.com/v2/specials/add?text=Test&unlockedText=Congrats&oauth_token=#{@client.oauth_token}", "special_created.json")
+      special = @client.add_special(:text => 'Test', :unlockedText => 'Congrats')
+      special.message.should == "Test"
+    end
+    
   end
 end
