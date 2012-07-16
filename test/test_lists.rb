@@ -13,5 +13,12 @@ class TestLists < Test::Unit::TestCase
       list.name.should == 'Restaurants to Try'
       list.venueCount.should == 8
     end
+
+    should "add a list" do
+      stub_post("https://api.foursquare.com/v2/lists/add?oauth_token=#{@client.oauth_token}&name=Ramen+Spots", "list_created.json")
+      list = @client.add_list(:name => "Ramen Spots")
+      list.name.should == "Ramen Spots"
+    end
+
   end
 end
