@@ -1,0 +1,1025 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 0
+      }
+    }
+  ],
+  "response": {
+    "lists": {
+      "count": 21,
+      "items": [
+        {
+          "id": "4f36bd59e4b017ad7a49b6e7",
+          "name": "New York - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/new-york--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/new-york--food",
+          "createdAt": 1328987481,
+          "updatedAt": 1342050829,
+          "photo": {
+            "id": "4e592955d164da2b275ed76f",
+            "createdAt": 1314466133,
+            "url": "https://is1.4sqi.net/pix/1OT5V54LMAKF3CUYIEJN0BHYVNNT5AAUWNLNHCUO1IB2WDVE.jpg",
+            "sizes": {
+              "count": 4,
+              "items": [
+                {
+                  "url": "https://is1.4sqi.net/pix/1OT5V54LMAKF3CUYIEJN0BHYVNNT5AAUWNLNHCUO1IB2WDVE.jpg",
+                  "width": 720,
+                  "height": 540
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/1OT5V54LMAKF3CUYIEJN0BHYVNNT5AAUWNLNHCUO1IB2WDVE_300x300.jpg",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/1OT5V54LMAKF3CUYIEJN0BHYVNNT5AAUWNLNHCUO1IB2WDVE_100x100.jpg",
+                  "width": 100,
+                  "height": 100
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/1OT5V54LMAKF3CUYIEJN0BHYVNNT5AAUWNLNHCUO1IB2WDVE_36x36.jpg",
+                  "width": 36,
+                  "height": 36
+                }
+              ]
+            },
+            "user": {
+              "id": "11682450",
+              "firstName": "Quinten",
+              "lastName": "E.",
+              "photo": "https://is1.4sqi.net/userpix_thumbs/PNATK2NF5TV1LS5S.jpg",
+              "tips": {
+                "count": 2
+              },
+              "gender": "female",
+              "homeCity": "Gainesville, Florida",
+              "bio": "",
+              "contact": {
+                "twitter": "quin10_e"
+              }
+            },
+            "visibility": "public"
+          },
+          "followers": {
+            "count": 1
+          },
+          "listItems": {
+            "count": 119
+          }
+        },
+        {
+          "id": "4f36bd4ce4b00af17939ed3d",
+          "name": "New York - Drinks",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/new-york--drinks",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/new-york--drinks",
+          "createdAt": 1328987468,
+          "updatedAt": 1341371112,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 53
+          }
+        },
+        {
+          "id": "4fd179c0e4b01d563b4925c6",
+          "name": "San Francisco - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/san-francisco--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/san-francisco--food",
+          "createdAt": 1339128256,
+          "updatedAt": 1340588715,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 14
+          }
+        },
+        {
+          "id": "4fd24cece4b0362dd3d82ecb",
+          "name": "San Francisco - Drinks",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/san-francisco--drinks",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/san-francisco--drinks",
+          "createdAt": 1339182316,
+          "updatedAt": 1339355313,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 7
+          }
+        },
+        {
+          "id": "4fa00f56e4b0ad70a92d1873",
+          "name": "Gainesville - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/gainesville--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/gainesville--food",
+          "createdAt": 1335889750,
+          "updatedAt": 1339354572,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 22
+          }
+        },
+        {
+          "id": "4fa00f0ee4b0bf270c625452",
+          "name": "Jacksonville - Drinks",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/jacksonville--drinks",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/jacksonville--drinks",
+          "createdAt": 1335889678,
+          "updatedAt": 1339187215,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 5
+          }
+        },
+        {
+          "id": "4fa00f41e4b0db1b85b68efd",
+          "name": "Jacksonville - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/jacksonville--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/jacksonville--food",
+          "createdAt": 1335889729,
+          "updatedAt": 1339187126,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 4
+          }
+        },
+        {
+          "id": "4fa00ec0e4b0f6bef1d0837e",
+          "name": "Gainesville - Drinks",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/gainesville--drinks",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/gainesville--drinks",
+          "createdAt": 1335889600,
+          "updatedAt": 1339187025,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 11
+          }
+        },
+        {
+          "id": "4fa012e9e4b061430e576ada",
+          "name": "Gainesville - Coffee & Sweets",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/gainesville--coffee--sweets",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/gainesville--coffee--sweets",
+          "createdAt": 1335890665,
+          "updatedAt": 1339186841,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 7
+          }
+        },
+        {
+          "id": "4f36ea0ee4b0571dc6f1348a",
+          "name": "New York - Outdoors",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/new-york--outdoors",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/new-york--outdoors",
+          "createdAt": 1328998926,
+          "updatedAt": 1339184112,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 6
+          }
+        },
+        {
+          "id": "4f36bdc4e4b0d408a3b71026",
+          "name": "New York - Coffee & Sweets",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/new-york--coffee--sweets",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/new-york--coffee--sweets",
+          "createdAt": 1328987588,
+          "updatedAt": 1339183805,
+          "photo": {
+            "id": "4e973ca2b803f7b4a5248abe",
+            "createdAt": 1318534306,
+            "url": "https://is1.4sqi.net/pix/ZWVBQDPE5XWWYT1KWRAWD11QJOSO3NMDVEOJBLOVFEO5UWRJ.jpg",
+            "sizes": {
+              "count": 4,
+              "items": [
+                {
+                  "url": "https://is1.4sqi.net/pix/ZWVBQDPE5XWWYT1KWRAWD11QJOSO3NMDVEOJBLOVFEO5UWRJ.jpg",
+                  "width": 720,
+                  "height": 431
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/ZWVBQDPE5XWWYT1KWRAWD11QJOSO3NMDVEOJBLOVFEO5UWRJ_300x300.jpg",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/ZWVBQDPE5XWWYT1KWRAWD11QJOSO3NMDVEOJBLOVFEO5UWRJ_100x100.jpg",
+                  "width": 100,
+                  "height": 100
+                },
+                {
+                  "url": "https://is0.4sqi.net/derived_pix/ZWVBQDPE5XWWYT1KWRAWD11QJOSO3NMDVEOJBLOVFEO5UWRJ_36x36.jpg",
+                  "width": 36,
+                  "height": 36
+                }
+              ]
+            },
+            "user": {
+              "id": "3821727",
+              "firstName": "Tim",
+              "lastName": "D.",
+              "photo": "https://is1.4sqi.net/userpix_thumbs/5OPSOLUR5JQOK1ZQ.jpg",
+              "tips": {
+                "count": 19
+              },
+              "lists": {
+                "groups": [
+                  {
+                    "type": "created",
+                    "count": 1,
+                    "items": []
+                  }
+                ]
+              },
+              "gender": "male",
+              "homeCity": "Gainesville, FL",
+              "bio": "Food enthusiast, UF undergrad, liberal Democrat.",
+              "contact": {
+                "twitter": "tdannecy",
+                "facebook": "1622370038"
+              }
+            },
+            "visibility": "public"
+          },
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 24
+          }
+        },
+        {
+          "id": "4f36bd97e4b0948a81531b48",
+          "name": "New York - Entertainment",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/new-york--entertainment",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/new-york--entertainment",
+          "createdAt": 1328987543,
+          "updatedAt": 1339182299,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 9
+          }
+        },
+        {
+          "id": "4fc100dce4b05b8502f26493",
+          "name": "Boston - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/boston--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/boston--food",
+          "createdAt": 1338048732,
+          "updatedAt": 1338223532,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 5
+          }
+        },
+        {
+          "id": "4fc25a52e4b0d6554abfafdd",
+          "name": "Boston - Coffee & Sweets",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/boston--coffee--sweets",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/boston--coffee--sweets",
+          "createdAt": 1338137170,
+          "updatedAt": 1338223532,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        },
+        {
+          "id": "4fc15757e4b0e700fbbcec1b",
+          "name": "Boston - Drinks",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/boston--drinks",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/boston--drinks",
+          "createdAt": 1338070871,
+          "updatedAt": 1338145628,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        },
+        {
+          "id": "4fa016b6e4b0e69a19bba972",
+          "name": "Gainesville - Outdoors",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/gainesville--outdoors",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/gainesville--outdoors",
+          "createdAt": 1335891638,
+          "updatedAt": 1335891638,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 1
+          }
+        },
+        {
+          "id": "4fa013f6e4b078516e8b1e9b",
+          "name": "Jacksonville - Outdoors",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/jacksonville--outdoors",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/jacksonville--outdoors",
+          "createdAt": 1335890934,
+          "updatedAt": 1335891606,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        },
+        {
+          "id": "4fa01430e4b0efa846c1cb6e",
+          "name": "Orlando - Outdoors",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/orlando--outdoors-1",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/orlando--outdoors-1",
+          "createdAt": 1335890992,
+          "updatedAt": 1335890992,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 1
+          }
+        },
+        {
+          "id": "4fa0137fe4b0bf3fb7da9813",
+          "name": "Jacksonville - Coffee & Sweets",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/jacksonville--coffee--sweets",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/jacksonville--coffee--sweets",
+          "createdAt": 1335890815,
+          "updatedAt": 1335890837,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        },
+        {
+          "id": "4fa0113de4b008751dda9eb5",
+          "name": "Orlando - Food",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/orlando--food",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/orlando--food",
+          "createdAt": 1335890237,
+          "updatedAt": 1335890246,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        },
+        {
+          "id": "4fa00e96e4b0d0d547c143aa",
+          "name": "Jacksonville - Entertainment",
+          "description": "",
+          "user": {
+            "id": "244888",
+            "firstName": "John",
+            "lastName": "A.",
+            "photo": "https://is0.4sqi.net/userpix_thumbs/HPZ3DMZADMDHTE3F.jpg",
+            "tips": {
+              "count": 0
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 21,
+                  "items": []
+                }
+              ]
+            },
+            "gender": "male",
+            "homeCity": "Brooklyn, NY",
+            "bio": "",
+            "contact": {
+              "twitter": "ashenden",
+              "facebook": "2009168"
+            }
+          },
+          "editable": false,
+          "public": true,
+          "collaborative": false,
+          "url": "https://foursquare.com/ashenden/list/jacksonville--entertainment",
+          "canonicalUrl": "https://foursquare.com/ashenden/list/jacksonville--entertainment",
+          "createdAt": 1335889558,
+          "updatedAt": 1335889572,
+          "followers": {
+            "count": 0
+          },
+          "listItems": {
+            "count": 2
+          }
+        }
+      ]
+    }
+  }
+}

@@ -25,13 +25,19 @@ class TestUsers < Test::Unit::TestCase
       stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}", "user_tips.json")
       tips = @client.user_tips('self')
       tips.items.first.text.should == "Encontrei mesas e chao sujos."
-      tips.items.size.should == 12 
+      tips.items.size.should == 12
     end
 
     should "fetch tips and filter with term #{QUERY}" do
       stub_get("https://api.foursquare.com/v2/users/self/tips?oauth_token=#{@client.oauth_token}&query=#{QUERY}", "user_tips.json")
       tips = @client.user_tips('self', {:query => QUERY})
-      tips.items.size.should == 1 
+      tips.items.size.should == 1
+    end
+
+    should "fetch lists for a single user" do
+      stub_get("https://api.foursquare.com/v2/users/self/lists?oauth_token=#{@client.oauth_token}", "user_lists.json")
+      lists = @client.user_lists('self')
+      lists.items.size.should == 21
     end
 
     #TODO refactoring all call to method stub_get
