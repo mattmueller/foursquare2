@@ -20,5 +20,11 @@ class TestLists < Test::Unit::TestCase
       list.name.should == "Ramen Spots"
     end
 
+    should "update a list" do
+      stub_post("https://api.foursquare.com/v2/lists/4f230d90e4b0b653a21ffd0d/update?oauth_token=#{@client.oauth_token}&name=Ramen+Sports", "list_updated.json")
+      list = @client.update_list('4f230d90e4b0b653a21ffd0d', :name => "Ramen Sports")
+      list.name.should == "Ramen Sports"
+    end
+
   end
 end
