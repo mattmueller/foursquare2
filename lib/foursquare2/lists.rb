@@ -76,5 +76,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response.item)
     end
 
+    # Move an item on a list: https://developer.foursquare.com/docs/lists/moveitem
+    #
+    # @param [String] list_id - The id of the list on which the item is moved
+    # @param [String] item_id = The id of the item to move
+    # @param [Hash] options
+    # @option options String :beforeId - (optional) move itemId before beforeId
+    # @option options String :afterId - (optional) move itemId after afterId
+
+    def move_list_item(list_id, item_id, options={})
+      response = connection.post do |req|
+        req.url "lists/#{list_id}/moveitem", {:itemId => item_id}.merge(options)
+      end
+      return_error_or_body(response, response.body.response.list)
+    end
+
   end
 end

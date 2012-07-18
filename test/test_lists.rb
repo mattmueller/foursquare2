@@ -40,5 +40,14 @@ class TestLists < Test::Unit::TestCase
       item = @client.delete_list_item(@list_id, item_id)
       item.id.should == item_id
     end
+
+    should "move an item on a list" do
+      item_id = 't4d404fc934f42d43b2624385'
+      before_id = 'v4a01c477f964a520f9701fe3'
+      stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/moveitem?oauth_token=#{@client.oauth_token}&itemId=#{item_id}&beforeId=#{before_id}", "list_moved_item.json")
+      list = @client.move_list_item(@list_id, item_id, :beforeId => before_id)
+      list.listItems.items[0].id.should == item_id
+      list.listItems.items[1].id.should == before_id
+    end
   end
 end
