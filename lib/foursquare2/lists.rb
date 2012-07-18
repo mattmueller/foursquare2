@@ -46,5 +46,23 @@ module Foursquare2
         return_error_or_body(response, response.body.response.list)
     end
 
+    # Add an item to a list: https://developer.foursquare.com/docs/lists/additem
+    #
+    # @param [String] list_id - The id of the list to update
+    # @param [Hash] options (all optional)
+    # @option options String :venueId - A venue to add to the list.
+    # @option options String :text - text to add to item
+    # @option options String :url - associate a url with the tip
+    # @option options String :tipId - Used to add a tip to a list
+    # @option options String :listId - Used with itemId to copy item from a list
+    # @option options String :itemId - Used with listId to copy item from a list
+
+    def add_list_item(list_id, options={})
+      response = connection.post do |req|
+        req.url "lists/#{list_id}/additem", options
+      end
+        return_error_or_body(response, response.body.response.item)
+    end
+
   end
 end
