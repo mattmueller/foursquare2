@@ -1,0 +1,1371 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "list": {
+      "id": "4f230d90e4b0b653a21ffd0d",
+      "name": "Restaurants to Try",
+      "description": "There's too many in this city... gotta start keeping track of which one's I keep hearing about!",
+      "type": "others",
+      "user": {
+        "id": "302686",
+        "firstName": "Jesse",
+        "lastName": "L.",
+        "photo": "https://is1.4sqi.net/userpix_thumbs/JMTL2G51KI3G1TBV.jpg",
+        "tips": {
+          "count": 20
+        },
+        "lists": {
+          "groups": [
+            {
+              "type": "created",
+              "count": 4,
+              "items": []
+            }
+          ]
+        },
+        "gender": "male",
+        "homeCity": "New York, NY",
+        "bio": "",
+        "contact": {
+          "twitter": "jesselash",
+          "facebook": "584575551"
+        }
+      },
+      "editable": false,
+      "public": true,
+      "collaborative": false,
+      "url": "https://foursquare.com/jesselash/list/restaurants-to-try",
+      "canonicalUrl": "https://foursquare.com/jesselash/list/restaurants-to-try",
+      "createdAt": 1327697296,
+      "updatedAt": 1337967732,
+      "photo": {
+        "id": "4e750212ae60c32850f06009",
+        "createdAt": 1316291090,
+        "url": "https://is0.4sqi.net/pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0.jpg",
+        "sizes": {
+          "count": 4,
+          "items": [
+            {
+              "url": "https://is0.4sqi.net/pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0.jpg",
+              "width": 537,
+              "height": 720
+            },
+            {
+              "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_300x300.jpg",
+              "width": 300,
+              "height": 300
+            },
+            {
+              "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_100x100.jpg",
+              "width": 100,
+              "height": 100
+            },
+            {
+              "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_36x36.jpg",
+              "width": 36,
+              "height": 36
+            }
+          ]
+        },
+        "user": {
+          "id": "25309",
+          "firstName": "Guillo",
+          "lastName": "..",
+          "photo": "https://is0.4sqi.net/userpix_thumbs/EQMPM5XDGCQYNFAL.jpg",
+          "tips": {
+            "count": 42
+          },
+          "lists": {
+            "groups": [
+              {
+                "type": "created",
+                "count": 4,
+                "items": []
+              }
+            ]
+          },
+          "gender": "male",
+          "homeCity": "Brooklyn, NY",
+          "bio": "",
+          "contact": {}
+        },
+        "visibility": "public"
+      },
+      "doneCount": 0,
+      "visitedCount": 0,
+      "venueCount": 8,
+      "categories": {
+        "count": 8,
+        "items": [
+          {
+            "category": {
+              "id": "4bf58dd8d48988d1c1941735",
+              "name": "Mexican Restaurant",
+              "pluralName": "Mexican Restaurants",
+              "shortName": "Mexican",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/mexican_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d10f941735",
+              "name": "Indian Restaurant",
+              "pluralName": "Indian Restaurants",
+              "shortName": "Indian",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/indian_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d107941735",
+              "name": "Argentinian Restaurant",
+              "pluralName": "Argentinian Restaurants",
+              "shortName": "Argentinian",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/argentinian_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d1cd941735",
+              "name": "South American Restaurant",
+              "pluralName": "South American Restaurants",
+              "shortName": "South American",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/southamerican_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d151941735",
+              "name": "Taco Place",
+              "pluralName": "Taco Places",
+              "shortName": "Tacos",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/tacos_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d1be941735",
+              "name": "Latin American Restaurant",
+              "pluralName": "Latin American Restaurants",
+              "shortName": "Latin American",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/default_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d123941735",
+              "name": "Wine Bar",
+              "pluralName": "Wine Bars",
+              "shortName": "Wine Bar",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/nightlife/wine_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          },
+          {
+            "category": {
+              "id": "4bf58dd8d48988d109941735",
+              "name": "Eastern European Restaurant",
+              "pluralName": "Eastern European Restaurants",
+              "shortName": "Eastern European",
+              "icon": {
+                "prefix": "https://foursquare.com/img/categories/food/default_",
+                "sizes": [
+                  32,
+                  44,
+                  64,
+                  88,
+                  256
+                ],
+                "name": ".png"
+              }
+            },
+            "count": 1
+          }
+        ]
+      },
+      "following": true,
+      "followers": {
+        "count": 1
+      },
+      "collaborators": {
+        "count": 0,
+        "items": []
+      },
+      "listItems": {
+        "count": 8,
+        "items": [
+          {
+            "id": "v4a01c477f964a520f9701fe3",
+            "createdAt": 1327697309,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4a01c477f964a520f9701fe3",
+              "name": "El Almacen",
+              "contact": {
+                "phone": "7182187284",
+                "formattedPhone": "(718) 218-7284"
+              },
+              "location": {
+                "address": "557 Driggs Ave",
+                "crossStreet": "btw 6th and 7th",
+                "lat": 40.71686922,
+                "lng": -73.956499,
+                "postalCode": "11211",
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d107941735",
+                  "name": "Argentinian Restaurant",
+                  "pluralName": "Argentinian Restaurants",
+                  "shortName": "Argentinian",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/argentinian_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 2490,
+                "usersCount": 1618,
+                "tipCount": 70
+              },
+              "likes": {
+                "count": 3,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 3,
+                    "items": [
+                      {
+                        "id": "227554",
+                        "firstName": "Aya",
+                        "lastName": "R.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/GTHGNQO1LSHTA5VJ.jpg",
+                        "tips": {
+                          "count": 35
+                        },
+                        "gender": "female",
+                        "homeCity": "Brooklyn, New York",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "ayarosen",
+                          "facebook": "706145619"
+                        }
+                      },
+                      {
+                        "id": "227465",
+                        "firstName": "Ned",
+                        "lastName": "R.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/RZERQRTUEPCQHOLS.jpg",
+                        "tips": {
+                          "count": 5
+                        },
+                        "gender": "male",
+                        "homeCity": "New York, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "nedrosen",
+                          "facebook": "623193271"
+                        }
+                      },
+                      {
+                        "id": "1425521",
+                        "firstName": "Roberta",
+                        "lastName": "C.",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/2GTFVEXVNGHKX4RQ.jpg",
+                        "tips": {
+                          "count": 21
+                        },
+                        "gender": "female",
+                        "homeCity": "Milano",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "robertacerri",
+                          "facebook": "522855858"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Aya R, Ned R & Roberta C"
+              },
+              "like": false,
+              "menu": {
+                "type": "foodAndBeverage",
+                "url": "https://foursquare.com/v/el-almacen/4a01c477f964a520f9701fe3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a01c477f964a520f9701fe3/device_menu"
+              },
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4d127ee92e5837042675e4d1",
+            "createdAt": 1327697316,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4d127ee92e5837042675e4d1",
+              "name": "Mesa Azteca",
+              "contact": {},
+              "location": {
+                "address": "91 Wyckoff Ave",
+                "crossStreet": "btwn Suydam St & Hart St",
+                "lat": 40.70521114127741,
+                "lng": -73.92014043499093,
+                "postalCode": "11237",
+                "city": "Brooklyn",
+                "state": "New York",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1c1941735",
+                  "name": "Mexican Restaurant",
+                  "pluralName": "Mexican Restaurants",
+                  "shortName": "Mexican",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/mexican_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 419,
+                "usersCount": 239,
+                "tipCount": 12
+              },
+              "likes": {
+                "count": 2,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 2,
+                    "items": [
+                      {
+                        "id": "8681466",
+                        "firstName": "Jacqueline",
+                        "lastName": "V.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/TQSM51QJRVNDBQJU.jpg",
+                        "tips": {
+                          "count": 82
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "female",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "jrvandusen",
+                          "facebook": "17403465"
+                        }
+                      },
+                      {
+                        "id": "30255497",
+                        "firstName": "Bobby",
+                        "lastName": "K.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/QPIKDQWSKF11JS1M.jpg",
+                        "tips": {
+                          "count": 0
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "male",
+                        "homeCity": "New York, NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "726925503"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Jacqueline V & Bobby K"
+              },
+              "like": false,
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4b525a4ef964a520d17827e3",
+            "createdAt": 1327697327,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4b525a4ef964a520d17827e3",
+              "name": "Tabar?",
+              "contact": {
+                "phone": "3473350187",
+                "formattedPhone": "(347) 335-0187"
+              },
+              "location": {
+                "address": "221 S 1st St",
+                "crossStreet": "btw Driggs & Roebling",
+                "lat": 40.713051,
+                "lng": -73.959039,
+                "postalCode": "11211",
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1cd941735",
+                  "name": "South American Restaurant",
+                  "pluralName": "South American Restaurants",
+                  "shortName": "South American",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/southamerican_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "checkinsCount": 1162,
+                "usersCount": 901,
+                "tipCount": 29
+              },
+              "url": "http://www.tabarenyc.com",
+              "likes": {
+                "count": 1,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 1,
+                    "items": [
+                      {
+                        "id": "2621492",
+                        "firstName": "Jordan",
+                        "lastName": "O.",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/EJFTJWZBVDWFXES4.jpg",
+                        "tips": {
+                          "count": 5
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "male",
+                        "homeCity": "New York, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "jordanorelli",
+                          "facebook": "1804244"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Jordan O"
+              },
+              "like": false,
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 1,
+                "items": [
+                  {
+                    "id": "4f8c97b67716bda982fbfb33",
+                    "type": "frequency",
+                    "message": "complementary glass of wine or cocktail",
+                    "imageUrls": {
+                      "count": 0
+                    },
+                    "description": "Unlocked every 3 check-ins",
+                    "finePrint": "Dine in only. Must be 21+. Must be redeemed with food purchase.",
+                    "icon": "frequency",
+                    "title": "Loyalty Special",
+                    "provider": "foursquare",
+                    "redemption": "standard",
+                    "likes": {
+                      "count": 0,
+                      "groups": []
+                    }
+                  }
+                ]
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4ba19cb0f964a520c2c337e3",
+            "createdAt": 1329011647,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4ba19cb0f964a520c2c337e3",
+              "name": "The Bodega",
+              "contact": {
+                "twitter": "The_Bodega"
+              },
+              "location": {
+                "address": "24 St Nicholas Ave.",
+                "crossStreet": "at Troutman St.",
+                "lat": 40.70759614636528,
+                "lng": -73.92180919647217,
+                "postalCode": "11237",
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d123941735",
+                  "name": "Wine Bar",
+                  "pluralName": "Wine Bars",
+                  "shortName": "Wine Bar",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/nightlife/wine_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "checkinsCount": 1961,
+                "usersCount": 644,
+                "tipCount": 22
+              },
+              "url": "http://thebodegabk.com",
+              "likes": {
+                "count": 1,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 1,
+                    "items": [
+                      {
+                        "id": "8681466",
+                        "firstName": "Jacqueline",
+                        "lastName": "V.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/TQSM51QJRVNDBQJU.jpg",
+                        "tips": {
+                          "count": 82
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "female",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "jrvandusen",
+                          "facebook": "17403465"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Jacqueline V"
+              },
+              "like": false,
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4a453e4cf964a520f1a71fe3",
+            "createdAt": 1329276152,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4a453e4cf964a520f1a71fe3",
+              "name": "Empanada Mama",
+              "contact": {
+                "phone": "2126989008",
+                "formattedPhone": "(212) 698-9008"
+              },
+              "location": {
+                "address": "763 9th Ave.",
+                "crossStreet": "btwn 51st & 52nd St.",
+                "lat": 40.764217,
+                "lng": -73.988321,
+                "postalCode": "10019",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1be941735",
+                  "name": "Latin American Restaurant",
+                  "pluralName": "Latin American Restaurants",
+                  "shortName": "Latin American",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/default_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 8711,
+                "usersCount": 4885,
+                "tipCount": 151
+              },
+              "url": "http://www.empmamanyc.com/",
+              "likes": {
+                "count": 12,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 12,
+                    "items": []
+                  }
+                ],
+                "summary": "12 likes"
+              },
+              "like": false,
+              "menu": {
+                "type": "foodAndBeverage",
+                "url": "https://foursquare.com/v/empanada-mama/4a453e4cf964a520f1a71fe3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a453e4cf964a520f1a71fe3/device_menu"
+              },
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4a916658f964a520151a20e3",
+            "createdAt": 1329356513,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4a916658f964a520151a20e3",
+              "name": "Karczma",
+              "contact": {
+                "phone": "7183491744",
+                "formattedPhone": "(718) 349-1744"
+              },
+              "location": {
+                "address": "136 Greenpoint Avenue",
+                "lat": 40.730149914529,
+                "lng": -73.95505413408203,
+                "postalCode": "11222",
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d109941735",
+                  "name": "Eastern European Restaurant",
+                  "pluralName": "Eastern European Restaurants",
+                  "shortName": "Eastern European",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/default_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 1293,
+                "usersCount": 825,
+                "tipCount": 22
+              },
+              "url": "http://karczmabrooklyn.com/",
+              "likes": {
+                "count": 3,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 3,
+                    "items": [
+                      {
+                        "id": "1530851",
+                        "firstName": "Talisa",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/NM0SQ0HNLTQBNQOS.png",
+                        "tips": {
+                          "count": 116
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 11,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "female",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "Snack patrol.",
+                        "contact": {
+                          "twitter": "talisa"
+                        }
+                      },
+                      {
+                        "id": "30900565",
+                        "firstName": "Dominic",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/5F4PCE3S2E13S5LO.jpg",
+                        "tips": {
+                          "count": 1
+                        },
+                        "gender": "male",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "itsewonder",
+                          "facebook": "656115325"
+                        }
+                      },
+                      {
+                        "id": "2031459",
+                        "firstName": "Maria",
+                        "lastName": "B.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/ICQKTPEDK3WSLUFH.jpg",
+                        "tips": {
+                          "count": 19
+                        },
+                        "gender": "female",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "594226696"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Talisa, Dominic & Maria B"
+              },
+              "like": false,
+              "menu": {
+                "type": "foodAndBeverage",
+                "url": "https://foursquare.com/v/karczma/4a916658f964a520151a20e3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a916658f964a520151a20e3/device_menu"
+              },
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "v4bb93b70cf2fc9b6fe64a002",
+            "createdAt": 1330557642,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "venue": {
+              "id": "4bb93b70cf2fc9b6fe64a002",
+              "name": "Gandhi Fine Indian Cuisine",
+              "contact": {},
+              "location": {
+                "address": "2032 Bedford Ave",
+                "crossStreet": "Bet Clarkson Ave. and Parkside Ave.",
+                "lat": 40.65512031,
+                "lng": -73.9563952,
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d10f941735",
+                  "name": "Indian Restaurant",
+                  "pluralName": "Indian Restaurants",
+                  "shortName": "Indian",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/indian_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 181,
+                "usersCount": 104,
+                "tipCount": 15
+              },
+              "likes": {
+                "count": 2,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 2,
+                    "items": [
+                      {
+                        "id": "635287",
+                        "firstName": "Miha",
+                        "lastName": "R.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/ORTXGMB0MGS3BADV.jpg",
+                        "tips": {
+                          "count": 20
+                        },
+                        "gender": "male",
+                        "homeCity": "New York City",
+                        "bio": "I design, build and ship products. All the time.",
+                        "contact": {
+                          "twitter": "mihar",
+                          "facebook": "624306434"
+                        }
+                      },
+                      {
+                        "id": "11792294",
+                        "firstName": "Karen",
+                        "lastName": "T.",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/UJL1K04JKL2I32BE.jpg",
+                        "tips": {
+                          "count": 1
+                        },
+                        "gender": "female",
+                        "homeCity": "NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "1353000138"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Miha R & Karen T"
+              },
+              "like": false,
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          },
+          {
+            "id": "t4d404fc934f42d43b2624385",
+            "createdAt": 1337967732,
+            "todo": false,
+            "done": false,
+            "visitedCount": 0,
+            "tip": {
+              "id": "4d404fc934f42d43b2624385",
+              "createdAt": 1296060361,
+              "text": "No cubed chicken or orange cheese here... just shockingly simple, unpretentious and delicious street style Mexican food. - Anthony Bourdain, host of No Reservations",
+              "likes": {
+                "count": 68,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 2,
+                    "items": [
+                      {
+                        "id": "1012108",
+                        "firstName": "Ezzy",
+                        "lastName": "C.",
+                        "photo": "https://is1.4sqi.net/userpix_thumbs/X24KGI00RDY1JXDB.jpg",
+                        "tips": {
+                          "count": 2
+                        },
+                        "gender": "male",
+                        "homeCity": "Brooklyn, NY",
+                        "bio": "",
+                        "contact": {
+                          "twitter": "esmeraldoc",
+                          "facebook": "1145400301"
+                        }
+                      },
+                      {
+                        "id": "25966153",
+                        "firstName": "Jude",
+                        "lastName": "S.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/10V5JE5WGOUNHB5K.jpg",
+                        "tips": {
+                          "count": 1
+                        },
+                        "gender": "female",
+                        "homeCity": "Las Vegas, NV",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "710377693"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "68 likes"
+              },
+              "like": false,
+              "todo": {
+                "count": 71
+              },
+              "done": {
+                "count": 67
+              },
+              "user": {
+                "id": "4579353",
+                "firstName": "Travel Channel",
+                "photo": "https://is1.4sqi.net/userpix_thumbs/LJL3OPUPJLS2MALA.png",
+                "type": "page",
+                "followers": {
+                  "count": 177253,
+                  "groups": []
+                },
+                "tips": {
+                  "count": 649
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 25,
+                      "items": []
+                    }
+                  ]
+                },
+                "gender": "none",
+                "homeCity": "Everywhere, United States",
+                "bio": "",
+                "contact": {
+                  "twitter": "travelchannel",
+                  "facebook": "15672033850"
+                }
+              }
+            },
+            "photo": {
+              "id": "4e750212ae60c32850f06009",
+              "createdAt": 1316291090,
+              "url": "https://is0.4sqi.net/pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0.jpg",
+              "sizes": {
+                "count": 4,
+                "items": [
+                  {
+                    "url": "https://is0.4sqi.net/pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0.jpg",
+                    "width": 537,
+                    "height": 720
+                  },
+                  {
+                    "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_300x300.jpg",
+                    "width": 300,
+                    "height": 300
+                  },
+                  {
+                    "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_100x100.jpg",
+                    "width": 100,
+                    "height": 100
+                  },
+                  {
+                    "url": "https://is1.4sqi.net/derived_pix/3PJWYSHPJOPVE54T4ALKRIYU1WNHX0ZSOH334HTC3KB2NYG0_36x36.jpg",
+                    "width": 36,
+                    "height": 36
+                  }
+                ]
+              },
+              "user": {
+                "id": "25309",
+                "firstName": "Guillo",
+                "lastName": "..",
+                "photo": "https://is0.4sqi.net/userpix_thumbs/EQMPM5XDGCQYNFAL.jpg",
+                "tips": {
+                  "count": 42
+                },
+                "lists": {
+                  "groups": [
+                    {
+                      "type": "created",
+                      "count": 4,
+                      "items": []
+                    }
+                  ]
+                },
+                "gender": "male",
+                "homeCity": "Brooklyn, NY",
+                "bio": "",
+                "contact": {}
+              },
+              "visibility": "public"
+            },
+            "venue": {
+              "id": "4a21c1caf964a520397d1fe3",
+              "name": "Tortilleria Mexicana Tres Hermanos",
+              "contact": {
+                "phone": "7184563422",
+                "formattedPhone": "(718) 456-3422"
+              },
+              "location": {
+                "address": "271 Starr St",
+                "crossStreet": "btwn St Nicholas & Wyckoff",
+                "lat": 40.706516297693014,
+                "lng": -73.92187995415526,
+                "postalCode": "11237",
+                "city": "Brooklyn",
+                "state": "NY",
+                "country": "United States",
+                "cc": "US"
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d151941735",
+                  "name": "Taco Place",
+                  "pluralName": "Taco Places",
+                  "shortName": "Tacos",
+                  "icon": {
+                    "prefix": "https://foursquare.com/img/categories/food/tacos_",
+                    "sizes": [
+                      32,
+                      44,
+                      64,
+                      88,
+                      256
+                    ],
+                    "name": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "checkinsCount": 2810,
+                "usersCount": 1260,
+                "tipCount": 54
+              },
+              "likes": {
+                "count": 6,
+                "groups": [
+                  {
+                    "type": "others",
+                    "count": 6,
+                    "items": [
+                      {
+                        "id": "27589401",
+                        "firstName": "Steven",
+                        "lastName": "M.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/PHT1JEHLZZJDFWA0.jpg",
+                        "tips": {
+                          "count": 1
+                        },
+                        "gender": "male",
+                        "homeCity": "New York, NY",
+                        "bio": "",
+                        "contact": {}
+                      },
+                      {
+                        "id": "29921987",
+                        "firstName": "Lesly",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/TMCOR3PCUTO5TES4.jpg",
+                        "tips": {
+                          "count": 1
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "female",
+                        "homeCity": "Ridgewood, NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "100002989644280"
+                        }
+                      },
+                      {
+                        "id": "30255497",
+                        "firstName": "Bobby",
+                        "lastName": "K.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/QPIKDQWSKF11JS1M.jpg",
+                        "tips": {
+                          "count": 0
+                        },
+                        "lists": {
+                          "groups": [
+                            {
+                              "type": "created",
+                              "count": 1,
+                              "items": []
+                            }
+                          ]
+                        },
+                        "gender": "male",
+                        "homeCity": "New York, NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "726925503"
+                        }
+                      },
+                      {
+                        "id": "19462916",
+                        "firstName": "Harry",
+                        "lastName": "G.",
+                        "photo": "https://is0.4sqi.net/userpix_thumbs/MWFXW1DBV1SRHJND.jpg",
+                        "tips": {
+                          "count": 3
+                        },
+                        "gender": "male",
+                        "homeCity": "NY",
+                        "bio": "",
+                        "contact": {
+                          "facebook": "205104495"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "summary": "Steven M, Lesly, Bobby K & 3 others"
+              },
+              "like": false,
+              "menu": {
+                "type": "foodAndBeverage",
+                "url": "https://foursquare.com/v/tortilleria-mexicana-tres-hermanos/4a21c1caf964a520397d1fe3/menu",
+                "mobileUrl": "https://foursquare.com/v/4a21c1caf964a520397d1fe3/device_menu"
+              },
+              "beenHere": {
+                "count": 0,
+                "marked": false
+              },
+              "specials": {
+                "count": 0,
+                "items": []
+              }
+            },
+            "listed": {
+              "count": 0,
+              "items": []
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -30,6 +30,24 @@ module Foursquare2
         return_error_or_body(response, response.body.response.list)
     end
 
+    # Follow a list: https://developer.foursquare.com/docs/lists/follow
+    #
+    # @param [String] list_id - The id of the list to follow.
+
+    def follow_list(list_id)
+      response = connection.post "lists/#{list_id}/follow"
+      return_error_or_body(response, response.body.response.list)
+    end
+
+    # Unfollow a list: https://developer.foursquare.com/docs/lists/unfollow
+    #
+    # @param [String] list_id - The id of the list to unfollow.
+
+    def unfollow_list(list_id)
+      response = connection.post "lists/#{list_id}/unfollow"
+      return_error_or_body(response, response.body.response.list)
+    end
+
     # Update a list: https://developer.foursquare.com/docs/lists/update
     #
     # @param [String] list_id - The id of the list to update

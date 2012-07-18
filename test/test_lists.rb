@@ -21,6 +21,18 @@ class TestLists < Test::Unit::TestCase
       list.name.should == "Ramen Spots"
     end
 
+    should "follow a list" do
+      stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/follow?oauth_token=#{@client.oauth_token}", "list_followed.json")
+      list = @client.follow_list(@list_id)
+      list.following.should == true
+    end
+
+    should "unfollow a list" do
+      stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/unfollow?oauth_token=#{@client.oauth_token}", "list.json")
+      list = @client.unfollow_list(@list_id)
+      list.following.should == false
+    end
+
     should "update a list" do
       stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/update?oauth_token=#{@client.oauth_token}&name=Ramen+Sports", "list_updated.json")
       list = @client.update_list(@list_id, :name => "Ramen Sports")
