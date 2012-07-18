@@ -64,5 +64,17 @@ module Foursquare2
         return_error_or_body(response, response.body.response.item)
     end
 
+    # Delete an item from a list: https://developer.foursquare.com/docs/lists/deleteitem
+    #
+    # @param [String] list_id - The id of the list to delete item from
+    # @param [String] item_id = The id of the item to delete from list
+
+    def delete_list_item(list_id, item_id)
+      response = connection.post do |req|
+        req.url "lists/#{list_id}/deleteitem", :itemId => item_id
+      end
+      return_error_or_body(response, response.body.response.item)
+    end
+
   end
 end

@@ -30,9 +30,15 @@ class TestLists < Test::Unit::TestCase
     should "add an item to a list" do
       venue_id = '4ba19cb0f964a520c2c337e3'
       stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/additem?oauth_token=#{@client.oauth_token}&venueId=#{venue_id}", "list_item.json")
-      list_item = @client.add_list_item(@list_id, :venueId => venue_id)
-      list_item.venue.id.should == venue_id
+      item = @client.add_list_item(@list_id, :venueId => venue_id)
+      item.venue.id.should == venue_id
     end
 
+    should "delete an item from a list" do
+      item_id = 'v4ba19cb0f964a520c2c337e3'
+      stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/deleteitem?oauth_token=#{@client.oauth_token}&itemId=#{item_id}", "list_item.json")
+      item = @client.delete_list_item(@list_id, item_id)
+      item.id.should == item_id
+    end
   end
 end
