@@ -154,6 +154,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response.mayorships)
     end
 
+    # Get the lists for a given user.
+    #
+    # @param [String] user_id - The user to retrieve lists for.
+    # @param [Hash] options
+    # @option options String :group - One of: created, edited, followed, friends, or suggestions
+    # @option options String :ll - Location of the user, required in order to receive the suggested group.
+
+    def user_lists(user_id, options={})
+      response = connection.get do |req|
+        req.url "users/#{user_id}/lists", options
+      end
+      return_error_or_body(response, response.body.response.lists)
+    end
+
     # Request friendship with a user
     #
     # @param [String] user_id - The user to request friendship with.
@@ -163,7 +177,7 @@ module Foursquare2
         req.url "users/#{user_id}/request"
       end
       return_error_or_body(response, response.body.response)
-    end   
+    end
 
     # Unfriend a user
     #
@@ -174,7 +188,7 @@ module Foursquare2
         req.url "users/#{user_id}/unfriend"
       end
       return_error_or_body(response, response.body.response)
-    end 
+    end
 
     # Approve friendship with a user.
     #
@@ -185,7 +199,7 @@ module Foursquare2
         req.url "users/#{user_id}/approve"
       end
       return_error_or_body(response, response.body.response)
-    end 
+    end
 
     # Deny friendship with a user.
     #
@@ -196,7 +210,7 @@ module Foursquare2
         req.url "users/#{user_id}/deny"
       end
       return_error_or_body(response, response.body.response)
-    end 
+    end
 
     # Set pings for a friend
     #
@@ -208,7 +222,7 @@ module Foursquare2
         req.url "users/#{user_id}/setpings", value
       end
       return_error_or_body(response, response.body.response)
-    end 
+    end
 
   end
 end
