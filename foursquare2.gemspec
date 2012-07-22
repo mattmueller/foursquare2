@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "foursquare2"
-  s.version = "1.7.0"
+  s.version = "1.8.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
-  s.date = "2012-07-08"
+  s.date = "2012-07-22"
   s.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
   s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
   s.extra_rdoc_files = [
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/foursquare2/campaigns.rb",
     "lib/foursquare2/checkins.rb",
     "lib/foursquare2/client.rb",
+    "lib/foursquare2/lists.rb",
     "lib/foursquare2/pages.rb",
     "lib/foursquare2/photos.rb",
     "lib/foursquare2/settings.rb",
@@ -42,6 +43,12 @@ Gem::Specification.new do |s|
     "test/fixtures/error.json",
     "test/fixtures/explore_venues.json",
     "test/fixtures/friend_checkins.json",
+    "test/fixtures/list.json",
+    "test/fixtures/list_created.json",
+    "test/fixtures/list_followed.json",
+    "test/fixtures/list_item.json",
+    "test/fixtures/list_moved_item.json",
+    "test/fixtures/list_updated.json",
     "test/fixtures/managed_venues.json",
     "test/fixtures/no_venues_by_tip.json",
     "test/fixtures/page.json",
@@ -58,6 +65,7 @@ Gem::Specification.new do |s|
     "test/fixtures/suggest_completion_venues.json",
     "test/fixtures/tip.json",
     "test/fixtures/user.json",
+    "test/fixtures/user_lists.json",
     "test/fixtures/user_mayorships.json",
     "test/fixtures/user_tips.json",
     "test/fixtures/user_tips_empty.json",
@@ -70,6 +78,7 @@ Gem::Specification.new do |s|
     "test/test_campaigns.rb",
     "test/test_checkins.rb",
     "test/test_client.rb",
+    "test/test_lists.rb",
     "test/test_pages.rb",
     "test/test_photos.rb",
     "test/test_specials.rb",
