@@ -9,7 +9,7 @@ module Foursquare2
     def filter tips, term
       tip = []
       unless tips.nil?
-        tips.items.each do |check_tip| 
+        tips.items.each do |check_tip|
           tip << check_tip if check_tip.text.downcase.include? term.downcase
         end
       end
@@ -27,9 +27,10 @@ module Foursquare2
   require 'foursquare2/checkins'
   require 'foursquare2/venues'
   require 'foursquare2/pages'
+  require 'foursquare2/lists'
   require 'foursquare2/client'
   require 'foursquare2/api_error'
-  
+
 
 end
 
