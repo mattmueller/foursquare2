@@ -54,7 +54,7 @@ module Foursquare2
       response = connection.get("venues/categories")
       return_error_or_body(response, response.body.response.categories)
     end
-    
+
     # Retrieve links for a venue.
     #
     # param [String] venue_id The ID of the venue
@@ -150,7 +150,7 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
-    # Suggest venue completions. Returns a list of mini-venues partially matching the search term, near the location. 
+    # Suggest venue completions. Returns a list of mini-venues partially matching the search term, near the location.
     #
     # @param [Hash]  options
     # @option options String :ll - Latitude and longitude in format LAT,LON
@@ -166,7 +166,7 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-  
+
     # Retrieve menus for a venue.
     #
     # param [String] venue_id The ID of the venue
@@ -175,16 +175,31 @@ module Foursquare2
       response = connection.get("venues/#{venue_id}/menu")
       return_error_or_body(response, response.body.response)
     end
-    
+
     #
     #Returns a list of venues managed
     #
-    
+
     def managed_venues()
       response = connection.get do |req|
         req.url "venues/managed"
       end
       return_error_or_body(response, response.body.response.venues)
     end
-  end 
+
+    # Get venue stats over a given time range. Client instance should represent an OAuth user who is the venue owner.
+    # Note: returns more detailed statistics than the basic stats returned when calling venue(venue_id)
+    #
+    # param [String] venue_id The ID of the venue managed by the current user
+    # @param [Hash] options
+    # @option options Integer :startAt - The start of the time range to retrieve stats for (seconds since epoch). If omitted, all-time stats will be returned.
+    # @option options Integer :endAt - The end of the time range to retrieve stats for (seconds since epoch). If omitted, the current time is assumed.
+
+    def managed_venue_stats(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/stats", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+  end
 end

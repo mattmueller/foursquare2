@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "stats": {
+      "totalCheckins": 1,
+      "newCheckins": 1,
+      "uniqueVisitors": 1,
+      "sharing": {
+        "twitter": 0,
+        "facebook": 0
+      },
+      "genderBreakdown": {
+        "female": 0,
+        "male": 1
+      },
+      "ageBreakdown": [{
+        "age": "13-17",
+        "checkins": 0
+      }, {
+        "age": "18-24",
+        "checkins": 0
+      }, {
+        "age": "25-34",
+        "checkins": 1
+      }, {
+        "age": "35-44",
+        "checkins": 0
+      }, {
+        "age": "45-54",
+        "checkins": 0
+      }, {
+        "age": "55+",
+        "checkins": 0
+      }],
+      "hourBreakdown": [{
+        "hour": 0,
+        "checkins": 1
+      }, {
+        "hour": 1,
+        "checkins": 0
+      }, {
+        "hour": 2,
+        "checkins": 0
+      }, {
+        "hour": 3,
+        "checkins": 0
+      }, {
+        "hour": 4,
+        "checkins": 0
+      }, {
+        "hour": 5,
+        "checkins": 0
+      }, {
+        "hour": 6,
+        "checkins": 0
+      }, {
+        "hour": 7,
+        "checkins": 0
+      }, {
+        "hour": 8,
+        "checkins": 0
+      }, {
+        "hour": 9,
+        "checkins": 0
+      }, {
+        "hour": 10,
+        "checkins": 0
+      }, {
+        "hour": 11,
+        "checkins": 0
+      }, {
+        "hour": 12,
+        "checkins": 0
+      }, {
+        "hour": 13,
+        "checkins": 0
+      }, {
+        "hour": 14,
+        "checkins": 0
+      }, {
+        "hour": 15,
+        "checkins": 0
+      }, {
+        "hour": 16,
+        "checkins": 0
+      }, {
+        "hour": 17,
+        "checkins": 0
+      }, {
+        "hour": 18,
+        "checkins": 0
+      }, {
+        "hour": 19,
+        "checkins": 0
+      }, {
+        "hour": 20,
+        "checkins": 0
+      }, {
+        "hour": 21,
+        "checkins": 0
+      }, {
+        "hour": 22,
+        "checkins": 0
+      }, {
+        "hour": 23,
+        "checkins": 0
+      }],
+      "visitCountHistogram": [{
+        "checkins": 1,
+        "users": 1
+      }],
+      "topVisitors": [{
+        "user": {
+          "id": "4372259",
+          "firstName": "Murugan",
+          "lastName": "V.",
+          "photo": "https://is1.4sqi.net/userpix_thumbs/2QVZXGQQA2LILWY3.jpg",
+          "tips": {
+            "count": 2
+          },
+          "gender": "male",
+          "homeCity": "Chennai, India",
+          "bio": "",
+          "contact": {}
+        },
+        "checkins": 1
+      }],
+      "recentVisitors": [{
+        "user": {
+          "id": "4372259",
+          "firstName": "Murugan",
+          "lastName": "V.",
+          "photo": "https://is1.4sqi.net/userpix_thumbs/2QVZXGQQA2LILWY3.jpg",
+          "tips": {
+            "count": 2
+          },
+          "gender": "male",
+          "homeCity": "Chennai, India",
+          "bio": "",
+          "contact": {}
+        },
+        "lastCheckin": 1338182425
+      }]
+    }
+  }
+}
