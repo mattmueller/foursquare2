@@ -41,7 +41,7 @@ class TestVenues < Test::Unit::TestCase
 
     should "get tips from a venue only with some term" do
       stub_get("https://api.foursquare.com/v2/venues/4c94a45c82b56dcb47cad0aa/tips?oauth_token=#{@client.oauth_token}", "venue_tips.json")
-      tips = @client.venue_tips('4c94a45c82b56dcb47cad0aa', {:query => "legal"}) 
+      tips = @client.venue_tips('4c94a45c82b56dcb47cad0aa', {:query => "legal"})
       tips[:count].should == 1
       tips.items.first.id.should == "4c94a45c82b56dcb47cad0aa"
     end
@@ -60,7 +60,7 @@ class TestVenues < Test::Unit::TestCase
 
       tips[:items].size.should == 0
     end
-    
+
     should "allow venues to be explored" do
       stub_get("https://api.foursquare.com/v2/venues/explore?section=food&ll=40.7%2C-74&oauth_token=#{@client.oauth_token}&limit=2", "explore_venues.json")
       venues = @client.explore_venues(:ll => '40.7,-74', :section => 'food', :limit => '2')
@@ -74,7 +74,7 @@ class TestVenues < Test::Unit::TestCase
       links.items.size == links.count
       links.items.size.should == 2
     end
-    
+
     should "get photos for a venue" do
       stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/photos?group=venue&oauth_token=#{@client.oauth_token}&limit=3", "venue_photos.json")
       photos = @client.venue_photos('4b8c3d87f964a520f7c532e3', { :group => 'venue', :limit => 3 })
@@ -88,7 +88,7 @@ class TestVenues < Test::Unit::TestCase
       venues = @client.suggest_completion_venues(:ll => "40.7,-74", :query => "coffee")
       venues.minivenues.first.id.should == '44dc96e4f964a520b0361fe3'
     end
-    
+
     should "fetch venue for manager" do
       stub_get("https://api.foursquare.com/v2/venues/managed?oauth_token=#{@client.oauth_token}", "managed_venues.json")
       venues = @client.managed_venues()
@@ -102,6 +102,28 @@ class TestVenues < Test::Unit::TestCase
       response.menu.menus.items.count.should == 1
       response.menu.menus.items.first.name.should == "Main Menu"
       response.menu.menus.items.first['entries']['items'].first['entries'].items.count.should == 11
+    end
+
+    should "get detailed stats for a venue managed by user" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/stats?oauth_token=#{@client.oauth_token}", "venue_stats.json")
+      response = @client.managed_venue_stats('4b8c3d87f964a520f7c532e3')
+      response.stats.totalCheckins.should == 1
+    end
+
+    should "get a subset of detailed stats for a venue managed by user when passing in options" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/stats?oauth_token=#{@client.oauth_token}&startAt=1343085269&endAt=1343171627", "venue_stats.json")
+      response = @client.managed_venue_stats('4b8c3d87f964a520f7c532e3', { :startAt => 1343085269, :endAt => 1343171627})
+      response.stats.totalCheckins.should == 1
+    end
+
+    context "and getting detailed stats for a venue not managed by user" do
+      should "raise a 'not authorized' API error" do
+        stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,
+          :error => { :code => '403', :type => 'not_authorized', :message => 'User is not authorized to view venue stats' })
+        assert_raises(Foursquare2::APIError) do
+          @client.managed_venue_stats('4ad4c04af964a52065f220e3')
+        end
+      end
     end
 
   end

@@ -186,5 +186,20 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response.venues)
     end
+
+    # Get venue stats over a given time range. Client instance should represent an OAuth user who is the venue owner.
+    # Note: returns more detailed statistics than the basic stats returned when calling venue(venue_id)
+    #
+    # param [String] venue_id The ID of the venue managed by the current user
+    # @param [Hash] options
+    # @option options Integer :startAt - The start of the time range to retrieve stats for (seconds since epoch). If omitted, all-time stats will be returned.
+    # @option options Integer :endAt - The end of the time range to retrieve stats for (seconds since epoch). If omitted, the current time is assumed.
+
+    def managed_venue_stats(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/stats", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
   end
 end
