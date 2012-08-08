@@ -73,6 +73,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response)  
     end
 
+    # Add a post to a checkin.
+    #
+    # @param [String] checkin_id the ID of the checkin.
+    # @param [Hash]  options
+    # @option options String :text - The text of the post, up to 200 characters.
+    # @option options String :url - Link for more details. This page will be opened in an embedded web view in the foursquare application, unless contentId is specified and a native link handler is registered and present. We support the following URL schemes: http, https, foursquare, mailto, tel, and sms.
+    # @option options String :contentId - Identifier for the post to be used in a native link, up to 50 characters. A url must also be specified in the request.
+
+    def add_checkin_post(checkin_id, options={})
+      response = connection.post do |req|
+        req.url "checkins/#{checkin_id}/addpost", options
+      end
+      return_error_or_body(response, response.body.response)  
+    end
   end    
 end
 
