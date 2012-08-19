@@ -30,7 +30,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
 #### Get information about a user (use 'self' for the authenticated user)
 
-    client.user(108914) 
+    client.user(108914)
 
 #### Get information about a venue
 
@@ -45,7 +45,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
     client.add_checkin(:venueId => "4b2afcaaf964a5205bb324e3", :broadcast => 'public', :ll => '36.142064,-86.816086', :shout => 'zomg coffee!1!')
 
 
-#### Search user by tip 
+#### Search user by tip
 
      client.search_users_by_tip(:ll => '36.142064,-86.816086', :name => 'Marco')
 
@@ -53,7 +53,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 
      client.user_tips("123456", :query => 'coffee')
 
-#### Search venues by tip 
+#### Search venues by tip
 
      client.search_venues_by_tip(:ll => '36.142064,-86.816086', :query => 'coffee')
 
@@ -116,6 +116,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.flag_venue
     client.propose_venue_edit
 	client.managed_venues
+    client.managed_venue_stats
 	client.add_special
 	client.add_campaign
 
