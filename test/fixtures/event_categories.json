@@ -1,0 +1,153 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "categories": [
+            {
+                "id": "4dfb90c6bd413dd705e8f897",
+                "name": "Movies",
+                "pluralName": "Movies",
+                "shortName": "Movie",
+                "icon": {
+                    "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/movietheater_",
+                    "suffix": ".png"
+                },
+                "categories": []
+            },
+            {
+                "id": "4e0a4b91bd41eda0d6092f89",
+                "name": "Music",
+                "pluralName": "Music",
+                "shortName": "Music",
+                "icon": {
+                    "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/musicvenue_",
+                    "suffix": ".png"
+                },
+                "categories": []
+            },
+            {
+                "id": "4e458e3bbd41d66894dbdecc",
+                "name": "Other",
+                "pluralName": "Other",
+                "shortName": "Other",
+                "icon": {
+                    "prefix": "https://foursquare.com/img/categories_v2/event/default_",
+                    "suffix": ".png"
+                },
+                "categories": []
+            },
+            {
+                "id": "4f59477b33bdcd006285c0e4",
+                "name": "Panels",
+                "pluralName": "Panels",
+                "shortName": "Panel",
+                "icon": {
+                    "prefix": "https://foursquare.com/img/categories_v2/event/default_",
+                    "suffix": ".png"
+                },
+                "categories": []
+            },
+            {
+                "id": "4e09f7a5bd41dc571bc3b1dc",
+                "name": "Sporting Events",
+                "pluralName": "Sporting Events",
+                "shortName": "Sport",
+                "icon": {
+                    "prefix": "https://foursquare.com/img/categories_v2/event/default_",
+                    "suffix": ".png"
+                },
+                "categories": [
+                    {
+                        "id": "4e132f48bd41026cd50e8f8e",
+                        "name": "Baseball Games",
+                        "pluralName": "Baseball Games",
+                        "shortName": "Baseball",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_baseball_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e132f48bd41026cd50e8f91",
+                        "name": "Basketball Games",
+                        "pluralName": "Basketball Games",
+                        "shortName": "Basketball",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_basketball_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e132f48bd41026cd50e8f8f",
+                        "name": "Football Game",
+                        "pluralName": "Football Game",
+                        "shortName": "Football",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_football_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e1ca351bd4159e7d88bd90c",
+                        "name": "Golf Tournaments",
+                        "pluralName": "Golf Tournaments",
+                        "shortName": "Golf",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/parks_outdoors/golfcourse_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e132f48bd41026cd50e8f90",
+                        "name": "Hockey Games",
+                        "pluralName": "Hockey Games",
+                        "shortName": "Hockey",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_hockey_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e1dbf8dbd4146b989a9d9ee",
+                        "name": "Races",
+                        "pluralName": "Races",
+                        "shortName": "Racing",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/racetrack_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e173846bd41c6d19e8dd5a3",
+                        "name": "Soccer Matches",
+                        "pluralName": "Soccer Matches",
+                        "shortName": "Soccer",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_soccer_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    },
+                    {
+                        "id": "4e29cd20bd41a4ce124ac881",
+                        "name": "Tennis Matches",
+                        "pluralName": "Tennis Matches",
+                        "shortName": "Tennis",
+                        "icon": {
+                            "prefix": "https://foursquare.com/img/categories_v2/arts_entertainment/stadium_tennis_",
+                            "suffix": ".png"
+                        },
+                        "categories": []
+                    }
+                ]
+            }
+        ]
+    }
+}
