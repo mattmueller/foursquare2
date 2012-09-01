@@ -27,6 +27,12 @@ class TestCheckins < Test::Unit::TestCase
       post = @client.add_checkin_post('5041335de4b08d95c1591453', :text => "Test")
       post.text.should == "Test"
     end
+
+    should "add a reply to an existing checkin" do
+      stub_post("https://api.foursquare.com/v2/checkins/5041eda9e4b0133020c2292c/reply?oauth_token=#{@client.oauth_token}&text=Test", "checkin_reply.json")
+      reply = @client.add_checkin_reply('5041eda9e4b0133020c2292c', :text => "Test")
+      reply.text.should == "Test"
+    end
   end
 
 end

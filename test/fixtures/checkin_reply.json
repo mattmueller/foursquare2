@@ -1,0 +1,30 @@
+{
+    "meta": {
+        "code": 200, 
+        "errorDetail": "Please provide an API version to avoid future errors.See http://bit.ly/vywCav", 
+        "errorType": "deprecated"
+    }, 
+    "notifications": [
+        {
+            "item": {
+                "unreadCount": -1
+            }, 
+            "type": "notificationTray"
+        }
+    ], 
+    "response": {
+        "reply": {
+            "createdAt": 1346497989, 
+            "id": "5041edc5e4b09ae79babd551", 
+            "source": {
+                "detailUrl": "https://foursquare.com/device/app/SDDBI1SDSDEGVP3YUJGAJC0TRNCKCPA5WABTMYQ5OFBVDOLJ", 
+                "icon": "https://foursquare.com/img/blank_app_16.png", 
+                "id": "SDDBI1SDSDEGVP3YUJGAJC0TRNCKCPA5WABTMYQ5OFBVDOLJ", 
+                "name": "Foursquare API documentation", 
+                "photo": "https://foursquare.com/img/blank_app.png", 
+                "url": "https://developer.foursquare.com"
+            }, 
+            "text": "Test"
+        }
+    }
+}
