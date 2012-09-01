@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "notifications": [{
+    "type": "notificationTray",
+    "item": {
+      "unreadCount": -1
+    }
+  }],
+  "response": {
+    "event": {
+      "venueId": "4b108b9ef964a5208f7223e3",
+      "id": "4f98d496f6903e7ae2a3628c",
+      "name": "Marvel's The Avengers",
+      "foreignIds": {
+        "count": 0,
+        "items": []
+      },
+      "categories": [{
+        "id": "4dfb90c6bd413dd705e8f897",
+        "name": "Movies",
+        "pluralName": "Movies",
+        "shortName": "Movie",
+        "icon": {
+          "prefix": "https:\/\/foursquare.com\/img\/categories_v2\/arts_entertainment\/movietheater_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }],
+      "hereNow": {
+        "count": 0,
+        "groups": [{
+          "type": "friends",
+          "name": "Friends here",
+          "count": 0,
+          "items": []
+        }, {
+          "type": "others",
+          "name": "Other people here",
+          "count": 0,
+          "items": []
+        }]
+      },
+      "allDay": true,
+      "date": 1336021200,
+      "stats": {
+        "checkinsCount": 128,
+        "usersCount": 125
+      }
+    }
+  }
+}
