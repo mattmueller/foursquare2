@@ -21,6 +21,12 @@ class TestCheckins < Test::Unit::TestCase
       checkins.first.venue.name.should == 'Buffalo Billiards'
       checkins.last.user.firstName.should == 'David'
     end
+
+    should "add a post to an existing checkin" do
+      stub_post("https://api.foursquare.com/v2/checkins/5041335de4b08d95c1591453/addpost?oauth_token=#{@client.oauth_token}&text=Test", "post_created.json")
+      post = @client.add_checkin_post('5041335de4b08d95c1591453', :text => "Test")
+      post.text.should == "Test"
+    end
   end
 
 end

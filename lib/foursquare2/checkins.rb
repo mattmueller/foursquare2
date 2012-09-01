@@ -85,7 +85,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/addpost", options
       end
-      return_error_or_body(response, response.body.response)  
+      return_error_or_body(response, response.body.response.post)  
     end
 
     # Add a reply to a checkin.
@@ -100,7 +100,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/reply", options
       end
-      return_error_or_body(response, response.body.response)  
+      return_error_or_body(response, response.body.response.reply)  
     end
   end    
 end
