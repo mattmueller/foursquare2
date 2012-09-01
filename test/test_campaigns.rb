@@ -8,7 +8,7 @@ class TestCampaigns < Test::Unit::TestCase
     end
     
     should "add a campaign" do
-      stub_post("https://api.foursquare.com/v2/campaigns/add?oauth_token=#{@client.oauth_token}&specialId=4bd876f886ba62b58a6e88b3", "campaign_created.json")
+      stub_post("https://api.foursquare.com/v2/campaigns/add?oauth_token=#{@client.oauth_token}&specialId=4bd876f886ba62b58a6e88b3", "campaigns/campaign_created.json")
       campaign = @client.add_campaign(:specialId => '4bd876f886ba62b58a6e88b3')
       campaign.special.id == "4bd876f886ba62b58a6e88b3"
     end

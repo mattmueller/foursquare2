@@ -51,7 +51,7 @@ class TestClient < Test::Unit::TestCase
 
   context "When returning a successful response" do
     should "return the response body as a Hash." do
-      response = Faraday::Response.new(:body => fixture_file('search_venues.json', :parse => true))
+      response = Faraday::Response.new(:body => fixture_file('venues/search_venues.json', :parse => true))
       client   = Foursquare2::Client.new
 
       subject = client.return_error_or_body(response, response.body.response)
