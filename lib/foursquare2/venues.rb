@@ -47,8 +47,6 @@ module Foursquare2
     end
 
     # Retrieve information about all venue categories.
-    #
-    # param [String] venue_id The ID of the venue
 
     def venue_categories
       response = connection.get("venues/categories")
