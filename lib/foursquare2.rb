@@ -6,6 +6,10 @@ directory = File.expand_path(File.dirname(__FILE__))
 module Foursquare2
   class << self
 
+    FIELDS = [ :client_id, :client_secret, :api_version,
+               :ssl, :connection_middleware ]
+    attr_accessor(*FIELDS)
+
     def filter tips, term
       tip = []
       unless tips.nil?
@@ -14,6 +18,11 @@ module Foursquare2
         end
       end
       Hashie::Mash.new({:count => tip.count, :items => tip })
+    end
+
+    def configure
+      yield self
+      true
     end
 
   end
