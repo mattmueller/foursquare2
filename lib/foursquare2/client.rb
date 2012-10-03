@@ -43,6 +43,7 @@ module Foursquare2
       @oauth_token = options[:oauth_token]
       @api_version = options[:api_version]
       @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
+      @locale = options[:locale]
       @connection_middleware = options.fetch(:connection_middleware, [])
       @connection_middleware += DEFAULT_CONNECTION_MIDDLEWARE
     end
@@ -59,6 +60,7 @@ module Foursquare2
       params[:client_secret] = @client_secret if @client_secret
       params[:oauth_token] = @oauth_token if @oauth_token
       params[:v] = @api_version if @api_version
+      params[:locale] = @locale if @locale
       @connection ||= Faraday::Connection.new(:url => api_url, :ssl => @ssl, :params => params, :headers => default_headers) do |builder|
         @connection_middleware.each do |middleware|
           builder.use *middleware
