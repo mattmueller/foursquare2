@@ -7,6 +7,12 @@ class TestUsers < Test::Unit::TestCase
       @client = foursquare_test_client
     end
 
+    should "fetch user's leaderboard" do
+      stub_get("https://api.foursquare.com/v2/users/leaderboard?oauth_token=#{@client.oauth_token}&neighbors=2", "users/leaderboard.json", )
+      leaderboard = @client.leaderboard(:neighbors => 2)
+      leaderboard.leaderboard['count'].should == 3
+    end
+
     should "fetch info for a single user" do
       stub_get("https://api.foursquare.com/v2/users/self?oauth_token=#{@client.oauth_token}", "users/user.json")
       user = @client.user('self')
