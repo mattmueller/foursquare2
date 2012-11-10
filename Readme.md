@@ -119,6 +119,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.propose_venue_edit
 	client.managed_venues
     client.managed_venue_stats
+    client.venues_timeseries
 	client.add_special
 	client.add_campaign
 
