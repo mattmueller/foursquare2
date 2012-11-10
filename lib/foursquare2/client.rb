@@ -38,13 +38,13 @@ module Foursquare2
     # @option options Hash   :ssl Additional SSL options (like the path to certificate file)
 
     def initialize(options={})
-      @client_id = options[:client_id]
-      @client_secret = options[:client_secret]
+      @client_id = options[:client_id] || Foursquare2.client_id
+      @client_secret = options[:client_secret] || Foursquare2.client_secret
       @oauth_token = options[:oauth_token]
-      @api_version = options[:api_version]
-      @ssl = options[:ssl].nil? ? Hash.new : options[:ssl]
-      @locale = options[:locale]
-      @connection_middleware = options.fetch(:connection_middleware, [])
+      @api_version = options[:api_version] || Foursquare2.api_version
+      @locale = options[:locale] || Foursquare2.locale
+      @ssl = options[:ssl] || Foursquare2.ssl || Hash.new
+      @connection_middleware = options[:connection_middleware] || Foursquare2.connection_middleware || []
       @connection_middleware += DEFAULT_CONNECTION_MIDDLEWARE
     end
 
