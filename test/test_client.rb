@@ -24,6 +24,11 @@ class TestClient < Test::Unit::TestCase
       @client.api_version.should == "20120505"
     end
 
+    should "retain api locale for requests" do
+      @client = Foursquare2::Client.new(:locale => 'es')
+      @client.locale.should == "es"
+    end
+
     should "retain SSL option for requests when you don't pass it as param" do
       @client = Foursquare2::Client.new(:client_id => 'awesome', :client_secret => 'sauce')
       @client.ssl.should == {}

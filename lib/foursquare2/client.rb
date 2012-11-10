@@ -23,7 +23,7 @@ module Foursquare2
     include Lists
     include Events
 
-    attr_reader :client_id, :client_secret, :oauth_token, :api_version
+    attr_reader :client_id, :client_secret, :oauth_token, :api_version, :locale
 
     #Initialize the client class that will be used for all foursquare API requests.  Note that either a valid user oauth token OR a valid client_id + secret is required.
     #
