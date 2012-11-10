@@ -1,0 +1,74 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 1
+            }
+        }
+    ],
+    "response": {
+        "leaderboard": {
+            "count": 3,
+            "items": [
+                {
+                    "user": {
+                        "id": "14839073",
+                        "firstName": "Neeraj",
+                        "lastName": "P N",
+                        "relationship": "friend",
+                        "photo": {
+                            "prefix": "https://irs0.4sqi.net/img/user/",
+                            "suffix": "/C1WP30SUDZUCZC2X.jpg"
+                        }
+                    },
+                    "scores": {
+                        "recent": 18,
+                        "max": 115,
+                        "checkinsCount": 5
+                    },
+                    "rank": 26
+                },
+                {
+                    "user": {
+                        "id": "25052241",
+                        "firstName": "Rony",
+                        "lastName": "Varghese",
+                        "relationship": "self",
+                        "photo": {
+                            "prefix": "https://irs1.4sqi.net/img/user/",
+                            "suffix": "/HE1OX3T3S3HN5OI4.jpg"
+                        }
+                    },
+                    "scores": {
+                        "recent": 16,
+                        "max": 123,
+                        "checkinsCount": 4
+                    },
+                    "rank": 27
+                },
+                {
+                    "user": {
+                        "id": "32747767",
+                        "firstName": "Georgy",
+                        "lastName": "Koshy",
+                        "relationship": "friend",
+                        "photo": {
+                            "prefix": "https://irs0.4sqi.net/img/user/",
+                            "suffix": "/blank_boy.png"
+                        }
+                    },
+                    "scores": {
+                        "recent": 16,
+                        "max": 94,
+                        "checkinsCount": 8
+                    },
+                    "rank": 27
+                }
+            ]
+        }
+    }
+}

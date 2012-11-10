@@ -1,6 +1,18 @@
 module Foursquare2
   module Users
 
+    # Get user's leaderboard details
+    #
+    # @param [Hash] options
+    # @option options Integer :neighbors Number of friends' scores adjacent to your score
+    
+    def leaderboard(options={})
+      response = connection.get do |req|
+        req.url "users/leaderboard", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
     # Get information about a user
     #
     # @param [Integer] user_id - User to get information for.
