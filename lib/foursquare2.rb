@@ -7,7 +7,7 @@ module Foursquare2
   class << self
 
     FIELDS = [ :client_id, :client_secret, :api_version,
-               :ssl, :connection_middleware ]
+               :ssl, :connection_middleware, :locale ]
     attr_accessor(*FIELDS)
 
     def filter tips, term
