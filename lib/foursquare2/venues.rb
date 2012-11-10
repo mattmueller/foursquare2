@@ -199,5 +199,22 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+
+    # Get daily venue stats for a list of venues over a time range.
+    # Client instance should represent an OAuth user who is the venues owner.
+    #
+    # @param [Hash] options
+    # @option options Array[String] :venueId - A list of venue ids to retrieve series data for.
+    # @option options Integer :startAt - Required. The start of the time range to retrieve stats for (seconds since epoch).
+    # @option options Integer :endAt - The end of the time range to retrieve stats for (seconds since epoch). If omitted, the current time is assumed.
+    # @option options String :fields - Specifies which fields to return. May be one or more of totalCheckins, newCheckins, uniqueVisitors, sharing, genders, ages, hours, separated by commas.
+
+    def venues_timeseries(options={})
+      options[:venueId] = options[:venueId].join(',') # Transforms the array into a 'comma-separated list' of ids.
+      response = connection.get do |req|
+        req.url "venues/timeseries", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
   end
 end
