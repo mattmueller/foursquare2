@@ -83,6 +83,7 @@ module Foursquare2
     # @param [Hash]  options
     # @option options Integer :limit
     # @option options Integer :offest - For paging through results
+    # @option options String  :sort - "newestfirst" or "oldestfirst"
     # @option options Integer :afterTimestamp - Get all checkins after this epoch time.
     # @option options Integer :beforeTimestamp - Get all checkins before this epoch time.
 
