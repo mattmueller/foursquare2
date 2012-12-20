@@ -73,5 +73,27 @@ class TestUsers < Test::Unit::TestCase
       mayorships = @client.user_mayorships('self')
       mayorships.items.size.should == 2
     end
+
+    should "find a users checkins - plain (without optional params)" do
+      stub_get("https://api.foursquare.com/v2/users/self/checkins?oauth_token=#{@client.oauth_token}", "users/user_checkins_plain.json")
+      checkins = @client.user_checkins
+      checkins.items.size.should == 20
+    end
+
+    should "find a users checkins with afterTimestamp param" do
+      stub_get("https://api.foursquare.com/v2/users/self/checkins?oauth_token=#{@client.oauth_token}&limit=10&offset=2&sort=newestfirst&afterTimestamp=1279044824", "users/user_checkins_aftertimestamp.json")
+      checkins_after = @client.user_checkins({:limit => 10, :offset => 2, :sort => 'newestfirst', :afterTimestamp => 1279044824})
+      checkins_after.items.size.should == 10
+      checkins_after.items.reject { |ci| ci.createdAt > 1279044824 }.empty?.should == true
+      checkins_after.items.first.createdAt.should > checkins_after.items.last.createdAt
+    end
+
+    should "should find a users checkins with beforeTimestamp param" do
+      stub_get("https://api.foursquare.com/v2/users/self/checkins?oauth_token=#{@client.oauth_token}&limit=5&offset=20&sort=oldestfirst&beforeTimestamp=1355867689", "users/user_checkins_beforetimestamp.json")
+      checkins_before = @client.user_checkins({:limit => 5, :offset => 20, :sort => 'oldestfirst', :beforeTimestamp => 1355867689})
+      checkins_before.items.size.should == 5
+      checkins_before.items.reject { |ci| ci.createdAt < 1355867689 }.empty?.should == true
+      checkins_before.items.first.createdAt.should < checkins_before.items.last.createdAt
+    end
   end
 end
