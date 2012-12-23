@@ -1,0 +1,556 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 0
+            }
+        }
+    ],
+    "response": {
+        "checkins": {
+            "count": 63,
+            "items": [
+                {
+                    "id": "50b12f2be4b056d2abb7818d",
+                    "createdAt": 1353789227,
+                    "type": "checkin",
+                    "timeZoneOffset": -300,
+                    "venue": {
+                        "id": "4bedecffa40fc92817c3820c",
+                        "name": "Chart House",
+                        "contact": {
+                            "phone": "2013486628",
+                            "formattedPhone": "(201) 348-6628"
+                        },
+                        "location": {
+                            "address": "Pier D, Lincoln Harbor",
+                            "lat": 40.7612521224501,
+                            "lng": -74.01911973953247,
+                            "postalCode": "07086",
+                            "city": "Weehawken",
+                            "state": "NJ",
+                            "country": "United States",
+                            "cc": "US"
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d14e941735",
+                                "name": "American Restaurant",
+                                "pluralName": "American Restaurants",
+                                "shortName": "American",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                                    "suffix": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": true,
+                        "stats": {
+                            "checkinsCount": 5006,
+                            "usersCount": 2905,
+                            "tipCount": 41
+                        },
+                        "url": "http://www.chart-house.com",
+                        "likes": {
+                            "count": 6,
+                            "groups": [
+                                {
+                                    "type": "others",
+                                    "count": 6,
+                                    "items": [
+                                        {
+                                            "id": "34030363",
+                                            "firstName": "James",
+                                            "lastName": "M.",
+                                            "photo": {
+                                                "prefix": "https://irs2.4sqi.net/img/user/",
+                                                "suffix": "/10MZPNWGV2ZR3YDC.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "2965449",
+                                            "firstName": "Abby",
+                                            "lastName": "M.",
+                                            "photo": {
+                                                "prefix": "https://irs1.4sqi.net/img/user/",
+                                                "suffix": "/HHLXDFAB5ZKOKDIP.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "3943516",
+                                            "firstName": "Miguel",
+                                            "lastName": "R.",
+                                            "photo": {
+                                                "prefix": "https://irs0.4sqi.net/img/user/",
+                                                "suffix": "/NJJXD5Y4BWTGHR5R.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "29201165",
+                                            "firstName": "Yvette",
+                                            "lastName": "G.",
+                                            "photo": {
+                                                "prefix": "https://irs2.4sqi.net/img/user/",
+                                                "suffix": "/BONGFVUYPIV2L4KO.jpg"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "summary": "James M, Abby M, Miguel R & 3 others"
+                        },
+                        "like": false,
+                        "beenHere": {
+                            "count": 1,
+                            "marked": false
+                        },
+                        "specials": {
+                            "count": 0
+                        }
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "like": false,
+                    "photos": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "comments": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "source": {
+                        "name": "tracker test app 2",
+                        "url": "http://localhost:3000"
+                    }
+                },
+                {
+                    "id": "50b13316e4b042e7817f0775",
+                    "createdAt": 1353790230,
+                    "type": "checkin",
+                    "timeZoneOffset": -300,
+                    "venue": {
+                        "id": "4cb06cd5aef16dcb8883b054",
+                        "name": "SONIC Drive In",
+                        "contact": {
+                            "phone": "2017664595",
+                            "formattedPhone": "(201) 766-4595",
+                            "twitter": "sonicdrive_in"
+                        },
+                        "location": {
+                            "address": "2819 Kennedy Boulevard",
+                            "lat": 40.774093,
+                            "lng": -74.03775911,
+                            "postalCode": "07047",
+                            "city": "North Bergen",
+                            "state": "NJ",
+                            "country": "United States",
+                            "cc": "US"
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d16e941735",
+                                "name": "Fast Food Restaurant",
+                                "pluralName": "Fast Food Restaurants",
+                                "shortName": "Fast Food",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories_v2/food/fastfood_",
+                                    "suffix": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": true,
+                        "stats": {
+                            "checkinsCount": 2365,
+                            "usersCount": 1348,
+                            "tipCount": 20
+                        },
+                        "url": "http://sonicdrivein.com",
+                        "likes": {
+                            "count": 4,
+                            "groups": [
+                                {
+                                    "type": "others",
+                                    "count": 4,
+                                    "items": [
+                                        {
+                                            "id": "1656200",
+                                            "firstName": "Max",
+                                            "lastName": "U.",
+                                            "photo": {
+                                                "prefix": "https://irs3.4sqi.net/img/user/",
+                                                "suffix": "/SIDNHLG4RBT21GZ3.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "160580",
+                                            "firstName": "Luigino",
+                                            "lastName": "G.",
+                                            "photo": {
+                                                "prefix": "https://irs0.4sqi.net/img/user/",
+                                                "suffix": "/PAP3N0CQWENRFTPI.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "302559",
+                                            "firstName": "Tony",
+                                            "lastName": "P.",
+                                            "photo": {
+                                                "prefix": "https://irs0.4sqi.net/img/user/",
+                                                "suffix": "/UHB0HVEEFH4X3CTL.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "11176113",
+                                            "firstName": "Enrique",
+                                            "lastName": "T.",
+                                            "photo": {
+                                                "prefix": "https://irs1.4sqi.net/img/user/",
+                                                "suffix": "/AMROOQEGY0TQPGMM.jpg"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "summary": "Max U, Luigino G, Tony P & Enrique T"
+                        },
+                        "like": false,
+                        "beenHere": {
+                            "count": 1,
+                            "marked": false
+                        },
+                        "specials": {
+                            "count": 0
+                        }
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "like": false,
+                    "photos": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "comments": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "source": {
+                        "name": "tracker test app 2",
+                        "url": "http://localhost:3000"
+                    }
+                },
+                {
+                    "id": "50b134eee4b0f706d011ac7c",
+                    "createdAt": 1353790702,
+                    "type": "checkin",
+                    "timeZoneOffset": -300,
+                    "venue": {
+                        "id": "4c84134447cc224b2245959f",
+                        "name": "El Artesano Restaurant",
+                        "contact": {
+                            "phone": "2018677341",
+                            "formattedPhone": "(201) 867-7341"
+                        },
+                        "location": {
+                            "address": "4101 Bergenline Avenue",
+                            "crossStreet": "at 41st St",
+                            "lat": 40.776885,
+                            "lng": -74.025538,
+                            "postalCode": "07087",
+                            "city": "Union City",
+                            "state": "NJ",
+                            "country": "United States",
+                            "cc": "US"
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d154941735",
+                                "name": "Cuban Restaurant",
+                                "pluralName": "Cuban Restaurants",
+                                "shortName": "Cuban",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                                    "suffix": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": true,
+                        "stats": {
+                            "checkinsCount": 577,
+                            "usersCount": 291,
+                            "tipCount": 11
+                        },
+                        "url": "http://www.elartesanorestaurant.com",
+                        "likes": {
+                            "count": 1,
+                            "groups": [
+                                {
+                                    "type": "others",
+                                    "count": 1,
+                                    "items": [
+                                        {
+                                            "id": "134486",
+                                            "firstName": "Manny",
+                                            "lastName": "B.",
+                                            "photo": {
+                                                "prefix": "https://irs3.4sqi.net/img/user/",
+                                                "suffix": "/NOHIGIZALTCB3P0A.jpg"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "summary": "Manny B"
+                        },
+                        "like": false,
+                        "beenHere": {
+                            "count": 1,
+                            "marked": false
+                        },
+                        "specials": {
+                            "count": 0
+                        },
+                        "venuePage": {
+                            "id": "34884719"
+                        }
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "like": false,
+                    "photos": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "comments": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "source": {
+                        "name": "tracker test app 2",
+                        "url": "http://localhost:3000"
+                    }
+                },
+                {
+                    "id": "50b135e8e4b03c6b1e77d8cc",
+                    "createdAt": 1353790952,
+                    "type": "checkin",
+                    "timeZoneOffset": -300,
+                    "venue": {
+                        "id": "507c98dee4b0d8cafbfedc16",
+                        "name": "Rumba Cubana",
+                        "contact": {},
+                        "location": {
+                            "address": "1807 46th St",
+                            "lat": 40.784111746622834,
+                            "lng": -74.03363559548751,
+                            "postalCode": "07047",
+                            "city": "North Bergen",
+                            "state": "NJ",
+                            "country": "United States",
+                            "cc": "US"
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d154941735",
+                                "name": "Cuban Restaurant",
+                                "pluralName": "Cuban Restaurants",
+                                "shortName": "Cuban",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                                    "suffix": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 95,
+                            "usersCount": 76,
+                            "tipCount": 1
+                        },
+                        "likes": {
+                            "count": 2,
+                            "groups": [
+                                {
+                                    "type": "others",
+                                    "count": 2,
+                                    "items": [
+                                        {
+                                            "id": "22680835",
+                                            "firstName": "Tony",
+                                            "lastName": "M.",
+                                            "photo": {
+                                                "prefix": "https://irs0.4sqi.net/img/user/",
+                                                "suffix": "/UAANCBPH2K3OBPJ0.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "22926974",
+                                            "firstName": "Laurentius",
+                                            "lastName": "T.",
+                                            "photo": {
+                                                "prefix": "https://irs1.4sqi.net/img/user/",
+                                                "suffix": "/NM4TPEIJQWXJB5KQ.jpg"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "summary": "Tony M & Laurentius T"
+                        },
+                        "like": false,
+                        "beenHere": {
+                            "count": 1,
+                            "marked": false
+                        },
+                        "specials": {
+                            "count": 0
+                        }
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "like": false,
+                    "photos": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "comments": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "source": {
+                        "name": "tracker test app 2",
+                        "url": "http://localhost:3000"
+                    }
+                },
+                {
+                    "id": "50b13860e4b00627546a0607",
+                    "createdAt": 1353791584,
+                    "type": "checkin",
+                    "timeZoneOffset": -300,
+                    "venue": {
+                        "id": "4cfd9a9120fe3704db9a60f8",
+                        "name": "Havana Dulce",
+                        "contact": {},
+                        "location": {
+                            "address": "5117 Tonnelle Ave",
+                            "crossStreet": "51st street",
+                            "lat": 40.78823519452522,
+                            "lng": -74.03092741649088,
+                            "city": "North Bergen",
+                            "state": "NJ",
+                            "country": "United States",
+                            "cc": "US"
+                        },
+                        "categories": [
+                            {
+                                "id": "4bf58dd8d48988d154941735",
+                                "name": "Cuban Restaurant",
+                                "pluralName": "Cuban Restaurants",
+                                "shortName": "Cuban",
+                                "icon": {
+                                    "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                                    "suffix": ".png"
+                                },
+                                "primary": true
+                            }
+                        ],
+                        "verified": false,
+                        "stats": {
+                            "checkinsCount": 727,
+                            "usersCount": 416,
+                            "tipCount": 12
+                        },
+                        "likes": {
+                            "count": 6,
+                            "groups": [
+                                {
+                                    "type": "others",
+                                    "count": 6,
+                                    "items": [
+                                        {
+                                            "id": "22680835",
+                                            "firstName": "Tony",
+                                            "lastName": "M.",
+                                            "photo": {
+                                                "prefix": "https://irs0.4sqi.net/img/user/",
+                                                "suffix": "/UAANCBPH2K3OBPJ0.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "31911292",
+                                            "firstName": "Nini",
+                                            "photo": {
+                                                "prefix": "https://irs1.4sqi.net/img/user/",
+                                                "suffix": "/CMOISMGOSKQNHTUD.jpg"
+                                            }
+                                        },
+                                        {
+                                            "id": "34998282",
+                                            "firstName": "Anne",
+                                            "lastName": "M.",
+                                            "photo": {
+                                                "prefix": "https://irs2.4sqi.net/img/user/",
+                                                "suffix": "/blank_girl.png"
+                                            }
+                                        },
+                                        {
+                                            "id": "12938301",
+                                            "firstName": "💫Jennifier💫",
+                                            "lastName": "👄.",
+                                            "photo": {
+                                                "prefix": "https://irs3.4sqi.net/img/user/",
+                                                "suffix": "/BN1RZLGB3TYNXV3U.jpg"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "summary": "Tony M, Nini, Anne M & 3 others"
+                        },
+                        "like": false,
+                        "beenHere": {
+                            "count": 1,
+                            "marked": false
+                        },
+                        "specials": {
+                            "count": 0
+                        }
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "like": false,
+                    "photos": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "comments": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "source": {
+                        "name": "tracker test app 2",
+                        "url": "http://localhost:3000"
+                    }
+                }
+            ]
+        }
+    }
+}
