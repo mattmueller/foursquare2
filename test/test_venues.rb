@@ -103,6 +103,14 @@ class TestVenues < Test::Unit::TestCase
       response.menu.menus.items.first.name.should == "Main Menu"
       response.menu.menus.items.first['entries']['items'].first['entries'].items.count.should == 11
     end
+    
+    should "get currently checked in users for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4a1c8506f964a520457b1fe3/hereNow?oauth_token=#{@client.oauth_token}", "venues/venue_herenow.json")
+      response = @client.herenow('4a1c8506f964a520457b1fe3')
+      response.hereNow.count.should == 2
+      response.hereNow.items.first.user.firstName.should == "Sabine"
+      response.hereNow.items.count.should == 2
+    end
 
     should "get detailed stats for a venue managed by user" do
       stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/stats?oauth_token=#{@client.oauth_token}", "venues/venue_stats.json")

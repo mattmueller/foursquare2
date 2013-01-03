@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "response": {
+    "hereNow": {
+      "count": 2,
+      "items": [
+        {
+          "id": "50e5cde3e4b0c35ae0800043",
+          "createdAt": 1357237732,
+          "type": "checkin",
+          "timeZone": "Europe\/Berlin",
+          "timeZoneOffset": 60,
+          "user": {
+            "id": "444950",
+            "firstName": "Sabine",
+            "lastName": "Z.",
+            "gender": "female",
+            "photo": "https:\/\/is1.4sqi.net\/userpix_thumbs\/AWDJ1COKPSKY4XUL.jpg",
+            "tips": {
+              "count": 3
+            },
+            "lists": {
+              "groups": [
+                {
+                  "type": "created",
+                  "count": 14,
+                  "items": [
+                    
+                  ]
+                }
+              ]
+            },
+            "homeCity": "Berlin",
+            "bio": "",
+            "contact": {
+              
+            }
+          }
+        },
+        {
+          "id": "50e5c5f1478e5fb8d88cac95",
+          "createdAt": 1357235697,
+          "type": "checkin",
+          "timeZone": "Europe\/Berlin",
+          "timeZoneOffset": 60,
+          "user": {
+            "id": "5162304",
+            "firstName": "Stephan",
+            "lastName": "P.",
+            "gender": "male",
+            "photo": "https:\/\/is1.4sqi.net\/userpix_thumbs\/42W3RD0ACXMMM5AE.jpg",
+            "tips": {
+              "count": 1
+            },
+            "homeCity": "Hamburg",
+            "bio": "",
+            "contact": {
+
+            }
+          }
+        }
+      ]
+    }
+  }
+}
