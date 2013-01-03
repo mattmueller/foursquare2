@@ -27,6 +27,21 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+    
+    # Search for trending venues
+    #
+    # @param [String] ll The ID of the venue
+    # @param [Hash]  options
+    # @option options Integer :limit - Number of results to return, up to 50.
+    # @option options Integer :radius - Radius in meters, up to approximately 2000 meters.
+
+    def trending_venues(ll, options={})
+      options[:ll] = ll    
+      response = connection.get do |req|
+        req.url "venues/trending", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
 
     # Search for venues by tip
     #
