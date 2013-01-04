@@ -184,7 +184,7 @@ module Foursquare2
 
     def herenow(venue_id, options={})
       response = connection.get do |req|
-        req.url "venues/#{venue_id}/hereNow", options
+        req.url "venues/#{venue_id}/herenow", options
       end
       return_error_or_body(response, response.body.response)
     end
