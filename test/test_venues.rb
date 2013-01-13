@@ -19,6 +19,14 @@ class TestVenues < Test::Unit::TestCase
       venues = @client.search_venues(:ll => "36.142064,-86.816086", :query => "coffee")
       venues.groups.first.items.first.name.should == 'Ugly Mugs'
     end
+    
+    should "search for trending venues around a certain position" do
+      stub_get("https://api.foursquare.com/v2/venues/trending?ll=36.132832%2C-115.151827&radius=10000&oauth_token=#{@client.oauth_token}", "venues/trending_venues.json")
+      venues = @client.trending_venues("36.132832,-115.151827", { :radius => 10000 })
+      
+      venues.venues.count.should == 2
+      venues.venues.first.name == "McCarran International Airport (LAS)"
+    end
 
     should "search for venues from a tip search" do
       stub_get("https://api.foursquare.com/v2/tips/search?ll=-23.013968%2C-45.550802&oauth_token=#{@client.oauth_token}&query=rodoviaria", "venues/search_venues_by_tip.json")
