@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "foursquare2"
-  s.version = "1.9.1"
+  s.version = "1.9.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Mueller", "Marco Moura"]
-  s.date = "2012-12-23"
+  s.date = "2013-01-13"
   s.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
   s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
   s.extra_rdoc_files = [
@@ -72,13 +72,16 @@ Gem::Specification.new do |s|
     "test/fixtures/users/user_lists.json",
     "test/fixtures/users/user_mayorships.json",
     "test/fixtures/users/user_tips.json",
+    "test/fixtures/users/user_venuestats.json",
     "test/fixtures/venues/explore_venues.json",
     "test/fixtures/venues/managed_venues.json",
     "test/fixtures/venues/no_venues_by_tip.json",
     "test/fixtures/venues/search_venues.json",
     "test/fixtures/venues/search_venues_by_tip.json",
     "test/fixtures/venues/suggest_completion_venues.json",
+    "test/fixtures/venues/trending_venues.json",
     "test/fixtures/venues/venue.json",
+    "test/fixtures/venues/venue_herenow.json",
     "test/fixtures/venues/venue_links.json",
     "test/fixtures/venues/venue_menus.json",
     "test/fixtures/venues/venue_photos.json",
