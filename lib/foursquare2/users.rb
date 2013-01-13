@@ -237,5 +237,16 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Summary of venues visited by a user
+    #
+    # @option options Integer :afterTimestamp - checkins after this epoch time.
+    # @option options Integer :beforeTimestamp - checkins before this epoch time.
+    def venuestats(options={})
+      response = connection.get do |req|
+        req.url "users/self/venuestats", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
   end
 end

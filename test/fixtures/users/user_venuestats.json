@@ -1,0 +1,427 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 0
+            }
+        }
+    ],
+    "response": {
+        "venues": [
+            {
+                "beenHere": 4,
+                "beenHereMessage": "4 Check-ins",
+                "venue": {
+                    "id": "506a4ca93950fb884c1a399c",
+                    "name": "Melt Shop",
+                    "contact": {
+                        "twitter": "melt_shop"
+                    },
+                    "location": {
+                        "address": "55 W 26th St",
+                        "crossStreet": "at 6th Ave",
+                        "lat": 40.74460714100382,
+                        "lng": -73.99074196815491,
+                        "postalCode": "10010",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/melt-shop/506a4ca93950fb884c1a399c",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d1c5941735",
+                            "name": "Sandwich Place",
+                            "pluralName": "Sandwich Places",
+                            "shortName": "Sandwiches",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/sandwiches_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 1066,
+                        "usersCount": 762,
+                        "tipCount": 25
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "specials": {
+                        "count": 0,
+                        "items": []
+                    }
+                }
+            },
+            {
+                "beenHere": 3,
+                "beenHereMessage": "3 Check-ins",
+                "venue": {
+                    "id": "4b97bb2cf964a520541235e3",
+                    "name": "No. 7 Sub @ The Ace Hotel",
+                    "contact": {
+                        "phone": "2125321680",
+                        "formattedPhone": "(212) 532-1680",
+                        "twitter": "no7sub"
+                    },
+                    "location": {
+                        "address": "1188 Broadway",
+                        "crossStreet": "btwn E 28th & E 29th St.",
+                        "lat": 40.74576898100524,
+                        "lng": -73.98886704152163,
+                        "postalCode": "10001",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/no-7-sub--the-ace-hotel/4b97bb2cf964a520541235e3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d1c5941735",
+                            "name": "Sandwich Place",
+                            "pluralName": "Sandwich Places",
+                            "shortName": "Sandwiches",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/sandwiches_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 8033,
+                        "usersCount": 3429,
+                        "tipCount": 129
+                    },
+                    "url": "http://no7sub.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/no-7-sub--the-ace-hotel/4b97bb2cf964a520541235e3/menu",
+                        "mobileUrl": "https://foursquare.com/v/4b97bb2cf964a520541235e3/device_menu"
+                    },
+                    "specials": {
+                        "count": 0,
+                        "items": []
+                    },
+                    "venuePage": {
+                        "id": "42272458"
+                    }
+                }
+            },
+            {
+                "beenHere": 2,
+                "beenHereMessage": "2 Check-ins",
+                "venue": {
+                    "id": "40e74880f964a520150a1fe3",
+                    "name": "Shake Shack",
+                    "contact": {
+                        "phone": "2128896600",
+                        "formattedPhone": "(212) 889-6600",
+                        "twitter": "shakeshackfans"
+                    },
+                    "location": {
+                        "address": "11 Madison Ave.",
+                        "crossStreet": "at W 23rd St.",
+                        "lat": 40.74140750304299,
+                        "lng": -73.98843795061111,
+                        "postalCode": "10010",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/shake-shack/40e74880f964a520150a1fe3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d16c941735",
+                            "name": "Burger Joint",
+                            "pluralName": "Burger Joints",
+                            "shortName": "Burgers",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/burger_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 62452,
+                        "usersCount": 37818,
+                        "tipCount": 629
+                    },
+                    "url": "http://www.shakeshacknyc.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "specials": {
+                        "count": 0,
+                        "items": []
+                    }
+                }
+            },
+            {
+                "beenHere": 2,
+                "beenHereMessage": "2 Check-ins",
+                "venue": {
+                    "id": "49fe10d9f964a520676f1fe3",
+                    "name": "P.F. Chang's",
+                    "contact": {
+                        "phone": "2018667790",
+                        "formattedPhone": "(201) 866-7790",
+                        "twitter": "pfchangs"
+                    },
+                    "location": {
+                        "address": "10 Port Imperial Way",
+                        "crossStreet": "at Riverbend",
+                        "lat": 40.78009362863879,
+                        "lng": -74.00982869627268,
+                        "postalCode": "07093",
+                        "city": "West New York",
+                        "state": "NJ",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/pf-changs/49fe10d9f964a520676f1fe3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d145941735",
+                            "name": "Chinese Restaurant",
+                            "pluralName": "Chinese Restaurants",
+                            "shortName": "Chinese",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/chinese_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 4847,
+                        "usersCount": 2650,
+                        "tipCount": 50
+                    },
+                    "url": "http://www.pfchangs.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/pf-changs/49fe10d9f964a520676f1fe3/menu",
+                        "mobileUrl": "https://foursquare.com/v/49fe10d9f964a520676f1fe3/device_menu"
+                    },
+                    "specials": {
+                        "count": 0,
+                        "items": []
+                    }
+                }
+            },
+            {
+                "beenHere": 2,
+                "beenHereMessage": "2 Check-ins",
+                "venue": {
+                    "id": "43504680f964a520af281fe3",
+                    "name": "Bubby's Brooklyn",
+                    "contact": {
+                        "phone": "7182220666",
+                        "formattedPhone": "(718) 222-0666"
+                    },
+                    "location": {
+                        "address": "1 Main St.",
+                        "crossStreet": "at Plymouth St.",
+                        "lat": 40.703932832748045,
+                        "lng": -73.99048950444671,
+                        "postalCode": "11201",
+                        "city": "Brooklyn",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/bubbys-brooklyn/43504680f964a520af281fe3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d14e941735",
+                            "name": "American Restaurant",
+                            "pluralName": "American Restaurants",
+                            "shortName": "American",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 6149,
+                        "usersCount": 4300,
+                        "tipCount": 112
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/bubbys-brooklyn/43504680f964a520af281fe3/menu",
+                        "mobileUrl": "https://foursquare.com/v/43504680f964a520af281fe3/device_menu"
+                    },
+                    "specials": {
+                        "count": 0,
+                        "items": []
+                    }
+                }
+            }
+        ],
+        "categories": [
+            {
+                "venueCount": 4,
+                "category": {
+                    "id": "4bf58dd8d48988d14e941735",
+                    "name": "American Restaurant",
+                    "pluralName": "American Restaurants",
+                    "shortName": "American",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 4,
+                "category": {
+                    "id": "4bf58dd8d48988d1f9941735",
+                    "name": "Food & Drink Shop",
+                    "pluralName": "Food & Drink Shops",
+                    "shortName": "Food & Drink",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/shops/foodanddrink_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 4,
+                "category": {
+                    "id": "4bf58dd8d48988d1c5941735",
+                    "name": "Sandwich Place",
+                    "pluralName": "Sandwich Places",
+                    "shortName": "Sandwiches",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/sandwiches_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 3,
+                "category": {
+                    "id": "4bf58dd8d48988d154941735",
+                    "name": "Cuban Restaurant",
+                    "pluralName": "Cuban Restaurants",
+                    "shortName": "Cuban",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 3,
+                "category": {
+                    "id": "4bf58dd8d48988d1c1941735",
+                    "name": "Mexican Restaurant",
+                    "pluralName": "Mexican Restaurants",
+                    "shortName": "Mexican",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/mexican_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 3,
+                "category": {
+                    "id": "4bf58dd8d48988d1e0931735",
+                    "name": "Coffee Shop",
+                    "pluralName": "Coffee Shops",
+                    "shortName": "Coffee Shop",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/coffeeshop_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4bf58dd8d48988d16c941735",
+                    "name": "Burger Joint",
+                    "pluralName": "Burger Joints",
+                    "shortName": "Burgers",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/burger_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4bf58dd8d48988d1cb941735",
+                    "name": "Food Truck",
+                    "pluralName": "Food Trucks",
+                    "shortName": "Street Food",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/streetfood_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4bf58dd8d48988d1d2941735",
+                    "name": "Sushi Restaurant",
+                    "pluralName": "Sushi Restaurants",
+                    "shortName": "Sushi",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/sushi_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4d4ae6fc7a7b7dea34424761",
+                    "name": "Fried Chicken Joint",
+                    "pluralName": "Fried Chicken Joints",
+                    "shortName": "Fried Chicken",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/friedchicken_",
+                        "suffix": ".png"
+                    }
+                }
+            }
+        ]
+    }
+}

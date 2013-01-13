@@ -88,12 +88,20 @@ class TestUsers < Test::Unit::TestCase
       checkins_after.items.first.createdAt.should > checkins_after.items.last.createdAt
     end
 
-    should "should find a users checkins with beforeTimestamp param" do
+    should "find a users checkins with beforeTimestamp param" do
       stub_get("https://api.foursquare.com/v2/users/self/checkins?oauth_token=#{@client.oauth_token}&limit=5&offset=20&sort=oldestfirst&beforeTimestamp=1355867689", "users/user_checkins_beforetimestamp.json")
       checkins_before = @client.user_checkins({:limit => 5, :offset => 20, :sort => 'oldestfirst', :beforeTimestamp => 1355867689})
       checkins_before.items.size.should == 5
       checkins_before.items.reject { |ci| ci.createdAt < 1355867689 }.empty?.should == true
       checkins_before.items.first.createdAt.should < checkins_before.items.last.createdAt
     end
+
+    should "find a users venuestats" do
+      stub_get("https://api.foursquare.com/v2/users/self/venuestats?oauth_token=#{@client.oauth_token}", "users/user_venuestats.json")
+      venuestats = @client.venuestats
+      venuestats.venues.size.should == 5
+      venuestats.categories.size.should == 10
+    end
   end
+
 end
