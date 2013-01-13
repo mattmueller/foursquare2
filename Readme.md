@@ -109,6 +109,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.venue_photos
     client.page
     client.search_pages
+    client.herenow
     client.page_venues
     client.search_venues
     client.search_venues_by_tip

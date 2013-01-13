@@ -174,6 +174,21 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Returns a list of users that are currently checked into a venue
+    #
+    # param [String] venue_id The ID of the venue managed by the current user
+    # @param [Hash] options
+    # @option options Integer :limit - Number of results to return, up to 500.
+    # @option options Integer :offset - Used to page through results.
+    # @option options Integer :afterTimestamp - Retrieve the first results to follow these seconds since epoch.
+
+    def herenow(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/herenow", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
     #
     #Returns a list of venues managed
     #
