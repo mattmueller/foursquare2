@@ -30,7 +30,7 @@ module Foursquare2
     
     # Search for trending venues
     #
-    # @param [String] ll The ID of the venue
+    # @param [String] :ll Latitude and longitude in format LAT,LON
     # @param [Hash]  options
     # @option options Integer :limit - Number of results to return, up to 50.
     # @option options Integer :radius - Radius in meters, up to approximately 2000 meters.
