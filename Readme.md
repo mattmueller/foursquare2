@@ -114,6 +114,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.search_venues
     client.search_venues_by_tip
     client.venue_categories
+    client.trending_venues
     client.add_venue
     client.mark_venue_todo
     client.flag_venue
