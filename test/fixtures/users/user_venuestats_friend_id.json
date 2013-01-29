@@ -1,0 +1,376 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 2
+            }
+        }
+    ],
+    "response": {
+        "venues": [
+            {
+                "beenHere": 1,
+                "beenHereMessage": "1 Check-ins",
+                "venue": {
+                    "id": "406dfe80f964a52048f21ee3",
+                    "name": "Flatiron Lounge",
+                    "contact": {
+                        "phone": "2127277741",
+                        "formattedPhone": "(212) 727-7741"
+                    },
+                    "location": {
+                        "address": "37 W 19th St.",
+                        "crossStreet": "btwn 5th & 6th",
+                        "lat": 40.739977397073,
+                        "lng": -73.99332451104736,
+                        "postalCode": "10011",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/flatiron-lounge/406dfe80f964a52048f21ee3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d11e941735",
+                            "name": "Cocktail Bar",
+                            "pluralName": "Cocktail Bars",
+                            "shortName": "Cocktail",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/nightlife/cocktails_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 7601,
+                        "usersCount": 5694,
+                        "tipCount": 71
+                    },
+                    "url": "http://www.flatironlounge.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/flatiron-lounge/406dfe80f964a52048f21ee3/menu",
+                        "mobileUrl": "https://foursquare.com/v/406dfe80f964a52048f21ee3/device_menu"
+                    }
+                }
+            },
+            {
+                "beenHere": 1,
+                "beenHereMessage": "1 Check-ins",
+                "venue": {
+                    "id": "49dfb616f964a52002611fe3",
+                    "name": "Bin 14",
+                    "contact": {
+                        "phone": "2019639463",
+                        "formattedPhone": "(201) 963-9463"
+                    },
+                    "location": {
+                        "address": "1314 Washington St.",
+                        "crossStreet": "13th St.",
+                        "lat": 40.752975451759006,
+                        "lng": -74.02613636991552,
+                        "postalCode": "07030",
+                        "city": "Hoboken",
+                        "state": "NJ",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/bin-14/49dfb616f964a52002611fe3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d123941735",
+                            "name": "Wine Bar",
+                            "pluralName": "Wine Bars",
+                            "shortName": "Wine Bar",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/nightlife/wine_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2168,
+                        "usersCount": 1210,
+                        "tipCount": 28
+                    },
+                    "url": "http://www.bin14.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "reservations": {
+                        "url": "http://www.opentable.com/single.aspx?rid=44107&ref=1040"
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/bin-14/49dfb616f964a52002611fe3/menu",
+                        "mobileUrl": "https://foursquare.com/v/49dfb616f964a52002611fe3/device_menu"
+                    }
+                }
+            },
+            {
+                "beenHere": 1,
+                "beenHereMessage": "1 Check-ins",
+                "venue": {
+                    "id": "4afcad9ff964a520052522e3",
+                    "name": "Costco Wholesale Club",
+                    "contact": {
+                        "phone": "2128965873",
+                        "formattedPhone": "(212) 896-5873"
+                    },
+                    "location": {
+                        "address": "517 E 117th St",
+                        "crossStreet": "Pleasant Ave",
+                        "lat": 40.79515543869133,
+                        "lng": -73.93099638731043,
+                        "postalCode": "10035",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/costco-wholesale-club/4afcad9ff964a520052522e3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d118951735",
+                            "name": "Grocery Store",
+                            "pluralName": "Grocery Stores",
+                            "shortName": "Grocery Store",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/shops/food_grocery_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 9337,
+                        "usersCount": 3448,
+                        "tipCount": 60
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    }
+                }
+            },
+            {
+                "beenHere": 1,
+                "beenHereMessage": "1 Check-ins",
+                "venue": {
+                    "id": "4b4b80aff964a520469e26e3",
+                    "name": "John's Deli",
+                    "contact": {
+                        "phone": "7183727481",
+                        "formattedPhone": "(718) 372-7481"
+                    },
+                    "location": {
+                        "address": "2033 Stillwell Ave.",
+                        "crossStreet": "at 86th St.",
+                        "lat": 40.59694477642726,
+                        "lng": -73.98532390594482,
+                        "postalCode": "11223",
+                        "city": "Brooklyn",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/johns-deli/4b4b80aff964a520469e26e3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d1c5941735",
+                            "name": "Sandwich Place",
+                            "pluralName": "Sandwich Places",
+                            "shortName": "Sandwiches",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/food/sandwiches_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 1343,
+                        "usersCount": 559,
+                        "tipCount": 15
+                    },
+                    "url": "http://johnsdeli.com",
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    },
+                    "menu": {
+                        "type": "foodAndBeverage",
+                        "url": "https://foursquare.com/v/johns-deli/4b4b80aff964a520469e26e3/menu",
+                        "mobileUrl": "https://foursquare.com/v/4b4b80aff964a520469e26e3/device_menu"
+                    }
+                }
+            },
+            {
+                "beenHere": 1,
+                "beenHereMessage": "1 Check-ins",
+                "venue": {
+                    "id": "4530db29f964a520613b1fe3",
+                    "name": "Whole Foods",
+                    "contact": {},
+                    "location": {
+                        "address": "10 Columbus Circle",
+                        "crossStreet": "Lower Level of the Time Warner Center",
+                        "lat": 40.76806170936614,
+                        "lng": -73.98184776306152,
+                        "postalCode": "10023",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "United States",
+                        "cc": "US"
+                    },
+                    "canonicalUrl": "https://foursquare.com/v/whole-foods/4530db29f964a520613b1fe3",
+                    "categories": [
+                        {
+                            "id": "4bf58dd8d48988d118951735",
+                            "name": "Grocery Store",
+                            "pluralName": "Grocery Stores",
+                            "shortName": "Grocery Store",
+                            "icon": {
+                                "prefix": "https://foursquare.com/img/categories_v2/shops/food_grocery_",
+                                "suffix": ".png"
+                            },
+                            "primary": true
+                        }
+                    ],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 44282,
+                        "usersCount": 15607,
+                        "tipCount": 192
+                    },
+                    "likes": {
+                        "count": 0,
+                        "groups": []
+                    }
+                }
+            }
+        ],
+        "categories": [
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4bf58dd8d48988d1f9941735",
+                    "name": "Food & Drink Shop",
+                    "pluralName": "Food & Drink Shops",
+                    "shortName": "Food & Drink",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/shops/foodanddrink_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 2,
+                "category": {
+                    "id": "4bf58dd8d48988d14e941735",
+                    "name": "American Restaurant",
+                    "pluralName": "American Restaurants",
+                    "shortName": "American",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/default_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d1c5941735",
+                    "name": "Sandwich Place",
+                    "pluralName": "Sandwich Places",
+                    "shortName": "Sandwiches",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/sandwiches_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d16f941735",
+                    "name": "Hot Dog Joint",
+                    "pluralName": "Hot Dog Joints",
+                    "shortName": "Hot Dogs",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/hotdog_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d117941735",
+                    "name": "Beer Garden",
+                    "pluralName": "Beer Gardens",
+                    "shortName": "Beer Garden",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/nightlife/beergarden_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d111941735",
+                    "name": "Japanese Restaurant",
+                    "pluralName": "Japanese Restaurants",
+                    "shortName": "Japanese",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/food/japanese_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d11e941735",
+                    "name": "Cocktail Bar",
+                    "pluralName": "Cocktail Bars",
+                    "shortName": "Cocktail",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/nightlife/cocktails_",
+                        "suffix": ".png"
+                    }
+                }
+            },
+            {
+                "venueCount": 1,
+                "category": {
+                    "id": "4bf58dd8d48988d123941735",
+                    "name": "Wine Bar",
+                    "pluralName": "Wine Bars",
+                    "shortName": "Wine Bar",
+                    "icon": {
+                        "prefix": "https://foursquare.com/img/categories_v2/nightlife/wine_",
+                        "suffix": ".png"
+                    }
+                }
+            }
+        ]
+    }
+}
