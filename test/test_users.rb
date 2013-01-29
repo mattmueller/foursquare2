@@ -96,11 +96,18 @@ class TestUsers < Test::Unit::TestCase
       checkins_before.items.first.createdAt.should < checkins_before.items.last.createdAt
     end
 
-    should "find a users venuestats" do
+    should "find a users venuestats by self" do
       stub_get("https://api.foursquare.com/v2/users/self/venuestats?oauth_token=#{@client.oauth_token}", "users/user_venuestats.json")
       venuestats = @client.venuestats
       venuestats.venues.size.should == 5
       venuestats.categories.size.should == 10
+    end
+
+    should "find a users venuestats by inputting friends user_id" do
+      stub_get("https://api.foursquare.com/v2/users/555555/venuestats?oauth_token=#{@client.oauth_token}", "users/user_venuestats_friend_id.json")
+      friends_venuestats = @client.venuestats(555555)
+      friends_venuestats.venues.size.should == 5
+      friends_venuestats.categories.size.should == 8
     end
   end
 
