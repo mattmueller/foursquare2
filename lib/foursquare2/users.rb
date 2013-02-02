@@ -238,12 +238,13 @@ module Foursquare2
     end
 
     # Summary of venues visited by a user
+    # optional @param [String] user_id - The user to get venue stats for.
     #
     # @option options Integer :afterTimestamp - checkins after this epoch time.
     # @option options Integer :beforeTimestamp - checkins before this epoch time.
-    def venuestats(options={})
+    def venuestats(user_id="self", options={})
       response = connection.get do |req|
-        req.url "users/self/venuestats", options
+        req.url "users/#{user_id}/venuestats", options
       end
       return_error_or_body(response, response.body.response)
     end
