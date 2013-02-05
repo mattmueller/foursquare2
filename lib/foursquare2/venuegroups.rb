@@ -1,5 +1,5 @@
 module Foursquare2
-  module VenueGroups
+  module Venuegroups
 
     # Retrieve information about a venuegroup
     #
