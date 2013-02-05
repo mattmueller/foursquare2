@@ -6,6 +6,6 @@ puts "client initialize"
 
 venueId=['50c07df6067db4a371c7902b','50c0ffa6067d2a087c00cb05']
 
-venuegroup=client.add_venuegroup(:name => 'Venues Managed 4', :venueId => venueId)
+venuegroup=client.add_venuegroup(:name => 'Venues Managed 6', :venueId => venueId)
 
 puts venuegroup.inspect

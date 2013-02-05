@@ -19,7 +19,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "venuegroups/add", options
       end
-      return_error_or_body(response, response.body)
+      return_error_or_body(response, response)
     end
 
     #Delete a venue group
