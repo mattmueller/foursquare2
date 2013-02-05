@@ -1,5 +1,5 @@
 module Foursquare2
-  module Venuegroups
+  module VenueGroups
 
     # Retrieve information about a venuegroup
     #
@@ -7,7 +7,7 @@ module Foursquare2
 
     def venuegroup(group_id)
       response = connection.get("venuegroups/#{group_id}")
-      return_error_or_body(response, response.body.response.venue)
+      return_error_or_body(response, response.body.response.venuegroup)
     end
 
     # Add a venuegroup
@@ -19,7 +19,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "venuegroups/add", options
       end
-      return_error_or_body(response, response.body.response.venue)
+      return_error_or_body(response, response.body.response.venuegroup)
     end
 
     # List all venue groups owned by the user
@@ -28,7 +28,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "venuegroups/list"
       end
-      return_error_or_body(response, response.body.response.venue)
+      return_error_or_body(response, response.body.response.venuegroup)
     end
 
     # Update a venuegroup
