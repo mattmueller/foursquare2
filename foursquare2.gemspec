@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     "lib/foursquare2/tips.rb",
     "lib/foursquare2/users.rb",
     "lib/foursquare2/venues.rb",
+    "lib/foursquare2/venuegroups.rb",
     "test/config.rb",
     "test/fixtures/campaigns/campaign_created.json",
     "test/fixtures/checkins/checkin.json",
