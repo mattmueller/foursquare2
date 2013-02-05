@@ -22,6 +22,15 @@ module Foursquare2
       return_error_or_body(response, response.body.response.venue)
     end
 
+    # List all venue groups owned by the user
+    
+    def list_venuegroup
+      response = connection.post do |req|
+        req.url "venuegroups/list"
+      end
+      return_error_or_body(response, response.body.response.venue)
+    end
+
     # Update a venuegroup
     # @param [String] group_id - The ID of the venue group to modify
     # @param [Hash]  options
