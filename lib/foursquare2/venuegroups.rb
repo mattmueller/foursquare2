@@ -19,7 +19,18 @@ module Foursquare2
       response = connection.post do |req|
         req.url "venuegroups/add", options
       end
-      return_error_or_body(response, response.body.response.venuegroup)
+      return_error_or_body(response, response.body)
+    end
+
+    #Delete a venue group
+    # @param [Hash] options
+    # @option options Array[String] :group_id - The ID of the venue group to delete
+    
+    def delete_venuegroup(options={})
+      response = connection.get do |req|
+        req.url "venuegroups/#{group_id}/delete", options
+      end
+      return_error_or_body(response, response.body.response)
     end
 
     # List all venue groups owned by the user
