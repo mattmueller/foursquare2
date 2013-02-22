@@ -31,7 +31,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "campaigns/" + options.campaign_id + "/end"
       end
-        return_error_or_body(response, response.body.response.message)
+        return_error_or_body(response, response.body.response)
     end
     
   end
