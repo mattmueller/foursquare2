@@ -19,6 +19,20 @@ module Foursquare2
       end
         return_error_or_body(response, response.body.response.campaign)
     end
+
+    def list_campaigns(options={})
+      response = connection.post do |req|
+        req.url "campaigns/list", options
+      end
+        return_error_or_body(response, response.body.response.campaigns)
+    end
+
+    def end_campaign(options={})
+      response = connection.post do |req|
+        req.url "campaigns/" + options.campaign_id + "/end"
+      end
+        return_error_or_body(response, response.body.response.message)
+    end
     
   end
 end
