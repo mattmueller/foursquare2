@@ -21,15 +21,15 @@ module Foursquare2
     end
 
     def list_campaigns(options={})
-      response = connection.post do |req|
+      response = connection.get do |req|
         req.url "campaigns/list", options
       end
-        return_error_or_body(response, response.body.response.campaigns)
+        return_error_or_body(response, response.body.response.campaigns.items)
     end
 
-    def end_campaign(options={})
+    def end_campaign(campaign_id)
       response = connection.post do |req|
-        req.url "campaigns/" + options.campaign_id + "/end"
+        req.url "campaigns/" + campaign_id[:campaign_id] + "/end"
       end
         return_error_or_body(response, response.body.response)
     end
