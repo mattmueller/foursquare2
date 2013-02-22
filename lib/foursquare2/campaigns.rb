@@ -29,7 +29,7 @@ module Foursquare2
 
     def end_campaign(campaign_id)
       response = connection.post do |req|
-        req.url "campaigns/" + campaign_id[:campaign_id] + "/end"
+        req.url "campaigns/#{campaign_id}/end"
       end
         return_error_or_body(response, response.body.response)
     end
