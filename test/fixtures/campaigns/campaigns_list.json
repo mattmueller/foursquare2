@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "notifications": [
+    {
+      "type": "notificationTray"
+      "item": {
+        "unreadCount": 0
+      }
+    }
+  ],
+  "response": {
+    "campaigns": {
+      "count": 1
+      "items": [
+        {
+          "id": "4e0deba2922e6f94b1410b79"
+          "venues": {
+            "count": 1
+            "items": [
+              {
+                "id": "4e0deab3922e6f94b1410af3"
+              }
+            ]
+          }
+          "startsAt": 1309535356
+          "specialId": "4e0debea922e6f94b1410bb7"
+          "venueGroupIds": {
+            "count": 0
+            "items": [ ]
+          }
+        }
+      ]
+    }
+  }
+}
