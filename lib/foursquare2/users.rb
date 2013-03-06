@@ -5,7 +5,7 @@ module Foursquare2
     #
     # @param [Hash] options
     # @option options Integer :neighbors Number of friends' scores adjacent to your score
-    
+
     def leaderboard(options={})
       response = connection.get do |req|
         req.url "users/leaderboard", options
@@ -140,6 +140,20 @@ module Foursquare2
         req.url "users/#{user_id}/todos", options
       end
       return_error_or_body(response, response.body.response.todos)
+    end
+
+    # Get the photos for the authenticated user.
+    #
+    # @param [Hash]  options
+    # @option options Integer :limit - The limit of results to return.
+    # @option options Integer :offset - Used to page through results.
+
+
+    def user_photos(options={})
+      response = connection.get do |req|
+        req.url "users/self/photos", options
+      end
+      return_error_or_body(response, response.body.response.photos)
     end
 
     # Get the venue history for the authenticated user.

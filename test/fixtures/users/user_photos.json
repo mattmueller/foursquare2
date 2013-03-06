@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "notifications": [
+    {
+      "type": "notificationTray",
+      "item": {
+        "unreadCount": 1
+      }
+    }
+  ],
+  "response": {
+    "photos": {
+      "count": 2,
+      "items": [
+        {
+          "id": "5136e2d3e4b00eba53f0bce0",
+          "createdAt": 1362551507,
+          "source": {
+            "name": "foursquare for iPhone",
+            "url": "https://foursquare.com/download/#/iphone"
+          },
+          "prefix": "https://irs0.4sqi.net/img/general/",
+          "suffix": "/308098_MgBNEkeVohBBWDO3eQVMbUWJFmm-7R5kEEWjhq77xIQ.jpg",
+          "width": 960,
+          "height": 720,
+          "visibility": "public",
+          "venue": {
+            "id": "4b66afdff964a52077272be3",
+            "name": "アカデミーヒルズ",
+            "contact": {
+
+            },
+            "location": {
+              "address": "六本木6-10-1",
+              "crossStreet": "六本木ヒルズ森タワー40F,49F",
+              "lat": 35.660452,
+              "lng": 139.729454,
+              "postalCode": "106-6155",
+              "city": "港区",
+              "state": "東京都",
+              "country": "Japan",
+              "cc": "JP"
+            },
+            "canonicalUrl": "https://foursquare.com/v/%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%BC%E3%83%92%E3%83%AB%E3%82%BA/4b66afdff964a52077272be3",
+            "categories": [
+              {
+                "id": "4bf58dd8d48988d12d941735",
+                "name": "Monument / Landmark",
+                "pluralName": "Monuments / Landmarks",
+                "shortName": "Landmark",
+                "icon": {
+                  "prefix": "https://foursquare.com/img/categories_v2/building/government_monument_",
+                  "suffix": ".png"
+                },
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 2256,
+              "usersCount": 927,
+              "tipCount": 5
+            },
+            "url": "http://www.academyhills.com",
+            "likes": {
+              "count": 0,
+              "groups": []
+            },
+            "like": false,
+            "beenHere": {
+              "count": 1,
+              "marked": true
+            }
+          },
+          "checkin": {
+            "id": "5136e2cce4b0dfb1b3003d9d",
+            "createdAt": 1362551500,
+            "type": "checkin",
+            "shout": "ほぼ満席",
+            "timeZoneOffset": 540
+          }
+        },
+        {
+          "id": "5117a5bce4b0f9aeaa0b6098",
+          "createdAt": 1360504252,
+          "source": {
+            "name": "foursquare for iPhone",
+            "url": "https://foursquare.com/download/#/iphone"
+          },
+          "prefix": "https://irs0.4sqi.net/img/general/",
+          "suffix": "/308098_Hx08l9Co4jE2d03s5aniyU0_OiFmuyHTW7RanXIrU7s.jpg",
+          "width": 720,
+          "height": 960,
+          "visibility": "public",
+          "venue": {
+            "id": "4fdc0cfee4b0598b20798fff",
+            "name": "ギークハウス元住吉",
+            "contact": {
+              "twitter": "geekmtsm"
+            },
+            "location": {
+              "lat": 35.56697725449356,
+              "lng": 139.65618716690207,
+              "country": "Japan",
+              "cc": "JP"
+            },
+            "canonicalUrl": "https://foursquare.com/v/%E3%82%AE%E3%83%BC%E3%82%AF%E3%83%8F%E3%82%A6%E3%82%B9%E5%85%83%E4%BD%8F%E5%90%89/4fdc0cfee4b0598b20798fff",
+            "categories": [
+              {
+                "id": "4d954b06a243a5684965b473",
+                "name": "Residential Building (Apartment / Condo)",
+                "pluralName": "Residential Buildings (Apartments / Condos)",
+                "shortName": "Apartment Building",
+                "icon": {
+                  "prefix": "https://foursquare.com/img/categories_v2/building/apartment_",
+                  "suffix": ".png"
+                },
+                "primary": true
+              }
+            ],
+            "verified": false,
+            "stats": {
+              "checkinsCount": 164,
+              "usersCount": 38,
+              "tipCount": 1
+            },
+            "likes": {
+              "count": 0,
+              "groups": []
+            },
+            "like": false,
+            "beenHere": {
+              "count": 63,
+              "marked": true
+            }
+          },
+          "checkin": {
+            "id": "5117a596e4b051a08b3d9d3b",
+            "createdAt": 1360504214,
+            "type": "checkin",
+            "shout": "2011だったら逆にほしかったーっていったらくれた",
+            "isMayor": true,
+            "timeZoneOffset": 540
+          }
+        }
+      ]
+    }
+  }
+}
