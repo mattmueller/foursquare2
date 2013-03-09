@@ -109,6 +109,13 @@ class TestUsers < Test::Unit::TestCase
       friends_venuestats.venues.size.should == 5
       friends_venuestats.categories.size.should == 8
     end
+
+    should "fetch photos" do
+      stub_get("https://api.foursquare.com/v2/users/self/photos?oauth_token=#{@client.oauth_token}", "users/user_photos.json")
+      photos = @client.user_photos
+      photos.items.size.should == 2
+      photos.items.first.suffix.should == "/308098_MgBNEkeVohBBWDO3eQVMbUWJFmm-7R5kEEWjhq77xIQ.jpg"
+    end
   end
 
 end
