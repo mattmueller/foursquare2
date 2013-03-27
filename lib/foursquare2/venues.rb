@@ -246,5 +246,14 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+
+    # Get venue hours information.
+    #
+    # param [String] venue_id The ID of the venue
+
+    def venue_hours(venue_id)
+      response = connection.get("venues/#{venue_id}/hours")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end
