@@ -35,6 +35,7 @@ module Foursquare2
   require 'foursquare2/tips'
   require 'foursquare2/checkins'
   require 'foursquare2/venues'
+  require 'foursquare2/venuegroups'
   require 'foursquare2/pages'
   require 'foursquare2/lists'
   require 'foursquare2/events'
