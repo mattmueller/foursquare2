@@ -16,7 +16,7 @@ class TestVenuegroups < Test::Unit::TestCase
     should "add a venuegroup" do
       stub_post("https://api.foursquare.com/v2/venuegroups/add?oauth_token=#{@client.oauth_token}?name=Venues&venueId=4b8c3d87f964a520f7c532e3", "venuegroups/venuegroup.json")
       venuegroup = @client.add_venuegroup()
-      venuegroup.name == "Venue"
+      venuegroup.name == "Venues"
     end
 
     should "update a venuegroup" do
