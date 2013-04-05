@@ -94,6 +94,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.user_badges
     client.user_checkins
     client.user_friends
+    client.user_photos
     client.user_tips
     client.user_mayorships
     client.user_todos
