@@ -1,5 +1,13 @@
 module Foursquare2
   module Campaigns
+
+    # Retrieve information about a campaign
+    #
+    # param [String] campaign_id The ID of the venue
+    def campaign(campaign_id)
+      response = connection.get("campaigns/#{campaign_id}")
+      return_error_or_body(response, response.body.response.campaign)
+    end
     
     # Add a campaign 
     # Details on param options can be found at https://developer.foursquare.com/docs/campaigns/add

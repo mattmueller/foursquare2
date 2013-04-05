@@ -1,0 +1,20 @@
+{
+  "meta": {"code": 200},
+  "response": {
+    "venuegroup": {
+      "id": "4e15cd13b61c42e7c54e5bb6",
+      "name": "Venues",
+      "venues": {
+        "count": 2,
+        "items": [
+          {
+            "id": "4b8c3d87f964a520f7c532e3"
+          },
+          {
+            "id": "4d572bcc9e508cfab975189b"
+          }
+        ]
+      }
+    }
+  }
+}
