@@ -3,10 +3,10 @@ module Foursquare2
 
     # Retrieve information about a venuegroup
     #
-    # param [String] venuegroup_id The ID of the venue
+    # param [String] group_id The ID of the venuegroup
 
-    def venuegroup(venuegroup_id)
-      response = connection.get("venuegroups/#{venuegroup_id}")
+    def venuegroup(group_id)
+      response = connection.get("venuegroups/#{group_id}")
       return_error_or_body(response, response.body.response.venuegroup)
     end
 
