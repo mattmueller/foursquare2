@@ -12,6 +12,7 @@ module Foursquare2
     extend Forwardable
 
     include Venues
+    include Venuegroups
     include Checkins
     include Tips
     include Photos
