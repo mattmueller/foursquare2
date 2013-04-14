@@ -10,7 +10,7 @@ class TestCampaigns < Test::Unit::TestCase
     end
 
     should "get a campaign" do
-      stub_post("https://api.foursquare.com/v2/campaigns/4e0deba2922e6f94b1410b79?oauth_token=#{@client.oauth_token}", "campaigns/campaign.json")
+      stub_get("https://api.foursquare.com/v2/campaigns/4e0deba2922e6f94b1410b79?oauth_token=#{@client.oauth_token}", "campaigns/campaign.json")
       campaign = @client.campaign('4e0deba2922e6f94b1410b79')
       campaign.id == "4e0deba2922e6f94b1410b79"
     end
