@@ -8,6 +8,12 @@ class TestCampaigns < Test::Unit::TestCase
     setup do
       @client = foursquare_test_client
     end
+
+    should "get a campaign" do
+      stub_post("https://api.foursquare.com/v2/campaigns/4e0deba2922e6f94b1410b79?oauth_token=#{@client.oauth_token}", "campaigns/campaign.json")
+      campaign = @client.campaign('4e0deba2922e6f94b1410b79')
+      campaign.id == "4e0deba2922e6f94b1410b79"
+    end
     
     should "add a campaign" do
       stub_post("https://api.foursquare.com/v2/campaigns/add?oauth_token=#{@client.oauth_token}&specialId=4bd876f886ba62b58a6e88b3", "campaigns/campaign_created.json")

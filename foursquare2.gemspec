@@ -38,7 +38,9 @@ Gem::Specification.new do |s|
     "lib/foursquare2/tips.rb",
     "lib/foursquare2/users.rb",
     "lib/foursquare2/venues.rb",
+    "lib/foursquare2/venuegroups.rb",
     "test/config.rb",
+    "test/fixtures/campaigns/campaign.json",
     "test/fixtures/campaigns/campaign_created.json",
     "test/fixtures/campaigns/campaigns_list.json",
     "test/fixtures/checkins/checkin.json",
@@ -90,6 +92,8 @@ Gem::Specification.new do |s|
     "test/fixtures/venues/venue_photos.json",
     "test/fixtures/venues/venue_stats.json",
     "test/fixtures/venues/venue_tips.json",
+    "test/fixtures/venuegroups/venuegroup.json",
+    "test/fixtures/venuegroups/venuegroup_update.json",
     "test/helper.rb",
     "test/test_campaigns.rb",
     "test/test_checkins.rb",
@@ -101,7 +105,8 @@ Gem::Specification.new do |s|
     "test/test_specials.rb",
     "test/test_tips.rb",
     "test/test_users.rb",
-    "test/test_venues.rb"
+    "test/test_venues.rb",
+    "test/test_venuegroups.rb"
   ]
   s.homepage = "http://github.com/mattmueller/foursquare2"
   s.licenses = ["MIT"]

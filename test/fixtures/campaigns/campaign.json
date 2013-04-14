@@ -1,0 +1,33 @@
+{
+  "meta": {"code": 200},
+  "response": {
+    "campaign": {
+      "id": "4e0deba2922e6f94b1410b79",
+      "venues": {
+        "count": 1,
+        "items": [
+          {
+            "id": "4e0deab3922e6f94b1410af3"
+          }
+        ]
+      },
+      "startsAt": 1309535356,
+      "startable": false,
+      "deleteable": false,
+      "requiresCodes": false,
+      "uploadInProgress": false,
+      "status": "active",
+      "special": {
+        "id": "4e0debea922e6f94b1410bb7",
+        "name": "Friends Special 7/1/2011",
+        "title": "Friends Special",
+        "text": "Check in with 2 friends and receive a free cowsy dungy clock!"
+      },
+      "timeZoneOffset": -240,
+      "venueGroups": {
+        "count": 0,
+        "items": [ ]
+      }
+    }
+  }
+}
