@@ -255,5 +255,14 @@ module Foursquare2
       response = connection.get("venues/#{venue_id}/hours")
       return_error_or_body(response, response.body.response)
     end
+
+    # Get the events currently taking place at a venue.
+    #
+    # param [String] venue_id The ID of the venue
+
+    def venue_events(venue_id)
+      response = connection.get("venues/#{venue_id}/events")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end

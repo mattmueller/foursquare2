@@ -138,6 +138,13 @@ class TestVenues < Test::Unit::TestCase
       response.hours.timeframes.first.days.should == [1, 2, 3, 4, 5, 6]
     end
 
+    should "get events from a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/40afe980f964a5203bf31ee3/events?oauth_token=#{@client.oauth_token}", "venues/venue_events.json")
+      response = @client.venue_events('40afe980f964a5203bf31ee3')
+      response.events.items.first.name.should == 'Nautanki Saala!'
+      response.events.items.size == response.events.count
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,
