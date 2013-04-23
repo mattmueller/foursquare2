@@ -267,10 +267,24 @@ module Foursquare2
 
     # Returns friends and a total count of users who have liked this venue.
     #
-    # param [String] The ID of the venue to get likes for
+    # param [String] venue_id The ID of the venue to get likes for
 
     def venue_likes(venue_id)
       response = connection.get("venues/#{venue_id}/likes")
+      return_error_or_body(response, response.body.response)
+    end
+
+    # Returns the lists that this venue appears on.
+    #
+    # param [String] venue_id ID of a venue to get lists for.
+    # @option options String :group - can be created, edited, followed, friends, other. If no acting user is present, only other is supported.
+    # @option options Integer :limit - Number of results to return, up to 200.
+    # @option options Integer :offset - Used to page through results. Must specify a group
+
+    def venue_listed(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/listed", options
+      end
       return_error_or_body(response, response.body.response)
     end
   end
