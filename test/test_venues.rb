@@ -159,6 +159,13 @@ class TestVenues < Test::Unit::TestCase
       response.lists.count == 4
     end
 
+    should "get next venues for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/nextvenues?oauth_token=#{@client.oauth_token}", "venues/venue_nextvenues.json")
+      response = @client.venue_nextvenues('4b8c3d87f964a520f7c532e3')
+      response.nextVenues.items.first.id.should == '4b06a391f964a5200aee22e3'
+      response.nextVenues.count == 5
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,

@@ -287,5 +287,14 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
+
+    # Returns venues that people often check in to after the current venue. Up to 5 venues are returned in each query, and results are sorted by how many people have visited that venue after the current one. Homes are never returned in results.
+    #
+    # param [String] venue_id Required. ID of the venue you want to see next venue information about
+
+    def venue_nextvenues(venue_id)
+      response = connection.get("venues/#{venue_id}/nextvenues")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end
