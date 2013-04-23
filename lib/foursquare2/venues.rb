@@ -264,5 +264,14 @@ module Foursquare2
       response = connection.get("venues/#{venue_id}/events")
       return_error_or_body(response, response.body.response)
     end
+
+    # Returns friends and a total count of users who have liked this venue.
+    #
+    # param [String] The ID of the venue to get likes for
+
+    def venue_likes(venue_id)
+      response = connection.get("venues/#{venue_id}/likes")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end

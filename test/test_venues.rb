@@ -145,6 +145,13 @@ class TestVenues < Test::Unit::TestCase
       response.events.items.size == response.events.count
     end
 
+    should "get likes for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/likes?oauth_token=#{@client.oauth_token}", "venues/venue_likes.json")
+      response = @client.venue_likes('4b8c3d87f964a520f7c532e3')
+      response.likes.groups.first.items.first.id.should == '53698158'
+      response.likes.count == 140
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,
