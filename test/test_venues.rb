@@ -166,6 +166,13 @@ class TestVenues < Test::Unit::TestCase
       response.nextVenues.count == 5
     end
 
+    should "get similar venues for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/40a55d80f964a52020f31ee3/similar?oauth_token=#{@client.oauth_token}", "venues/venue_similar.json")
+      response = @client.venue_similar('40a55d80f964a52020f31ee3')
+      response.similarVenues.items.first.id.should == '4b61cec9f964a52023242ae3'
+      response.similarVenues.count == 5
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,

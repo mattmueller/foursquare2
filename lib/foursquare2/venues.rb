@@ -296,5 +296,14 @@ module Foursquare2
       response = connection.get("venues/#{venue_id}/nextvenues")
       return_error_or_body(response, response.body.response)
     end
+
+    # Returns a list of venues similar to the specified venue.
+    #
+    # param [String] venue_id The venue you want similar venues for.
+
+    def venue_similar(venue_id)
+      response = connection.get("venues/#{venue_id}/similar")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end
