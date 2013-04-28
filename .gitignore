@@ -42,4 +42,5 @@ pkg
 *.swp
 # RubyMine
 .idea/*
-
+# Rbenv
+.rbenv-version
