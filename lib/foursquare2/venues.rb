@@ -255,5 +255,55 @@ module Foursquare2
       response = connection.get("venues/#{venue_id}/hours")
       return_error_or_body(response, response.body.response)
     end
+
+    # Get the events currently taking place at a venue.
+    #
+    # param [String] venue_id The ID of the venue
+
+    def venue_events(venue_id)
+      response = connection.get("venues/#{venue_id}/events")
+      return_error_or_body(response, response.body.response)
+    end
+
+    # Returns friends and a total count of users who have liked this venue.
+    #
+    # param [String] venue_id The ID of the venue to get likes for
+
+    def venue_likes(venue_id)
+      response = connection.get("venues/#{venue_id}/likes")
+      return_error_or_body(response, response.body.response)
+    end
+
+    # Returns the lists that this venue appears on.
+    #
+    # param [String] venue_id ID of a venue to get lists for.
+    # @option options String :group - can be created, edited, followed, friends, other. If no acting user is present, only other is supported.
+    # @option options Integer :limit - Number of results to return, up to 200.
+    # @option options Integer :offset - Used to page through results. Must specify a group
+
+    def venue_listed(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/listed", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
+    # Returns venues that people often check in to after the current venue. Up to 5 venues are returned in each query, and results are sorted by how many people have visited that venue after the current one. Homes are never returned in results.
+    #
+    # param [String] venue_id Required. ID of the venue you want to see next venue information about
+
+    def venue_nextvenues(venue_id)
+      response = connection.get("venues/#{venue_id}/nextvenues")
+      return_error_or_body(response, response.body.response)
+    end
+
+    # Returns a list of venues similar to the specified venue.
+    #
+    # param [String] venue_id The venue you want similar venues for.
+
+    def venue_similar(venue_id)
+      response = connection.get("venues/#{venue_id}/similar")
+      return_error_or_body(response, response.body.response)
+    end
   end
 end

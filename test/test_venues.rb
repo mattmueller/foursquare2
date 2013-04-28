@@ -138,6 +138,41 @@ class TestVenues < Test::Unit::TestCase
       response.hours.timeframes.first.days.should == [1, 2, 3, 4, 5, 6]
     end
 
+    should "get events from a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/40afe980f964a5203bf31ee3/events?oauth_token=#{@client.oauth_token}", "venues/venue_events.json")
+      response = @client.venue_events('40afe980f964a5203bf31ee3')
+      response.events.items.first.name.should == 'Nautanki Saala!'
+      response.events.items.size == response.events.count
+    end
+
+    should "get likes for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/likes?oauth_token=#{@client.oauth_token}", "venues/venue_likes.json")
+      response = @client.venue_likes('4b8c3d87f964a520f7c532e3')
+      response.likes.groups.first.items.first.id.should == '53698158'
+      response.likes.count == 140
+    end
+
+    should "get lists for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4989af90f964a5207f521fe3/listed?oauth_token=#{@client.oauth_token}&group=other&limit=4&offset=0", "venues/venue_listed.json")
+      response = @client.venue_listed('4989af90f964a5207f521fe3', { :group => 'other', :limit => 4, :offset => 0})
+      response.lists.items.first.id == '4e5b95beb61c4aaa3e182d8d'
+      response.lists.count == 4
+    end
+
+    should "get next venues for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/nextvenues?oauth_token=#{@client.oauth_token}", "venues/venue_nextvenues.json")
+      response = @client.venue_nextvenues('4b8c3d87f964a520f7c532e3')
+      response.nextVenues.items.first.id.should == '4b06a391f964a5200aee22e3'
+      response.nextVenues.count == 5
+    end
+
+    should "get similar venues for a venue" do
+      stub_get("https://api.foursquare.com/v2/venues/40a55d80f964a52020f31ee3/similar?oauth_token=#{@client.oauth_token}", "venues/venue_similar.json")
+      response = @client.venue_similar('40a55d80f964a52020f31ee3')
+      response.similarVenues.items.first.id.should == '4b61cec9f964a52023242ae3'
+      response.similarVenues.count == 5
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,
