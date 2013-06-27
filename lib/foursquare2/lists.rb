@@ -85,11 +85,14 @@ module Foursquare2
     # Delete an item from a list: https://developer.foursquare.com/docs/lists/deleteitem
     #
     # @param [String] list_id - The id of the list to delete item from
-    # @param [String] item_id = The id of the item to delete from list
+    # @param [Hash] options (choose one)
+    # @option options String :itemId - Used to remove an item from a list
+    # @option options String :venueId - Used to remove all instances of a venue from a list
+    # @option options String :tipId - Used to remove a tip from a list
 
-    def delete_list_item(list_id, item_id)
+    def delete_list_item(list_id, options={})
       response = connection.post do |req|
-        req.url "lists/#{list_id}/deleteitem", :itemId => item_id
+        req.url "lists/#{list_id}/deleteitem", options
       end
       return_error_or_body(response, response.body.response.item)
     end
