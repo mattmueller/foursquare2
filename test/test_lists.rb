@@ -54,7 +54,7 @@ class TestLists < Test::Unit::TestCase
     end
 
     should "delete a venue from a list" do
-      venue_id = 'vgit 4ba19cb0f964a520c2c337e3'
+      venue_id = 'v4ba19cb0f964a520c2c337e3'
       stub_post("https://api.foursquare.com/v2/lists/#{@list_id}/deleteitem?oauth_token=#{@client.oauth_token}&venueId=#{venue_id}", "lists/list_item.json")
       venue = @client.delete_list_item(@list_id, :venueId => venue_id)
       venue.id.should == venue_id
