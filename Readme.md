@@ -4,7 +4,7 @@ Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
 ## Installation
 
-    sudo gem install foursquare2
+    gem install foursquare2
 
 ## Usage
 
