@@ -143,7 +143,7 @@ module Foursquare2
     end
 
     # Make changes to a venue
-    # @param [String] venue_id - Venue id to edit, required.
+    # @param [String] venue_id - Venue id to edit, required. Acting user must be a venue manager or a superuser.
     # @param [Hash]  options
     # @option options String :name
     # @option options String :address
