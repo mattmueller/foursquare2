@@ -142,6 +142,31 @@ module Foursquare2
       return_error_or_body(response, response.body.response)
     end
 
+    # Make changes to a venue
+    # @param [String] venue_id - Venue id to edit, required.
+    # @param [Hash]  options
+    # @option options String :name
+    # @option options String :address
+    # @option options String :crossStreet
+    # @option options String :city
+    # @option options String :state
+    # @option options String :zip
+    # @option options String :phone
+    # @option options String :ll - Latitude and longitude in format LAT,LON
+    # @option options String :categoryId - The IDs of the category or categories to which you want to assign this venue (separate multiple IDs with commas).
+    # @option options String :twitter – Twitter handle of the name.
+    # @option options String :description – A free-form venue description, up to 300 characters.
+    # @option options String :url – The url of the homepage of the venue.
+    # @option options String :storeId – An identifier used by the manager of the venue to distinguish between venues of the same name. Only visible to managers.
+    # @option options String :hours – The hours for the venue, as a semi-colon separated list of open segments and named segments.
+
+    def edit(venue_id, options={})
+      response = connection.post do |req|
+        req.url "venues/#{venue_id}/edit", options
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
     # Explore venues
     #
     # @param [Hash]  options
