@@ -120,7 +120,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursqu
     client.mark_venue_todo
     client.flag_venue
     client.propose_venue_edit
-    client.edit
+    client.edit_venue
 	client.managed_venues
     client.managed_venue_stats
     client.venues_timeseries

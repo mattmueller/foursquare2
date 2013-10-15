@@ -160,7 +160,7 @@ module Foursquare2
     # @option options String :storeId – An identifier used by the manager of the venue to distinguish between venues of the same name. Only visible to managers.
     # @option options String :hours – The hours for the venue, as a semi-colon separated list of open segments and named segments.
 
-    def edit(venue_id, options={})
+    def edit_venue(venue_id, options={})
       response = connection.post do |req|
         req.url "venues/#{venue_id}/edit", options
       end
