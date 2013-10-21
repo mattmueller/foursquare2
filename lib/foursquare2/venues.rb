@@ -27,7 +27,7 @@ module Foursquare2
       queries.each do |g|
         query += CGI.escape("/venues/search?" + g.to_query) + ","
       end
-      puts query
+      query.gsub!(/,$/,'')
       response = connection.get do |req|
         req.url "multi?requests=#{query}"
       end
