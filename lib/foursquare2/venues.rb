@@ -19,7 +19,7 @@ module Foursquare2
     # It will return a hash of the results in the same order
     # as the requests.
 
-    def search_multiple_venues(queries={})
+    def search_multiple_venues(queries={},debug=false)
       if queries.size > 5
         raise "Too many queries. Foursquare only allows for a maximum of 5 at a time."
       end
@@ -28,6 +28,9 @@ module Foursquare2
         query += CGI.escape("/venues/search?" + g.to_query) + ","
       end
       query.gsub!(/,$/,'')
+      if debug
+        puts CGI.unescape(query.to_s)
+      end
       response = connection.get do |req|
         req.url "multi?requests=#{query}"
       end
