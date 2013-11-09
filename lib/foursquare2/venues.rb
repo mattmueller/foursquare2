@@ -180,7 +180,7 @@ module Foursquare2
     # @option options Integer :limit - The limit of results to return.
     # @option options String :intent - Limit results to venues with specials.
     # @option options String :novelty - Pass new or old to limit results to places the acting user hasn't been or has been, respectively. Omitting this parameter returns a mixture.
-
+    # @option options String :venuePhotos - true to bring out the photos
     def explore_venues(options={})
       response = connection.get do |req|
         req.url "venues/explore", options
