@@ -42,7 +42,7 @@ module Foursquare2
       @client_id = options[:client_id] || Foursquare2.client_id
       @client_secret = options[:client_secret] || Foursquare2.client_secret
       @oauth_token = options[:oauth_token]
-      @api_version = options[:api_version] || Foursquare2.api_version
+      @api_version = options[:api_version] || Foursquare2.api_version || Time.now.strftime('%Y%m%d')
       @locale = options[:locale] || Foursquare2.locale
       @ssl = options[:ssl] || Foursquare2.ssl || Hash.new
       @connection_middleware = options[:connection_middleware] || Foursquare2.connection_middleware || []

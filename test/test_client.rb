@@ -76,6 +76,12 @@ class TestClient < Test::Unit::TestCase
       @client.ssl[:ca_file].should == 'path_to_ca_file'
     end
 
+    should "default to the current date for versioning" do
+      @client = Foursquare2::Client.new
+      @client.api_version.should == Time.now.strftime('%Y%m%d')
+    end
+
+
     should "apply the middleware to the connection" do
       middleware = [FaradayMiddleware::Instrumentation,
                     [FaradayMiddleware::ParseJson, {:content_type => /\bjson$/}]]
