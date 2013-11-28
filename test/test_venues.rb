@@ -173,6 +173,20 @@ class TestVenues < Test::Unit::TestCase
       response.similarVenues.count == 5
     end
 
+    should "create new venue" do
+      new_venue_params = {
+        title:   "home",
+        address: "shvernika 17 k3",
+        ll:      "55.693309,37.592336",
+        city:    "moscow",
+        state:   "russia",
+        zip:     "117449",
+      }
+      stub_post("https://api.foursquare.com/v2/venues/add?oauth_token=#{@client.oauth_token}&#{ to_query new_venue_params }", "venues/venues_add.json")
+      response = @client.add_venue new_venue_params
+      response.id.should == "52976adc11d29a7df54128d9"
+    end
+
     context "and getting detailed stats for a venue not managed by user" do
       should "raise a 'not authorized' API error" do
         stub_get("https://api.foursquare.com/v2/venues/4ad4c04af964a52065f220e3/stats?oauth_token=#{@client.oauth_token}", nil,
