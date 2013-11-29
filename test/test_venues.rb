@@ -175,7 +175,7 @@ class TestVenues < Test::Unit::TestCase
 
     should "create new venue" do
       new_venue_params = {
-        title:   "home",
+        name:   "home",
         address: "shvernika 17 k3",
         ll:      "55.693309,37.592336",
         city:    "moscow",
