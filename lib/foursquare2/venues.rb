@@ -5,8 +5,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue(venue_id)
-      response = connection.get("venues/#{venue_id}")
+    def venue(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}", options
+      end
       return_error_or_body(response, response.body.response.venue)
     end
 
