@@ -66,7 +66,9 @@ module Foursquare2
     # Retrieve information about all venue categories.
 
     def venue_categories(options={})
-      response = connection.get("venues/categories")
+      response = connection.get do |req|
+        req.url "venues/categories", options
+      end
       return_error_or_body(response, response.body.response.categories)
     end
 
