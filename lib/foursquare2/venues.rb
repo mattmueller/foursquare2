@@ -5,8 +5,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue(venue_id)
-      response = connection.get("venues/#{venue_id}")
+    def venue(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}", options
+      end
       return_error_or_body(response, response.body.response.venue)
     end
 
@@ -27,7 +29,7 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-    
+
     # Search for trending venues
     #
     # @param [String] :ll Latitude and longitude in format LAT,LON
@@ -36,7 +38,7 @@ module Foursquare2
     # @option options Integer :radius - Radius in meters, up to approximately 2000 meters.
 
     def trending_venues(ll, options={})
-      options[:ll] = ll    
+      options[:ll] = ll
       response = connection.get do |req|
         req.url "venues/trending", options
       end
@@ -63,7 +65,7 @@ module Foursquare2
 
     # Retrieve information about all venue categories.
 
-    def venue_categories
+    def venue_categories(options={})
       response = connection.get("venues/categories")
       return_error_or_body(response, response.body.response.categories)
     end
@@ -72,8 +74,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue_links(venue_id)
-      response = connection.get("venues/#{venue_id}/links")
+    def venue_links(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/links", options
+      end
       return_error_or_body(response, response.body.response.links)
     end
 
@@ -209,8 +213,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue_menus(venue_id)
-      response = connection.get("venues/#{venue_id}/menu")
+    def venue_menus(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/menu", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -233,9 +239,9 @@ module Foursquare2
     #Returns a list of venues managed
     #
 
-    def managed_venues()
+    def managed_venues(options={})
       response = connection.get do |req|
-        req.url "venues/managed"
+        req.url "venues/managed", options
       end
       return_error_or_body(response, response.body.response.venues)
     end
@@ -276,8 +282,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue_hours(venue_id)
-      response = connection.get("venues/#{venue_id}/hours")
+    def venue_hours(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/hours", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -285,8 +293,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue
 
-    def venue_events(venue_id)
-      response = connection.get("venues/#{venue_id}/events")
+    def venue_events(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/events", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -294,8 +304,10 @@ module Foursquare2
     #
     # param [String] venue_id The ID of the venue to get likes for
 
-    def venue_likes(venue_id)
-      response = connection.get("venues/#{venue_id}/likes")
+    def venue_likes(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/likes", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -317,8 +329,10 @@ module Foursquare2
     #
     # param [String] venue_id Required. ID of the venue you want to see next venue information about
 
-    def venue_nextvenues(venue_id)
-      response = connection.get("venues/#{venue_id}/nextvenues")
+    def venue_nextvenues(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/nextvenues", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -326,8 +340,10 @@ module Foursquare2
     #
     # param [String] venue_id The venue you want similar venues for.
 
-    def venue_similar(venue_id)
-      response = connection.get("venues/#{venue_id}/similar")
+    def venue_similar(venue_id, options={})
+      response = connection.get do |req|
+        req.url "venues/#{venue_id}/similar", options
+      end
       return_error_or_body(response, response.body.response)
     end
   end

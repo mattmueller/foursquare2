@@ -5,10 +5,12 @@ module Foursquare2
     #
     # param [String] tip_id - The id of the tip to retrieve.
 
-    def tip(tip_id)
-      response = connection.get("tips/#{tip_id}")
+    def tip(tip_id, options={})
+      response = connection.get do |req|
+        req.url "tips/#{tip_id}", options
+      end
       return_error_or_body(response, response.body.response.tip)
-    end    
+    end
 
     # Search for tips.
     #
@@ -63,9 +65,9 @@ module Foursquare2
     #
     # param [String] tip_id - The id of the tip to mark.
 
-    def mark_tip_todo(tip_id)
+    def mark_tip_todo(tip_id, options={})
       response = connection.post do |req|
-        req.url "tips/#{tip_id}/marktodo"
+        req.url "tips/#{tip_id}/marktodo", options
       end
       return_error_or_body(response, response.body.response)
     end
@@ -74,9 +76,9 @@ module Foursquare2
     #
     # param [String] tip_id - The id of the tip to mark.
 
-    def mark_tip_done(tip_id)
+    def mark_tip_done(tip_id, options={})
       response = connection.post do |req|
-        req.url "tips/#{tip_id}/markdone"
+        req.url "tips/#{tip_id}/markdone", options
       end
       return_error_or_body(response, response.body.response)
     end
@@ -85,9 +87,9 @@ module Foursquare2
     #
     # param [String] tip_id - The id of the tip to unmark.
 
-    def unmark_tip(tip_id)
+    def unmark_tip(tip_id, options={})
       response = connection.post do |req|
-        req.url "tips/#{tip_id}/unmark"
+        req.url "tips/#{tip_id}/unmark", options
       end
       return_error_or_body(response, response.body.response)
     end

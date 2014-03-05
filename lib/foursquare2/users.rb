@@ -17,8 +17,10 @@ module Foursquare2
     #
     # @param [Integer] user_id - User to get information for.
 
-    def user(user_id)
-      response = connection.get("users/#{user_id}")
+    def user(user_id, options={})
+      response = connection.get do |req|
+        req.url "users/#{user_id}", options
+      end
       return_error_or_body(response, response.body.response.user)
     end
 
@@ -65,8 +67,10 @@ module Foursquare2
     end
     # Get all pending friend requests for the authenticated user
 
-    def user_requests
-      response = connection.get("users/requests")
+    def user_requests(options={})
+      response = connection.get do |req|
+        req.url "users/requests", options
+      end
       return_error_or_body(response, response.body.response.requests)
     end
 
@@ -74,8 +78,10 @@ module Foursquare2
     #
     # @param [String] user_id - The user to retrieve badges for.
 
-    def user_badges(user_id)
-      response = connection.get("users/#{user_id}/badges")
+    def user_badges(user_id, options={})
+      response = connection.get do |req|
+        req.url "users/#{user_id}/badges", options
+      end
       return_error_or_body(response, response.body.response)
     end
 
@@ -174,9 +180,9 @@ module Foursquare2
     #
     # @param [String] user_id - The user to retrieve friends for.
 
-    def user_mayorships(user_id)
+    def user_mayorships(user_id, options={})
       response = connection.get do |req|
-      req.url "users/#{user_id}/mayorships"
+        req.url "users/#{user_id}/mayorships", options
       end
       return_error_or_body(response, response.body.response.mayorships)
     end
@@ -199,9 +205,9 @@ module Foursquare2
     #
     # @param [String] user_id - The user to request friendship with.
 
-    def user_friend_request(user_id)
+    def user_friend_request(user_id, options={})
       response = connection.post do |req|
-        req.url "users/#{user_id}/request"
+        req.url "users/#{user_id}/request", options
       end
       return_error_or_body(response, response.body.response)
     end
@@ -210,9 +216,9 @@ module Foursquare2
     #
     # @param [String] user_id - The user to unfriend.
 
-    def user_unfriend(user_id)
+    def user_unfriend(user_id, options={})
       response = connection.post do |req|
-        req.url "users/#{user_id}/unfriend"
+        req.url "users/#{user_id}/unfriend", options
       end
       return_error_or_body(response, response.body.response)
     end
@@ -221,9 +227,9 @@ module Foursquare2
     #
     # @param [String] user_id - The user to approve friendship with.
 
-    def user_approve_friend(user_id)
+    def user_approve_friend(user_id, options={})
       response = connection.post do |req|
-        req.url "users/#{user_id}/approve"
+        req.url "users/#{user_id}/approve", options
       end
       return_error_or_body(response, response.body.response)
     end
@@ -232,9 +238,9 @@ module Foursquare2
     #
     # @param [String] user_id - The user to deny friendship with.
 
-    def user_deny_friend(user_id)
+    def user_deny_friend(user_id, options={})
       response = connection.post do |req|
-        req.url "users/#{user_id}/deny"
+        req.url "users/#{user_id}/deny", options
       end
       return_error_or_body(response, response.body.response)
     end

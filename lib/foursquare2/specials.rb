@@ -5,10 +5,12 @@ module Foursquare2
     #
     # param [String] special_id The ID of the special
 
-    def special(special_id)
-      response = connection.get("specials/#{special_id}")
+    def special(special_id, options={})
+      response = connection.get do |req|
+        req.url "specials/#{special_id}", options
+      end
       return_error_or_body(response, response.body.response.special)
-    end    
+    end
 
     # Search for specials
     #
@@ -25,7 +27,7 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response.specials.items)
     end
-    
+
     # Add a special for venue managers
     # Details on param options can be found at https://developer.foursquare.com/docs/specials/add
     #
@@ -33,10 +35,10 @@ module Foursquare2
     # @option options String :name - A name for the special.
     # @option options String :text - Required
     # @option options String :unlockedText - Required. Special text that is shown when the user has unlocked the special.
-    # @option options String :finePrint 
-    # @option options Integer :count1 
-    # @option options Integer :count2 
-    # @option options Integer :count3 
+    # @option options String :finePrint
+    # @option options Integer :count1
+    # @option options Integer :count2
+    # @option options Integer :count3
     # @option options String :type - Required.
     # @option options String :offerId
     # @option options Float :cost
@@ -48,7 +50,7 @@ module Foursquare2
       end
         return_error_or_body(response, response.body.response.special)
     end
-    
+
   end
 end
 

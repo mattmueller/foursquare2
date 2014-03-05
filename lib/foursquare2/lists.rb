@@ -34,8 +34,10 @@ module Foursquare2
     #
     # @param [String] list_id - The id of the list to follow.
 
-    def follow_list(list_id)
-      response = connection.post "lists/#{list_id}/follow"
+    def follow_list(list_id, options={})
+      response = connection.post do |req|
+        req.url "lists/#{list_id}/follow", options
+      end
       return_error_or_body(response, response.body.response.list)
     end
 
@@ -43,8 +45,10 @@ module Foursquare2
     #
     # @param [String] list_id - The id of the list to unfollow.
 
-    def unfollow_list(list_id)
-      response = connection.post "lists/#{list_id}/unfollow"
+    def unfollow_list(list_id, options={})
+      response = connection.post do |req|
+        req.url "lists/#{list_id}/unfollow", options
+      end
       return_error_or_body(response, response.body.response.list)
     end
 
@@ -87,9 +91,9 @@ module Foursquare2
     # @param [String] list_id - The id of the list to delete item from
     # @param [String] item_id = The id of the item to delete from list
 
-    def delete_list_item(list_id, item_id)
+    def delete_list_item(list_id, item_id, options={})
       response = connection.post do |req|
-        req.url "lists/#{list_id}/deleteitem", :itemId => item_id
+        req.url "lists/#{list_id}/deleteitem", {:itemId => item_id}.merge(options)
       end
       return_error_or_body(response, response.body.response.item)
     end

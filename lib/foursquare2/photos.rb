@@ -5,10 +5,12 @@ module Foursquare2
     #
     # @params [String] photo_id - The ID of the photo
 
-    def photo(photo_id)
-      response = connection.get("photos/#{photo_id}")
+    def photo(photo_id, options={})
+      response = connection.get do |req|
+        req.url "photos/#{photo_id}", options
+      end
       return_error_or_body(response, response.body.response.photo)
-    end    
+    end
 
     # Add a photo
     #
@@ -26,7 +28,7 @@ module Foursquare2
       response = connection.post('photos/add', options)
       return_error_or_body(response, response.body.response.photo)
     end
-    
+
     # Retrieve photos for a venue
     #
     # @params [String] venue_id - The ID of the venue
@@ -40,7 +42,7 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response.photos)
     end
-    
+
   end
 end
 
