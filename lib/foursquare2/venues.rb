@@ -27,7 +27,7 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-    
+
     # Search for trending venues
     #
     # @param [String] :ll Latitude and longitude in format LAT,LON
@@ -36,7 +36,7 @@ module Foursquare2
     # @option options Integer :radius - Radius in meters, up to approximately 2000 meters.
 
     def trending_venues(ll, options={})
-      options[:ll] = ll    
+      options[:ll] = ll
       response = connection.get do |req|
         req.url "venues/trending", options
       end
@@ -162,7 +162,8 @@ module Foursquare2
 
     def edit_venue(venue_id, options={})
       response = connection.post do |req|
-        req.url "venues/#{venue_id}/edit", options
+        req.body = options
+        req.url "venues/#{venue_id}/edit"
       end
       return_error_or_body(response, response.body.response)
     end
