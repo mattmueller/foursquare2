@@ -4,12 +4,14 @@ module Foursquare2
     # Retrieve information about a campaign
     #
     # param [String] campaign_id The ID of the venue
-    def campaign(campaign_id)
-      response = connection.get("campaigns/#{campaign_id}")
+    def campaign(campaign_id, options={})
+      response = connection.get do |req|
+        req.url "campaigns/#{campaign_id}", options
+      end
       return_error_or_body(response, response.body.response.campaign)
     end
-    
-    # Add a campaign 
+
+    # Add a campaign
     # Details on param options can be found at https://developer.foursquare.com/docs/campaigns/add
     #
     # @param [Hash]  options
@@ -18,7 +20,7 @@ module Foursquare2
     # @option options String :venueId - comma-separated list of venue IDs (either groupId or venueId is required)
     # @option options Integer :endAt - DateTime when the campaign is to be automatically deactivated (seconds since epoch)
     # @option options Integer :startAt - DateTime when the campaign is to be started (seconds since epoch)
-    # @option options String :campaignId - ID of an existing campaign to copy. 
+    # @option options String :campaignId - ID of an existing campaign to copy.
     #
 
     def add_campaign(options={})
@@ -52,12 +54,12 @@ module Foursquare2
     #
     #
 
-    def end_campaign(campaign_id)
+    def end_campaign(campaign_id, options={})
       response = connection.post do |req|
-        req.url "campaigns/#{campaign_id}/end"
+        req.url "campaigns/#{campaign_id}/end", options
       end
         return_error_or_body(response, response.body.code)
     end
-    
+
   end
 end

@@ -6,8 +6,10 @@ module Foursquare2
     # /!\ A page is considered by Foursquare as a user.
     # @param [Integer] user_id - Page to get information for.
 
-    def page(user_id)
-      response = connection.get("pages/#{user_id}")
+    def page(user_id, options={})
+      response = connection.get do |req|
+        req.url "pages/#{user_id}", options
+      end
       return_error_or_body(response, response.body.response.user)
     end
 
@@ -35,9 +37,9 @@ module Foursquare2
     # @option options Integer :offset - For paging through results
     # @option options String :ll - Latitude and longitude in format LAT,LON - Limit results to venues near this latitude and longitude. NOT VALID with NE or SW (see after).
     # @option String :radius - Can be used when including ll. Limit results to venues within this many meters of the specified ll. Not valid with ne or sw.
-    # @option String :sw - With ne, limits results to the bounding quadrangle defined by the latitude and longitude given by sw as its south-west corner, and ne as its north-east corner. Not valid with ll or radius. 
+    # @option String :sw - With ne, limits results to the bounding quadrangle defined by the latitude and longitude given by sw as its south-west corner, and ne as its north-east corner. Not valid with ll or radius.
     # @option String :ne - See sw
-    
+
     def page_venues(page_id, options={})
       response = connection.get do |req|
         req.url "pages/#{page_id}/venues", options

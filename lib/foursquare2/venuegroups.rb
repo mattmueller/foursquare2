@@ -5,18 +5,20 @@ module Foursquare2
     #
     # param [String] group_id The ID of the venuegroup
 
-    def venuegroup(group_id)
-      response = connection.get("venuegroups/#{group_id}")
+    def venuegroup(group_id, options={})
+      response = connection.get do |req|
+        req.url "venuegroups/#{group_id}", options
+      end
       return_error_or_body(response, response.body.response.venueGroup)
     end
 
-    # Create a venue group. If the venueId parameter is specified, 
-    # then the endpoint will add the specified venues to the venue group. 
-    # If it is not possible to add all of the specified venues to the group, 
+    # Create a venue group. If the venueId parameter is specified,
+    # then the endpoint will add the specified venues to the venue group.
+    # If it is not possible to add all of the specified venues to the group,
     # then creation of the venue group will fail entirely.
     # @param [Hash]  options
     # @option options String :name - Required. The name to give the group.
-    # @option options String :venueId - Comma-delimited list of venue IDs to add to the group. If this parameter is not specified, then the venue group will initially be empty.  
+    # @option options String :venueId - Comma-delimited list of venue IDs to add to the group. If this parameter is not specified, then the venue group will initially be empty.
 
     def add_venuegroup(options={})
       response = connection.post do |req|
@@ -41,9 +43,9 @@ module Foursquare2
 
     # List all venue groups owned by the user.
 
-    def list_venuegroup
+    def list_venuegroup(options={})
       response = connection.get do |req|
-        req.url "venuegroups/list"
+        req.url "venuegroups/list", options
       end
       return_error_or_body(response, response.body.response.venueGroups)
     end
@@ -51,9 +53,9 @@ module Foursquare2
     # Delete a venue group.
     # param [String] group_id - The ID of the venuegroup to delete.
 
-    def delete_venuegroup(group_id)
+    def delete_venuegroup(group_id, options={})
       response = connection.post do |req|
-        req.url "venuegroups/#{group_id}/delete"
+        req.url "venuegroups/#{group_id}/delete", options
       end
       return_error_or_body(response, response.body.response)
     end
