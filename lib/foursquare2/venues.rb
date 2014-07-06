@@ -168,7 +168,8 @@ module Foursquare2
 
     def edit_venue(venue_id, options={})
       response = connection.post do |req|
-        req.url "venues/#{venue_id}/edit", options
+        req.body = options
+        req.url "venues/#{venue_id}/edit"
       end
       return_error_or_body(response, response.body.response)
     end
