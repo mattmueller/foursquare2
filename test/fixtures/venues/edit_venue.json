@@ -1,0 +1,83 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "notifications": [
+        {
+            "type": "notificationTray",
+            "item": {
+                "unreadCount": 0
+            }
+        }
+    ],
+    "response": {
+        "woes": [
+            {
+                "id": "53b956f6498eb33cef9cf879",
+                "type": "info",
+                "comments": [],
+                "reporters": [
+                    {
+                        "id": "77349316",
+                        "firstName": "Amelia Island Coffee",
+                        "gender": "none",
+                        "relationship": "self",
+                        "photo": {
+                            "prefix": "https://irs0.4sqi.net/img/user/",
+                            "suffix": "/77349316-ZUEQRZ10EF2U1322.png"
+                        },
+                        "type": "venuePage",
+                        "venue": {
+                            "id": "4b9d65a8f964a520b0a936e3"
+                        },
+                        "homeCity": "Fernandina Beach, FL"
+                    }
+                ],
+                "notes": [
+                    {
+                        "type": "recent",
+                        "text": "This venue has recent check-ins. Please be EXTRA careful."
+                    },
+                    {
+                        "type": "claimed",
+                        "text": "This venue is CLAIMED by manager. Please be EXTRA careful."
+                    },
+                    {
+                        "type": "popular",
+                        "text": "This venue has more than 250 check-ins. Please be EXTRA careful."
+                    }
+                ],
+                "correct": true,
+                "resolved": true,
+                "resolvedTime": "Sun Jul 06 14:02:30 UTC 2014",
+                "resolvedUsers": [
+                    {
+                        "id": "77349316",
+                        "firstName": "Amelia Island Coffee",
+                        "gender": "none",
+                        "relationship": "self",
+                        "photo": {
+                            "prefix": "https://irs0.4sqi.net/img/user/",
+                            "suffix": "/77349316-ZUEQRZ10EF2U1322.png"
+                        },
+                        "type": "venuePage",
+                        "venue": {
+                            "id": "4b9d65a8f964a520b0a936e3"
+                        }
+                    }
+                ],
+                "app": {
+                    "id": "SDDBI1SDSDEGVP3YUJGAJC0TRNCKCPA5WABTMYQ5OFBVDOLJ",
+                    "name": "Foursquare API documentation",
+                    "detailUrl": "https://foursquare.com/app/foursquare-api-documentation/SDDBI1SDSDEGVP3YUJGAJC0TRNCKCPA5WABTMYQ5OFBVDOLJ"
+                },
+                "canonicalPath": "/edit/address?id=53b956f6498eb33cef9cf879",
+                "field": "phone",
+                "displayName": "Phone",
+                "value": "(904) 321-2111",
+                "displayValue": "(904) 321-2111",
+                "currentValue": "(904) 321-2111"
+            }
+        ]
+    }
+}

@@ -75,6 +75,12 @@ class TestVenues < Test::Unit::TestCase
       venues.groups.first.items.count.should == 2
     end
 
+    should "allow venues to be edited" do
+      stub_post("https://api.foursquare.com/v2/venues/4b9d65a8f964a520b0a936e3/proposeedit?oauth_token=#{@client.oauth_token}", "venues/edit_venue.json")
+      edited_venue = @client.edit_venue("4b9d65a8f964a520b0a936e3", :v => '20140706', :phone => '9043212111')
+      edited_venue.woes.first.currentValue.should == "(904) 321-2111"
+    end
+
     should "get links for a venue" do
       stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3/links?oauth_token=#{@client.oauth_token}", "venues/venue_links.json")
       links = @client.venue_links('4b8c3d87f964a520f7c532e3')
