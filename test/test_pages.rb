@@ -27,5 +27,12 @@ class TestPages < Test::Unit::TestCase
       venues.items.length.should == 2
       venues.items.first.name.should == "Starbucks"
     end
+
+    should "fetch pages for manager" do
+      stub_get("https://api.foursquare.com/v2/pages/managing?oauth_token=#{@client.oauth_token}", "pages/managed_pages.json")
+      pages = @client.managed_pages()
+      pages.first.firstName.should == "Nashville Geeks"
+      pages.first.type.should == "page"
+    end
   end
 end

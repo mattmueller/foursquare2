@@ -48,5 +48,17 @@ module Foursquare2
       venues = Foursquare2.filter(venues, options[:query]) if options.has_key? :query
       venues
     end
+
+
+    #
+    # Returns a list of managed pages.
+    #
+
+    def managed_pages(options={})
+      response = connection.get do |req|
+        req.url "pages/managing", options
+      end
+      return_error_or_body(response, response.body.response.managing)
+    end
   end
 end
