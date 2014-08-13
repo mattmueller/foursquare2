@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "notifications": [{
+    "type": "notificationTray",
+    "item": {
+      "unreadCount": 0
+    }
+  }],
+  "response": {
+    "managing": [{
+      "id": "14046309",
+      "firstName": "Nashville Geeks",
+      "photo": "https:\/\/is1.4sqi.net\/userpix_thumbs\/IXHCY5SK3SDJC310.png",
+      "type": "page",
+      "followers": {
+        "count": 197,
+        "groups": []
+      },
+      "tips": {
+        "count": 15
+      },
+      "lists": {
+        "groups": [{
+          "type": "created",
+          "count": 1,
+          "items": []
+        }]
+      },
+      "gender": "none",
+      "homeCity": "Nashville, TN",
+      "bio": "",
+      "contact": {
+        "twitter": "nashvillegeeks",
+        "facebook": "119351084835752"
+      }
+    }]
+  }
+}
