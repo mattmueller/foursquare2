@@ -1,3 +1,4 @@
+require 'simplecov'
 require 'rubygems'
 require 'bundler'
 begin
@@ -18,6 +19,15 @@ require 'mocha'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+
+SimpleCov.start do
+  command_name 'Unit Tests'
+  filters.clear
+  add_filter do |src|
+    !(src.filename =~ /^#{SimpleCov.root}\/lib/)
+  end
+end
+
 require 'foursquare2'
 require 'config'
 
