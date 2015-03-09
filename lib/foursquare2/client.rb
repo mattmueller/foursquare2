@@ -82,6 +82,7 @@ module Foursquare2
 
     def return_error_or_body(response, response_body)
       if response.body.meta.code == 200
+        response_body['x-headers'] = response.headers.select { |k,v| k.to_s.match(/^x-.*/) }
         response_body
       else
         raise Foursquare2::APIError.new(response.body.meta, response.body.response)
