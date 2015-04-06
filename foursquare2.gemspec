@@ -38,6 +38,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<json_pure>, ["~> 1.4"])
       s.add_development_dependency(%q<multi_json>, ["< 2.0.0", ">= 0.0.5"])
       s.add_development_dependency(%q<test-unit>, ["~> 3.0"])
+      s.add_development_dependency(%q<jnunemaker-matchy>, [">= 0"])
+      s.add_development_dependency(%q<mocha>, [">= 0"])
     else
       s.add_dependency(%q<faraday>, ["~> 0.8"])
       s.add_dependency(%q<faraday_middleware>, [">= 0.8"])

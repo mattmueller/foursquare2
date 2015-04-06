@@ -96,8 +96,8 @@ class TestClient < Test::Unit::TestCase
       response = Faraday::Response.new(:body => fixture_file('venues/search_venues.json', :parse => true))
       client   = Foursquare2::Client.new
 
-      subject = client.return_error_or_body(response, response.body.response)
-      subject.should eql(response.body.response)
+      subject = client.return_error_or_body(response, response.body)
+      subject.should eql(response.body)
     end
   end
 
