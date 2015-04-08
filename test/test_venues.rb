@@ -8,7 +8,7 @@ class TestVenues < Test::Unit::TestCase
     end
 
     should "fetch info for a single venue" do
-      stub_post("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3?oauth_token=#{@client.oauth_token}", "venues/venue.json")
+      stub_get("https://api.foursquare.com/v2/venues/4b8c3d87f964a520f7c532e3?oauth_token=#{@client.oauth_token}", "venues/venue.json")
       venue = @client.venue('4b8c3d87f964a520f7c532e3')
       venue.name.should == 'Bridgestone Arena'
       venue.location.address.should == '501 Broadway'
