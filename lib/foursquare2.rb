@@ -39,6 +39,7 @@ module Foursquare2
   require 'foursquare2/pages'
   require 'foursquare2/lists'
   require 'foursquare2/events'
+  require 'foursquare2/multi'
   require 'foursquare2/client'
   require 'foursquare2/api_error'
 
