@@ -69,6 +69,7 @@ See [the documentation](http://rubydoc.info/gems/foursquare2/frames) for a list 
 See [the documentation](http://rubydoc.info/gems/foursquare2/frames) or [foursquare's endpoint list](http://developer.foursquare.com/docs/index_docs.html) for parameters.
 
     client.checkin
+    client.resolve_checkin
     client.recent_checkins
     client.add_checkin
     client.add_checkin_comment
