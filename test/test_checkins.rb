@@ -14,6 +14,13 @@ class TestCheckins < Test::Unit::TestCase
       checkin.user.firstName.should == 'Matt'
     end
 
+    should "resolve a checkin by a short ID" do
+      stub_get("https://api.foursquare.com/v2/checkins/resolve?shortId=fP44HxXzikm&oauth_token=#{@client.oauth_token}", "checkins/checkin.json")
+      checkin = @client.resolve_checkin(shortId: 'fP44HxXzikm')
+      checkin.venue.name.should == 'Bridgestone Arena'
+      checkin.user.firstName.should == 'Matt'
+    end
+
     should "fetch recent checkins from friends"do
       stub_get("https://api.foursquare.com/v2/checkins/recent?oauth_token=#{@client.oauth_token}&limit=2", "checkins/friend_checkins.json")
       checkins = @client.recent_checkins(:limit => 2)

@@ -14,6 +14,20 @@ module Foursquare2
       return_error_or_body(response, response.body.response.checkin)
     end
 
+    # Resolve checkin associated with a short ID at the end of a swarmapp.com link,
+    # e.g., https://swarmapp.com/c/abc123ZYX
+    #
+    # @param [Hash] options
+    # @option options String :shortId - ID at the end of a swarmapp.com link.
+
+    def resolve_checkin(options={})
+      response = connection.get do |req|
+        req.url "checkins/resolve", options
+      end
+      return_error_or_body(response, response.body.response.checkin)
+    end
+
+
     # Retrive a list of recent checkins from friends.
     #
     # @param [Hash] options
