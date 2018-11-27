@@ -45,4 +45,5 @@ pkg
 # Rbenv
 .rbenv-version
 .ruby-version
+.rubocop-https*
 Gemfile.lock
