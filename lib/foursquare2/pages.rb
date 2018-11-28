@@ -6,13 +6,12 @@ module Foursquare2
     # /!\ A page is considered by Foursquare as a user.
     # @param [Integer] user_id - Page to get information for.
 
-    def page(user_id, options={})
+    def page(user_id, options = {})
       response = connection.get do |req|
         req.url "pages/#{user_id}", options
       end
       return_error_or_body(response, response.body.response.user)
     end
-
 
     # Search for pages.
     #
@@ -21,13 +20,12 @@ module Foursquare2
     # @option options String :fbid - Match on facebook id.
     # @option options String :name - Match on name
 
-    def search_pages(options={})
+    def search_pages(options = {})
       response = connection.get do |req|
         req.url "pages/search", options
       end
       return_error_or_body(response, response.body.response)
     end
-
 
     # Get all venues for a given page.
     #
@@ -40,7 +38,7 @@ module Foursquare2
     # @option String :sw - With ne, limits results to the bounding quadrangle defined by the latitude and longitude given by sw as its south-west corner, and ne as its north-east corner. Not valid with ll or radius.
     # @option String :ne - See sw
 
-    def page_venues(page_id, options={})
+    def page_venues(page_id, options = {})
       response = connection.get do |req|
         req.url "pages/#{page_id}/venues", options
       end
@@ -49,12 +47,11 @@ module Foursquare2
       venues
     end
 
-
     #
     # Returns a list of managed pages.
     #
 
-    def managed_pages(options={})
+    def managed_pages(options = {})
       response = connection.get do |req|
         req.url "pages/managing", options
       end

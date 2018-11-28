@@ -1,5 +1,6 @@
 require "faraday"
 require "faraday_middleware"
+require "hashie/mash"
 
 __dir__
 
@@ -23,6 +24,7 @@ module Foursquare2
   end
 
   require "foursquare2/hash_wrapper"
+  require "foursquare2/mashify_wrapper"
   require "foursquare2/campaigns"
   require "foursquare2/users"
   require "foursquare2/specials"

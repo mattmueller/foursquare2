@@ -5,9 +5,9 @@ module Foursquare2
     DEFAULT_CONNECTION_MIDDLEWARE = [
       Faraday::Request::Multipart,
       Faraday::Request::UrlEncoded,
-      FaradayMiddleware::Mashify,
+      Foursquare2::MashifyWrapper,
       FaradayMiddleware::ParseJson
-    ]
+    ].freeze
 
     extend Forwardable
 
@@ -91,12 +91,12 @@ module Foursquare2
     private
 
 
-      def default_headers
-        headers = {
-          :accept =>  'application/json',
-          :user_agent => 'Ruby gem'
-        }
-      end
+    def default_headers
+      headers = {
+        :accept =>  'application/json',
+        :user_agent => 'Ruby gem'
+      }
+    end
 
   end
 end

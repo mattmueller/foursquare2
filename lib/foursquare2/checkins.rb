@@ -7,7 +7,7 @@ module Foursquare2
     # @param [Hash] options
     # @option options String :signature - Signature allowing users to bypass the friends-only access check on checkins
 
-    def checkin(checkin_id, options={})
+    def checkin(checkin_id, options = {})
       response = connection.get do |req|
         req.url "checkins/#{checkin_id}", options
       end
@@ -21,7 +21,7 @@ module Foursquare2
     # @option options String :limit - Maximum results to return (max 100)
     # @option options Integer :afterTimestamp - Seconds after which to look for checkins
 
-    def recent_checkins(options={})
+    def recent_checkins(options = {})
       response = connection.get do |req|
         req.url "checkins/recent", options
       end
@@ -40,7 +40,7 @@ module Foursquare2
     # @option options Integer :alt - Altitude in meters
     # @option options Integer :altAcc - Accuracy of the altitude in meters
 
-    def add_checkin(options={})
+    def add_checkin(options = {})
       response = connection.post do |req|
         req.url "checkins/add", options
       end
@@ -53,7 +53,7 @@ module Foursquare2
     # @param [Hash]  options
     # @option options String :text - Text of the comment to add, 200 character max.
 
-    def add_checkin_comment(checkin_id, options={})
+    def add_checkin_comment(checkin_id, options = {})
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/addcomment", options
       end
@@ -66,7 +66,7 @@ module Foursquare2
     # @param [Hash]  options
     # @option options String :commentId - ID of the comment to be deleted.
 
-    def delete_checkin_comment(checkin_id, options={})
+    def delete_checkin_comment(checkin_id, options = {})
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/deletecomment", options
       end
@@ -81,7 +81,7 @@ module Foursquare2
     # @option options String :url - Link for more details. This page will be opened in an embedded web view in the foursquare application, unless contentId is specified and a native link handler is registered and present. We support the following URL schemes: http, https, foursquare, mailto, tel, and sms.
     # @option options String :contentId - Identifier for the post to be used in a native link, up to 50 characters. A url must also be specified in the request.
 
-    def add_checkin_post(checkin_id, options={})
+    def add_checkin_post(checkin_id, options = {})
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/addpost", options
       end
@@ -96,7 +96,7 @@ module Foursquare2
     # @option options String :url - Link for more details. This page will be opened in an embedded web view in the foursquare application, unless contentId is specified and a native link handler is registered and present. We support the following URL schemes: http, https, foursquare, mailto, tel, and sms.
     # @option options String :contentId - Identifier for the post to be used in a native link, up to 50 characters. A url must also be specified in the request.
 
-    def add_checkin_reply(checkin_id, options={})
+    def add_checkin_reply(checkin_id, options = {})
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/reply", options
       end

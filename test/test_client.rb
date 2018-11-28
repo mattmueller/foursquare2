@@ -21,8 +21,8 @@ class TestClient < Test::Unit::TestCase
       Foursquare2.configure do |config|
         config.connection_middleware = [:middleware]
       end
-      Faraday::Builder.any_instance.expects(:use).at_least_once
-      Faraday::Builder.any_instance.expects(:use) \
+      Faraday::RackBuilder.any_instance.expects(:use).at_least_once
+      Faraday::RackBuilder.any_instance.expects(:use) \
         .with(:middleware)
       client = Foursquare2::Client.new
       client.connection
@@ -81,10 +81,10 @@ class TestClient < Test::Unit::TestCase
                     [FaradayMiddleware::ParseJson, {:content_type => /\bjson$/}]]
       client = Foursquare2::Client.new(:connection_middleware => middleware)
 
-      Faraday::Builder.any_instance.expects(:use).at_least_once
-      Faraday::Builder.any_instance.expects(:use) \
+      Faraday::RackBuilder.any_instance.expects(:use).at_least_once
+      Faraday::RackBuilder.any_instance.expects(:use) \
         .with(FaradayMiddleware::Instrumentation)
-      Faraday::Builder.any_instance.expects(:use) \
+      Faraday::RackBuilder.any_instance.expects(:use) \
         .with(FaradayMiddleware::ParseJson, {:content_type => /\bjson$/})
 
       client.connection

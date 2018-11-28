@@ -12,7 +12,7 @@ require 'shoulda'
 require 'matchy'
 require 'fakeweb'
 require 'json'
-require 'hashie'
+# require 'hashie'
 require 'awesome_print'
 require 'mocha/setup'
 
@@ -38,7 +38,7 @@ def fixture_file(filename, options={})
 
   case File.extname(file_path)
   when '.json'
-    options[:parse] ? Hashie::Mash.new(JSON.parse(fixture)) : fixture
+    options[:parse] ? Foursquare2::HashWrapper.new(JSON.parse(fixture)) : fixture
   else
     fixture
   end
