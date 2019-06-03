@@ -5,9 +5,9 @@ module Foursquare2
     DEFAULT_CONNECTION_MIDDLEWARE = [
       Faraday::Request::Multipart,
       Faraday::Request::UrlEncoded,
-      FaradayMiddleware::Mashify,
+      Foursquare2::MashifyWrapper,
       FaradayMiddleware::ParseJson
-    ]
+    ].freeze
 
     extend Forwardable
 
@@ -26,9 +26,9 @@ module Foursquare2
 
     attr_reader :client_id, :client_secret, :oauth_token, :api_version, :locale
 
-    #Initialize the client class that will be used for all foursquare API requests.  Note that either a valid user oauth token OR a valid client_id + secret is required.
+    # Initialize the client class that will be used for all foursquare API requests.  Note that either a valid user oauth token OR a valid client_id + secret is required.
     #
-    #Certain requests will require an oauth token.  See http://developer.foursquare.com/docs/index_docs.html for the full list.
+    # Certain requests will require an oauth token.  See http://developer.foursquare.com/docs/index_docs.html for the full list.
     #
     # @param [Hash] options
     # @option options String :client_id Your foursquare app's client_id
@@ -91,12 +91,12 @@ module Foursquare2
     private
 
 
-      def default_headers
-        headers = {
-          :accept =>  'application/json',
-          :user_agent => 'Ruby gem'
-        }
-      end
+    def default_headers
+      headers = {
+        :accept =>  'application/json',
+        :user_agent => 'Ruby gem'
+      }
+    end
 
   end
 end

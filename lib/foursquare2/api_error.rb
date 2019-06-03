@@ -1,6 +1,5 @@
 module Foursquare2
   class APIError < StandardError
-
     attr_reader :code
     attr_reader :detail
     attr_reader :type

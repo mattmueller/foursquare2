@@ -1,0 +1,25 @@
+inherit_from:
+- https://raw.githubusercontent.com/thoughtbot/guides/master/style/ruby/.rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+  - 'gemfiles/*'
+  - 'tmp/**/*'
+
+Metrics/BlockLength:
+  CountComments: true
+  Max: 25
+  ExcludedMethods: []
+  Exclude:
+  - "spec/**/*"
+  - '*.gemspec'
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/FormatStringToken:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 142

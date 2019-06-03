@@ -1,6 +1,5 @@
 module Foursquare2
   module Tips
-
     # Retrieve information about a tip.
     #
     # param [String] tip_id - The id of the tip to retrieve.
@@ -93,6 +92,5 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-
   end
 end

@@ -1,6 +1,5 @@
 module Foursquare2
   module Specials
-
     # Retrieve information about a special
     #
     # param [String] special_id The ID of the special
@@ -50,7 +49,5 @@ module Foursquare2
       end
         return_error_or_body(response, response.body.response.special)
     end
-
   end
 end
-

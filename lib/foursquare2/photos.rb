@@ -1,6 +1,5 @@
 module Foursquare2
   module Photos
-
     # Retrieve a photo
     #
     # @params [String] photo_id - The ID of the photo
@@ -42,7 +41,5 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response.photos)
     end
-
   end
 end
-

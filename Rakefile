@@ -9,19 +9,6 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "foursquare2"
-  gem.homepage = "http://github.com/mattmueller/foursquare2"
-  gem.license = "MIT"
-  gem.summary = "Foursquare API v2 gem in the spirit of the original foursquare gem"
-  gem.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
-  gem.email = ["muellermr@gmail.com", "email@marcomoura.com"]
-  gem.authors = ["Matt Mueller", "Marco Moura"]
-end
-Jeweler::RubygemsDotOrgTasks.new
-
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'

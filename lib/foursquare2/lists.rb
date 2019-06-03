@@ -8,7 +8,7 @@ module Foursquare2
     # @option options Integer :limit - Number of results to return, up to 200.
     # @option options Integer :offset - The number of results to skip. Used to page through results.
 
-    def list(list_id, options={})
+    def list(list_id, options = {})
       response = connection.get do |req|
         req.url "lists/#{list_id}", options
       end
@@ -23,18 +23,18 @@ module Foursquare2
     # @option options Boolean :collaborative - Boolean indicating if this list can be edited by friends.
     # @option options String :photoId - The id of a photo that should be set as the list photo.
 
-    def add_list(options={})
+    def add_list(options = {})
       response = connection.post do |req|
         req.url "lists/add", options
       end
-        return_error_or_body(response, response.body.response.list)
+      return_error_or_body(response, response.body.response.list)
     end
 
     # Follow a list: https://developer.foursquare.com/docs/lists/follow
     #
     # @param [String] list_id - The id of the list to follow.
 
-    def follow_list(list_id, options={})
+    def follow_list(list_id, options = {})
       response = connection.post do |req|
         req.url "lists/#{list_id}/follow", options
       end
@@ -45,7 +45,7 @@ module Foursquare2
     #
     # @param [String] list_id - The id of the list to unfollow.
 
-    def unfollow_list(list_id, options={})
+    def unfollow_list(list_id, options = {})
       response = connection.post do |req|
         req.url "lists/#{list_id}/unfollow", options
       end
@@ -61,11 +61,11 @@ module Foursquare2
     # @option options Boolean :collaborative - Boolean indicating if this list can be edited by friends.
     # @option options String :photoId - The id of a photo that should be set as the list photo.
 
-    def update_list(list_id, options={})
+    def update_list(list_id, options = {})
       response = connection.post do |req|
         req.url "lists/#{list_id}/update", options
       end
-        return_error_or_body(response, response.body.response.list)
+      return_error_or_body(response, response.body.response.list)
     end
 
     # Add an item to a list: https://developer.foursquare.com/docs/lists/additem
@@ -79,11 +79,11 @@ module Foursquare2
     # @option options String :listId - Used with itemId to copy item from a list
     # @option options String :itemId - Used with listId to copy item from a list
 
-    def add_list_item(list_id, options={})
+    def add_list_item(list_id, options = {})
       response = connection.post do |req|
         req.url "lists/#{list_id}/additem", options
       end
-        return_error_or_body(response, response.body.response.item)
+      return_error_or_body(response, response.body.response.item)
     end
 
     # Delete an item from a list: https://developer.foursquare.com/docs/lists/deleteitem
@@ -91,9 +91,9 @@ module Foursquare2
     # @param [String] list_id - The id of the list to delete item from
     # @param [String] item_id = The id of the item to delete from list
 
-    def delete_list_item(list_id, item_id, options={})
+    def delete_list_item(list_id, item_id, options = {})
       response = connection.post do |req|
-        req.url "lists/#{list_id}/deleteitem", {:itemId => item_id}.merge(options)
+        req.url "lists/#{list_id}/deleteitem", { :itemId => item_id }.merge(options)
       end
       return_error_or_body(response, response.body.response.item)
     end
@@ -106,9 +106,9 @@ module Foursquare2
     # @option options String :beforeId - (optional) move itemId before beforeId
     # @option options String :afterId - (optional) move itemId after afterId
 
-    def move_list_item(list_id, item_id, options={})
+    def move_list_item(list_id, item_id, options = {})
       response = connection.post do |req|
-        req.url "lists/#{list_id}/moveitem", {:itemId => item_id}.merge(options)
+        req.url "lists/#{list_id}/moveitem", { :itemId => item_id }.merge(options)
       end
       return_error_or_body(response, response.body.response.list)
     end

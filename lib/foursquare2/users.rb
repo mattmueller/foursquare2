@@ -1,6 +1,5 @@
 module Foursquare2
   module Users
-
     # Get user's leaderboard details
     #
     # @param [Hash] options
@@ -58,7 +57,7 @@ module Foursquare2
         user << tip['user'] if check_name(tip['user'], name)
       end
       user.uniq
-  end
+    end
 
     # check if the first last name of user match the query
 
@@ -140,7 +139,6 @@ module Foursquare2
     # @option options String :sort - One of recent, nearby, popular
     # @option options String :ll - Latitude and longitude in format LAT,LON - required for nearby sort option.
 
-
     def user_todos(user_id, options={})
       response = connection.get do |req|
         req.url "users/#{user_id}/todos", options
@@ -154,7 +152,6 @@ module Foursquare2
     # @option options Integer :limit - The limit of results to return.
     # @option options Integer :offset - Used to page through results.
 
-
     def user_photos(options={})
       response = connection.get do |req|
         req.url "users/self/photos", options
@@ -167,7 +164,6 @@ module Foursquare2
     # @param [Hash]  options
     # @option options Integer :afterTimestamp - Get all venues after this epoch time.
     # @option options Integer :beforeTimestamp - Get all venues before this epoch time.
-
 
     def user_venue_history(options={})
       response = connection.get do |req|
@@ -268,6 +264,5 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-
   end
 end

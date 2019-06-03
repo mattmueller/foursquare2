@@ -1,6 +1,5 @@
 module Foursquare2
   module Settings
-
     # Retrive all settings for the authenticated user.
 
     def settings(options={})
@@ -32,7 +31,5 @@ module Foursquare2
       end
       return_error_or_body(response, response.body.response)
     end
-
   end
 end
-

@@ -1,5 +1,8 @@
 # foursquare2
 
+[![Build Status](https://travis-ci.org/mattmueller/foursquare2.svg?branch=master)](https://travis-ci.org/smattmueller/foursquare2)
+[![Coverage Status](https://coveralls.io/repos/github/mattmueller/foursquare2/badge.svg?branch=master)](https://coveralls.io/github/mattmueller/foursquare2?branch=master)
+
 Ruby wrapper for the [foursquare v2 API](http://developer.foursquare.com/docs/).
 
 ## Installation

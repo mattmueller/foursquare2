@@ -1,6 +1,5 @@
 module Foursquare2
   module Venuegroups
-
     # Retrieve information about a venuegroup
     #
     # param [String] group_id The ID of the venuegroup
@@ -32,7 +31,6 @@ module Foursquare2
     # @param [Hash]  options
     # @option options String :name - If specified, the new name to give to the group.
     # @option options String :venueId - If specified, a comma-delimited list of venue IDs that will become the new set of venue IDs for the group.
-
 
     def venuegroup_update(group_id, options={})
       response = connection.post do |req|
