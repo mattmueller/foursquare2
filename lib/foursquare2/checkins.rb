@@ -1,7 +1,7 @@
 module Foursquare2
   module Checkins
 
-    # Retrive information about a single checkin.
+    # Retrieve information about a single checkin.
     #
     # @param [String] checkin_id the ID of the checkin.
     # @param [Hash] options
@@ -14,7 +14,7 @@ module Foursquare2
       return_error_or_body(response, response.body.response.checkin)
     end
 
-    # Retrive a list of recent checkins from friends.
+    # Retrieve a list of recent checkins from friends.
     #
     # @param [Hash] options
     # @option options String :ll - Latitude and longitude in format LAT,LON
@@ -57,7 +57,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/addcomment", options
       end
-      return_error_or_body(response, response.body.response)  
+      return_error_or_body(response, response.body.response)
     end
 
     # Delete a checkin's comment
@@ -70,7 +70,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/deletecomment", options
       end
-      return_error_or_body(response, response.body.response)  
+      return_error_or_body(response, response.body.response)
     end
 
     # Add a post to a checkin.
@@ -85,7 +85,7 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/addpost", options
       end
-      return_error_or_body(response, response.body.response.post)  
+      return_error_or_body(response, response.body.response.post)
     end
 
     # Add a reply to a checkin.
@@ -100,8 +100,8 @@ module Foursquare2
       response = connection.post do |req|
         req.url "checkins/#{checkin_id}/reply", options
       end
-      return_error_or_body(response, response.body.response.reply)  
+      return_error_or_body(response, response.body.response.reply)
     end
-  end    
+  end
 end
 

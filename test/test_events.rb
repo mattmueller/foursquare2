@@ -1,4 +1,4 @@
-require 'helper'
+require "helper"
 
 class TestEvents < Test::Unit::TestCase
 
@@ -15,7 +15,7 @@ class TestEvents < Test::Unit::TestCase
 
     should "fetch info for a single event" do
       stub_get("https://api.foursquare.com/v2/events/4f98d496f6903e7ae2a3628c?oauth_token=#{@client.oauth_token}", "events/event.json")
-      event = @client.event('4f98d496f6903e7ae2a3628c')
+      event = @client.event("4f98d496f6903e7ae2a3628c")
       event.name.should == "Marvel's The Avengers"
     end
   end
