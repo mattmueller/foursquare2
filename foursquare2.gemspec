@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "2.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Matt Mueller", "Marco Moura"]
+  s.authors = ["Matt Mueller", "Marco Moura", "Gerardo Ortega"]
   s.date = "2018-11-11"
   s.description = "Gives access to all endpoints in version 2 of foursquare's API with syntax that will be familiar to those who used the original foursquare gem by Jeremy Welch."
-  s.email = ["muellermr@gmail.com", "email@marcomoura.com"]
+  s.email = %w(muellermr@gmail.com email@marcomoura.com g3ortega@gmail.com)
   s.extra_rdoc_files = [
     "LICENSE.txt"
   ]
