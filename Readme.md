@@ -1,5 +1,4 @@
-# foursquare2
-
+# foursquare2 (Updated version [here](https://github.com/g3ortega/foursquare_next))
 [![Build Status](https://travis-ci.org/mattmueller/foursquare2.svg?branch=master)](https://travis-ci.org/smattmueller/foursquare2)
 [![Coverage Status](https://coveralls.io/repos/github/mattmueller/foursquare2/badge.svg?branch=master)](https://coveralls.io/github/mattmueller/foursquare2?branch=master)
 
