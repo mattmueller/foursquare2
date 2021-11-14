@@ -69,5 +69,12 @@ def error_or_standard_body(filename, options)
   body
 end
 
+def to_query(obj)
+  require 'cgi' unless defined?(CGI) && defined?(CGI::escape)
+  obj.map do |val, key|
+    "#{CGI.escape( val.to_s )}=#{CGI.escape( key.to_s )}"
+  end.join("&")
+end
+
 class Test::Unit::TestCase
 end
