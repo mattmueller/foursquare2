@@ -12,8 +12,35 @@ module Foursquare2
       return_error_or_body(response, response.body.response.venue)
     end
 
-    # Search for venues
+    
+    # Search for venues using multi
     #
+    # @param Array of Hashes.
+    # Send it an array of up to five hashes which are in the same
+    # format that you'd send to the regular search_venues method.
+    # It will return a hash of the results in the same order
+    # as the requests.
+
+    def search_multiple_venues(queries={},debug=false)
+      if queries.size > 5
+        raise "Too many queries. Foursquare only allows for a maximum of 5 at a time."
+      end
+      query = ""
+      queries.each do |g|
+        query += CGI.escape("/venues/search?" + g.to_query) + ","
+      end
+      query.gsub!(/,$/,'')
+      if debug
+        puts CGI.unescape(query.to_s)
+      end
+      response = connection.get do |req|
+        req.url "multi?requests=#{query}"
+      end
+      return_error_or_body(response, response.body.response)
+    end
+
+      
+    # Search for venues
     # @param [Hash]  options
     # @option options String :ll - Latitude and longitude in format LAT,LON
     # @option options Integer :llAcc - Accuracy of the lat/lon in meters.
